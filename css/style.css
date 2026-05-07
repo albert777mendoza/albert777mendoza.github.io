@@ -11,8 +11,8 @@ html{
 }
 
 body{
-  background:#ffffff;
-  color:#111111;
+  background:white;
+  color:#111;
 
   font-family:'Inter',sans-serif;
 
@@ -28,12 +28,12 @@ body{
   justify-content:space-between;
   align-items:center;
 
-  padding:35px 8%;
+  padding:30px 8%;
 
   position:fixed;
   top:0;
 
-  background:rgba(255,255,255,0.92);
+  background:rgba(255,255,255,0.9);
 
   backdrop-filter:blur(10px);
 
@@ -55,8 +55,6 @@ body{
 
   text-decoration:none;
 
-  font-size:0.95rem;
-
   transition:0.3s;
 }
 
@@ -73,12 +71,14 @@ body{
   align-items:center;
   justify-content:center;
 
-  gap:100px;
+  gap:90px;
 
-  padding:140px 8% 80px;
+  padding:120px 8% 80px;
+
+  max-width:1400px;
+
+  margin:auto;
 }
-
-/* FOTO */
 
 .profile-img{
   width:320px;
@@ -87,9 +87,9 @@ body{
   object-fit:cover;
 
   border-radius:24px;
-}
 
-/* HERO CONTENT */
+  flex-shrink:0;
+}
 
 .hero-content{
   max-width:650px;
@@ -98,7 +98,7 @@ body{
 .hero-tag{
   display:inline-block;
 
-  margin-bottom:25px;
+  margin-bottom:20px;
 
   color:#777;
 
@@ -108,15 +108,13 @@ body{
 }
 
 .hero h1{
-  font-size:5.8rem;
+  font-size:5.5rem;
 
   line-height:0.95;
 
   letter-spacing:-4px;
 
-  margin-bottom:30px;
-
-  font-weight:700;
+  margin-bottom:25px;
 }
 
 .hero p{
@@ -126,14 +124,14 @@ body{
 
   margin-bottom:40px;
 
-  max-width:550px;
+  max-width:520px;
 }
 
 /* BUTTONS */
 
 .hero-buttons{
   display:flex;
-  gap:20px;
+  gap:15px;
 }
 
 .btn{
@@ -165,13 +163,17 @@ body{
 
   color:black;
 
-  border:1px solid #d9d9d9;
+  border:1px solid #ddd;
 }
 
 /* SECTIONS */
 
 .section{
   padding:140px 8%;
+
+  max-width:1400px;
+
+  margin:auto;
 }
 
 .section-title{
@@ -201,7 +203,7 @@ body{
 .grid{
   display:grid;
 
-  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
   gap:30px;
 }
@@ -223,7 +225,7 @@ body{
 .project-type{
   display:inline-block;
 
-  margin-bottom:20px;
+  margin-bottom:18px;
 
   color:#777;
 
@@ -295,7 +297,7 @@ body{
   }
 
   .hero h1{
-    font-size:4rem;
+    font-size:3.5rem;
   }
 
 }
@@ -307,11 +309,7 @@ body{
   }
 
   .hero{
-    padding-top:120px;
-  }
-
-  .hero h1{
-    font-size:3rem;
+    padding-top:140px;
   }
 
   .profile-img{
@@ -321,6 +319,11 @@ body{
 
   .hero-buttons{
     flex-direction:column;
+    width:100%;
+  }
+
+  .btn{
+    width:100%;
   }
 
 }
