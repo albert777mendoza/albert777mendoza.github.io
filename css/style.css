@@ -1,21 +1,63 @@
 body{
   font-family:Arial,sans-serif;
-  background:#f5f5f5;
+  background:#fafafa;
   margin:0;
 }
 
 .layout{
+
   display:grid;
+
   grid-template-columns:300px 1fr;
-  gap:60px;
+
+  gap:80px;
+
   max-width:1200px;
+
   margin:auto;
+
   padding:40px;
 }
 
+/* SIDEBAR */
+
 .sidebar{
+
   width:100%;
+
+  position:sticky;
+
+  top:40px;
+
+  height:fit-content;
+
 }
+
+.sidebar h1{
+
+  font-size:3rem;
+
+  line-height:0.95;
+
+  color:#2f73b7;
+
+  margin-bottom:30px;
+
+  font-weight:600;
+
+}
+
+.sidebar p{
+
+  color:#666;
+
+  line-height:1.7;
+
+  margin-bottom:30px;
+
+}
+
+/* FOTO */
 
 .profile-img{
 
@@ -32,20 +74,66 @@ body{
   margin-bottom:30px;
 }
 
-.sidebar h1{
+/* LINKS */
 
-  font-size:3rem;
+.links{
 
-  line-height:0.95;
+  display:flex;
 
-  color:#2f73b7;
+  flex-direction:column;
 
-  margin-bottom:30px;
-
-  font-weight:700;
+  gap:10px;
 
 }
 
+.links a{
+
+  text-decoration:none;
+
+  color:#2f73b7;
+
+}
+
+/* CONTENT */
+
 .project{
+
   margin-bottom:60px;
+
+}
+
+.project h2{
+
+  color:#222;
+
+  margin-bottom:10px;
+
+}
+
+.project p{
+
+  color:#555;
+
+  line-height:1.7;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .layout{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .sidebar{
+
+    position:relative;
+
+    top:0;
+
+  }
+
 }
