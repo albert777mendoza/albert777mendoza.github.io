@@ -1,28 +1,22 @@
 body{
-  font-family: system-ui, -apple-system, Arial, sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
   margin:0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  background:#0f172a;
   color:#e5e7eb;
 }
 
-/* LAYOUT */
-.layout{
-  display:grid;
-  grid-template-columns:320px 1fr;
-  gap:90px;
-  max-width:1100px;
-  margin:auto;
-  padding:70px 40px;
-}
-
-/* SIDEBAR */
+/* SIDEBAR FIJO */
 .sidebar{
-  width:100%;
-  position:sticky;
-  top:60px;
-  height:fit-content;
+  position:fixed;
+  top:0;
+  left:0;
+  width:320px;
+  height:100vh;
+  padding:60px 40px;
+  background:transparent;
 }
 
+/* TITULO */
 .sidebar h1{
   font-size:2.6rem;
   line-height:1;
@@ -31,6 +25,7 @@ body{
   font-weight:800;
 }
 
+/* TEXTO */
 .sidebar p{
   color:#9ca3af;
   line-height:1.7;
@@ -44,7 +39,7 @@ body{
   object-fit:cover;
   border-radius:50%;
   border:3px solid rgba(255,255,255,0.08);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
   margin-bottom:25px;
 }
 
@@ -65,7 +60,13 @@ body{
   opacity:0.7;
 }
 
-/* PROJECTS */
+/* CONTENIDO DERECHO */
+main{
+  margin-left:320px;
+  padding:60px;
+}
+
+/* PROYECTOS */
 .project{
   margin-bottom:20px;
   padding:22px;
@@ -94,14 +95,16 @@ body{
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  .layout{
-    grid-template-columns:1fr;
-    gap:40px;
-    padding:30px;
-  }
 
   .sidebar{
     position:relative;
-    top:0;
+    width:100%;
+    height:auto;
+    padding:30px;
+  }
+
+  main{
+    margin-left:0;
+    padding:30px;
   }
 }
