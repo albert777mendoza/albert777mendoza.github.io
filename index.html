@@ -3,77 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Albert Mendoza</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>¡Hola! Bienvenido a mi portafolio 👋</h1>
-    <p>Soy <strong>Albert Mendoza</strong>, analista de datos apasionado por transformar información en soluciones estratégicas.</p>
-    <a href="https://github.com/albert777mendoza" target="_blank" class="btn">Ver mi perfil en GitHub</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <h1 class="logo">Albert</h1>
+
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Acerca de mí</h2>
-      <p>Analista de datos con experiencia en Python, SQL y herramientas de visualización. Me interesa convertir datos en conocimiento útil para la toma de decisiones.</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="assets/img/profile.jpg" alt="Foto de perfil" class="profile-img">
 
-    <section>
-      <h2>Habilidades técnicas</h2>
-      <ul>
-        <li>Python (pandas, matplotlib, scikit-learn)</li>
-        <li>SQL</li>
-        <li>Excel avanzado</li>
-        <li>Tableau / Power BI</li>
-        <li>Streamlit</li>
-      </ul>
-    </section>
+    <h2>Hola, soy Albert 👋</h2>
+    <p>Frontend Developer</p>
 
-    <section>
-      <h2>Habilidades blandas</h2>
-      <ul>
-        <li>Comunicación efectiva</li>
-        <li>Trabajo en equipo</li>
-        <li>Resolución de problemas</li>
-        <li>Orientación a resultados</li>
-      </ul>
-    </section>
+    <a href="#projects" class="btn">Ver proyectos</a>
+  </section>
 
-    <section>
-      <h2>Proyectos destacados</h2>
-      <div class="projects">
-        <div class="card">
-          <h3>Data Analyst Portfolio</h3>
-          <p>Conjunto de proyectos de análisis de datos con Python y SQL.</p>
-          <a href="https://github.com/albert777mendoza/data-analyst-portfolio" target="_blank">Ver proyecto</a>
-        </div>
-        <div class="card">
-          <h3>Trip Analysis</h3>
-          <p>Análisis de patrones de viaje usando pandas y visualización.</p>
-          <a href="https://github.com/albert777mendoza/trip-analysis" target="_blank">Ver proyecto</a>
-        </div>
-        <div class="card">
-          <h3>Vehicles Env</h3>
-          <p>Exploración de datos sobre vehículos y medio ambiente.</p>
-          <a href="https://github.com/albert777mendoza/vehicles_env" target="_blank">Ver proyecto</a>
-        </div>
-        <div class="card">
-          <h3>Streamlit Test</h3>
-          <p>Aplicación interactiva con Streamlit para visualización de datos.</p>
-          <a href="https://github.com/albert777mendoza/streamlit_test" target="_blank">Ver proyecto</a>
-        </div>
-        <div class="card">
-          <h3>Final Project DA</h3>
-          <p>Proyecto final integrando técnicas de exploración y modelado.</p>
-          <a href="https://github.com/albert777mendoza/final_project_da" target="_blank">Ver proyecto</a>
-        </div>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy desarrollador enfocado en crear interfaces modernas, limpias y funcionales.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Proyectos</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto.</p>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>📫 Contacto: Puedes visitar mi perfil en GitHub o conectarte conmigo en LinkedIn.</p>
-  </footer>
+      <div class="card">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto.</p>
+      </div>
+
+      <div class="card">
+        <h3>Proyecto 3</h3>
+        <p>Descripción del proyecto.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contacto</h2>
+    <p>Correo: tuemail@email.com</p>
+  </section>
+
 </body>
 </html>
