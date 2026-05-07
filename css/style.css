@@ -7,89 +7,65 @@
 }
 
 body{
-  background:#ffffff;
+  background:#f8f8f8;
 
-  color:#111111;
+  color:#333;
 
   font-family:'Inter',sans-serif;
+
+  line-height:1.7;
 }
 
 /* LAYOUT */
 
-.container{
-  min-height:100vh;
-
+.layout{
   display:grid;
 
-  grid-template-columns:420px 1fr;
+  grid-template-columns:320px 1fr;
 
-  gap:120px;
+  gap:80px;
 
-  padding:60px;
-
-  max-width:1400px;
+  max-width:1200px;
 
   margin:auto;
+
+  padding:60px 40px;
 }
 
-/* LEFT */
+/* SIDEBAR */
 
-.left{
+.sidebar{
   position:sticky;
 
-  top:60px;
+  top:40px;
 
   height:fit-content;
+}
+
+.sidebar h1{
+  font-size:2.6rem;
+
+  line-height:1.1;
+
+  color:#2f73b7;
+
+  margin-bottom:30px;
+
+  font-weight:700;
 }
 
 .profile-img{
   width:100%;
 
-  border-radius:24px;
-
-  object-fit:cover;
-}
-
-/* RIGHT */
-
-.right{
-  padding-top:40px;
-}
-
-.tag{
-  display:inline-block;
+  border-radius:50%;
 
   margin-bottom:30px;
-
-  color:#777;
-
-  letter-spacing:2px;
-
-  font-size:0.8rem;
 }
 
-h1{
-  font-size:7rem;
-
-  line-height:0.9;
-
-  letter-spacing:-6px;
+.sidebar p{
+  color:#666;
 
   margin-bottom:30px;
-
-  font-weight:600;
-}
-
-.intro{
-  max-width:520px;
-
-  font-size:1.1rem;
-
-  line-height:1.8;
-
-  color:#555;
-
-  margin-bottom:50px;
 }
 
 /* LINKS */
@@ -97,89 +73,56 @@ h1{
 .links{
   display:flex;
 
-  gap:30px;
+  flex-direction:column;
 
-  margin-bottom:100px;
+  gap:10px;
 }
 
 .links a{
-  color:black;
+  color:#2f73b7;
 
   text-decoration:none;
-
-  font-weight:500;
 }
 
-/* PROJECTS */
+/* CONTENT */
 
-.projects{
-  display:flex;
-
-  flex-direction:column;
-
-  gap:60px;
+.content{
+  padding-top:20px;
 }
 
 .project{
-  padding-bottom:40px;
-
-  border-bottom:1px solid #eeeeee;
+  margin-bottom:80px;
 }
 
-.project h3{
-  font-size:2rem;
+.project h2{
+  font-size:1.8rem;
 
-  margin-bottom:10px;
+  margin-bottom:15px;
 
-  font-weight:500;
+  color:#222;
 }
 
 .project p{
-  color:#666;
+  color:#555;
+
+  max-width:700px;
 }
 
 /* MOBILE */
 
-@media(max-width:980px){
+@media(max-width:900px){
 
-  .container{
+  .layout{
     grid-template-columns:1fr;
-
-    gap:60px;
   }
 
-  .left{
+  .sidebar{
     position:relative;
-
     top:0;
   }
 
   .profile-img{
-    max-width:320px;
-  }
-
-  h1{
-    font-size:4.5rem;
-  }
-
-}
-
-@media(max-width:768px){
-
-  .container{
-    padding:30px;
-  }
-
-  h1{
-    font-size:3.2rem;
-
-    letter-spacing:-3px;
-  }
-
-  .links{
-    flex-direction:column;
-
-    gap:15px;
+    max-width:260px;
   }
 
 }
