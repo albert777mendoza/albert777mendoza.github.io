@@ -191,16 +191,18 @@ main {
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
+    margin-left: 20px; /* Ajuste para dejar un pequeño margen izquierdo */
   }
 
   /* CENTRAR TEXTO '¡HOLA!...' */
   .profile-container p {
     text-align: center;  /* Centra el texto */
     margin-top: 15px;     /* Da un poco de espacio entre la foto y el texto */
+    margin-left: 0px;     /* Asegura que no haya margen innecesario */
   }
 
   main {
-    margin-left: 430px; /* Ajuste para mayor separación */
+    margin-left: 500px; /* Aumento del margen izquierdo para más espacio */
     padding: 60px 40px;
     max-width: 800px;
     text-align: left;
