@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido en la sidebar */
+  height: 100vh; /* Asegura que la sidebar ocupe toda la pantalla */
 }
 
 /* FOTO */
@@ -28,6 +29,7 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 25px;
+  position: relative; /* Cambiar a relative para que no quede fija */
 }
 
 .profile-container {
@@ -134,7 +136,7 @@ main {
     left: 50%;
     transform: translateX(-50%); /* Centrado */
     width: 100%;
-    height: 100vh; /* Asegura que la sidebar sea fija en toda la altura */
+    height: 100vh; /* Asegura que la sidebar sea fija */
     padding: 30px;
     align-items: center;
     justify-content: flex-start;
