@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center; /* Asegura que el contenido esté centrado */
 }
 
 /* TITULO */
@@ -157,6 +158,7 @@ main {
     padding: 30px;
     max-width: 100%;
     text-align: center; /* Centra el contenido */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
   }
 
   /* Ajustar márgenes de proyectos para que estén centrados */
