@@ -65,10 +65,10 @@ body {
 
 /* MAIN (contenido derecho) */
 main {
-  margin-left: 520px; /* Ajustado para balancear con el sidebar */
+  margin-left: 520px;  /* Ajustado para balancear con el sidebar */
   padding: 60px 40px;
-  max-width: 700px;
-  margin-right: 5 cm;
+  max-width: 90%; /* Cambiado a un valor relativo */
+  margin-right: 5cm;
 }
 
 /* PROYECTOS */
