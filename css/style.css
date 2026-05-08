@@ -154,7 +154,7 @@ main {
     height: 150px; /* Reducir tamaño para la versión móvil */
   }
 
-  /* Columna principal */
+  /* Columna principal (contenido derecho) */
   main {
     margin-left: 0;
     padding: 30px;
