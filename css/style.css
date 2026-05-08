@@ -14,8 +14,12 @@ body {
   transform: translateX(-50%); /* Centrado */
   width: 320px;
   padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido en la sidebar */
 }
 
+/* FOTO */
 .profile-img {
   width: 190px;
   height: 190px;
@@ -40,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center; /* Centra los enlaces */
 }
 
 .links a {
@@ -124,12 +129,15 @@ main {
 @media(max-width: 900px) {
   /* Ajustes para la sidebar en móvil */
   .sidebar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centrado */
     width: 100%;
-    height: auto;
+    height: 100vh; /* Asegura que la sidebar sea fija en toda la altura */
     padding: 30px;
-    left: 0; /* Hace que la sidebar ocupe el 100% de la pantalla en dispositivos móviles */
-    transform: none; /* Sin transformación, mantiene el diseño natural */
+    align-items: center;
+    justify-content: flex-start;
   }
 
   /* Ajustes para el main en móvil */
@@ -139,6 +147,18 @@ main {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto; /* Centra la columna principal */
+  }
+
+  .profile-container {
+    margin-top: 20px; /* Asegura que haya espacio entre la foto y el texto */
+  }
+
+  .sidebar h1 {
+    text-align: center; /* Centra el nombre en móvil */
+  }
+
+  .links a {
+    text-align: center; /* Centra los enlaces de la sidebar */
   }
 }
 
