@@ -182,6 +182,9 @@ main {
     padding: 60px 40px;
     max-width: 700px;
     text-align: left;
+    display: flex;
+    flex-direction: column; /* Asegura que las secciones estén apiladas verticalmente */
+    justify-content: flex-start; /* Alinea el contenido de arriba hacia abajo */
   }
 
   /* Alineación vertical de las secciones */
@@ -217,7 +220,6 @@ main {
     margin-top: 10px;
   }
 }
-
 /* Para la versión móvil */
 @media(max-width: 900px) {
   main {
