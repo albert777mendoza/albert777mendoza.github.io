@@ -65,6 +65,7 @@ body{
 main{
   margin-left:320px;
   padding:60px;
+  max-width:680px;
 }
 
 /* PROYECTOS */
