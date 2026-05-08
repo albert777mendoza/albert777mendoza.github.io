@@ -1,4 +1,4 @@
-/* General styles */
+/* GENERAL STYLES */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -10,8 +10,8 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 50%; /* Centrado en la pantalla */
-  transform: translateX(-50%); /* Centra exacto */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado */
   width: 320px;
   padding: 60px 40px;
 }
@@ -54,16 +54,18 @@ body {
 
 /* MAIN (contenido derecho) */
 main {
-  margin-left: 0; /* Eliminar margen izquierdo en móvil */
+  margin-left: 0;
   padding: 30px;
   max-width: 90%;
-  width: 100%; /* Se ajusta al 100% del contenedor */
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center; /* Asegura que el contenido principal se alinee al centro */
-  justify-content: flex-start; /* Centra el contenido verticalmente desde la parte superior */
-  margin-top: 20px; /* Espacio superior para separar el contenido de la foto */
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-left: auto; /* Centra la columna de contenido */
+  margin-right: auto; /* Asegura que se mantenga centrado */
 }
 
 /* SECTIONS */
@@ -120,17 +122,32 @@ main {
 
 /* RESPONSIVE: Móvil */
 @media(max-width: 900px) {
-
+  /* Ajustes para la sidebar en móvil */
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     padding: 30px;
+    left: 0; /* Hace que la sidebar ocupe el 100% de la pantalla en dispositivos móviles */
+    transform: none; /* Sin transformación, mantiene el diseño natural */
   }
 
+  /* Ajustes para el main en móvil */
   main {
     margin-left: 0;
     padding: 30px;
-    max-width: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; /* Centra la columna principal */
+  }
+}
+
+/* DESEADO PARA ESCRITORIO */
+@media(min-width: 901px) {
+  main {
+    margin-left: 380px;  /* Ajuste para el contenido principal */
+    padding: 60px 40px;
+    max-width: 700px;
+    text-align: left;  /* Alinea el contenido a la izquierda en escritorio */
   }
 }
