@@ -163,13 +163,12 @@ main {
   }
 }
 
-/* DESEADO PARA ESCRITORIO */
+/* Para escritorio */
 @media(min-width: 901px) {
-  /* Ajustes para la sidebar fija en escritorio */
   .sidebar {
     position: fixed;
     top: 0;
-    left: 30px; /* Ajuste para mover la sidebar más hacia la izquierda */
+    left: 30px;
     width: 320px;
     padding: 60px 40px;
     display: flex;
@@ -179,9 +178,65 @@ main {
   }
 
   main {
-    margin-left: 370px;  /* Ajuste para el contenido principal, movido hacia la derecha */
+    margin-left: 370px;  /* Ajuste para el contenido principal */
     padding: 60px 40px;
     max-width: 700px;
     text-align: left;  /* Alinea el contenido a la izquierda en escritorio */
+  }
+
+  /* Alineación de los bloques */
+  .section {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+  }
+
+  .section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px; /* Espaciado entre el título y los contenidos */
+  }
+
+  .section p,
+  .section ul {
+    font-size: 1.1em;
+    color: #ccc;
+  }
+
+  .section ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Espacio para las listas */
+  }
+
+  .section a {
+    color: #4da6ff;
+    text-decoration: none;
+  }
+}
+
+/* Para la versión móvil */
+@media(max-width: 900px) {
+  main {
+    padding: 20px;
+    margin-left: 0; /* Asegura que no haya margen izquierdo en móvil */
+  }
+
+  .section {
+    text-align: center; /* Centra el texto en móvil */
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.5em;
+  }
+
+  .section p,
+  .section ul {
+    font-size: 1em;
+  }
+
+  .section a {
+    font-size: 1.1em;
+    display: block;
+    margin-top: 10px;
   }
 }
