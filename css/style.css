@@ -1,3 +1,4 @@
+/* General styles */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -9,30 +10,12 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 120px; /* Ajustado para centrar más */
+  left: 50%; /* Centrado en la pantalla */
+  transform: translateX(-50%); /* Centra exacto */
   width: 320px;
-  height: 100vh;
   padding: 60px 40px;
 }
 
-/* TITULO */
-.sidebar h1 {
-  font-size: 2.6rem;
-  line-height: 1.05;
-  color: #60a5fa;
-  margin-bottom: 25px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-}
-
-/* TEXTO */
-.sidebar p {
-  color: #9ca3af;
-  line-height: 1.7;
-  margin-bottom: 25px;
-}
-
-/* FOTO */
 .profile-img {
   width: 190px;
   height: 190px;
@@ -41,6 +24,15 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 25px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la foto y el texto debajo */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre la foto y la columna de la derecha */
 }
 
 /* LINKS */
@@ -62,14 +54,21 @@ body {
 
 /* MAIN (contenido derecho) */
 main {
-  margin-left: 520px;  /* Ajustado para balancear con el sidebar */
-  padding: 60px 40px;
-  max-width: 700px;
-  margin-right: auto;
+  margin-left: 0; /* Eliminar margen izquierdo en móvil */
+  padding: 30px;
+  max-width: 90%;
+  width: 100%; /* Se ajusta al 100% del contenedor */
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido en la versión de escritorio */
+  align-items: center; /* Asegura que el contenido principal se alinee al centro */
+  justify-content: flex-start; /* Centra el contenido verticalmente desde la parte superior */
+  margin-top: 20px; /* Espacio superior para separar el contenido de la foto */
+}
+
+/* SECTIONS */
+.about, .skills, .projects, .contact {
+  margin-bottom: 20px;
 }
 
 /* PROYECTOS */
@@ -92,7 +91,6 @@ main {
 .project h2 {
   color: #f1f5f9;
   margin-bottom: 8px;
-  font-weight: 600;
 }
 
 .project p {
@@ -100,80 +98,39 @@ main {
   line-height: 1.6;
 }
 
-/* RESPONSIVE: Móvil */
-@media (max-width: 900px) {
-  .layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra todo en la versión móvil */
-    padding: 10px;
-  }
+/* SKILLS */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
 
-  /* Sidebar en móvil */
+.skills-list li {
+  padding-left: 12px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.skills-list li::before {
+  content: "•";
+  color: #60a5fa;
+  position: absolute;
+  left: 0;
+}
+
+/* RESPONSIVE: Móvil */
+@media(max-width: 900px) {
+
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     padding: 30px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
-  /* Contenedor de la foto y texto */
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .profile-img {
-    width: 150px;  /* Reducido para la versión móvil */
-    height: 150px; /* Reducido para la versión móvil */
-  }
-
-  /* Columna principal (contenido derecho) */
   main {
     margin-left: 0;
     padding: 30px;
-    max-width: 90%;
-    width: 100%; /* Se ajusta al 100% del contenedor */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Asegura que el contenido principal se alinee al centro */
-    justify-content: center; /* Centra el contenido verticalmente */
-  }
-
-  /* Proyectos */
-  .project {
-    margin-bottom: 20px;
-    padding: 22px;
-    background: rgba(30, 41, 59, 0.6);
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: 0.25s ease;
-    backdrop-filter: blur(6px);
-    width: 100%; /* Asegura que los proyectos se adapten al ancho de la pantalla */
-    text-align: center; /* Centra los textos dentro de los proyectos */
-  }
-
-  .project:hover {
-    transform: translateY(-5px);
-    border-color: rgba(96, 165, 250, 0.4);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  }
-
-  .project h2 {
-    color: #f1f5f9;
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-
-  .project p {
-    color: #94a3b8;
-    line-height: 1.6;
+    max-width: 100%;
   }
 }
