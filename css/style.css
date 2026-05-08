@@ -184,4 +184,9 @@ main {
     max-width: 700px;
     text-align: left;  /* Alinea el contenido a la izquierda en escritorio */
   }
+
+  /* Ajuste para la sección "Acerca de mí" en la columna derecha */
+  main .about {
+    margin-left: 20px;  /* Desplaza la sección hacia la derecha */
+  }
 }
