@@ -63,11 +63,10 @@ body{
 
 /* CONTENIDO DERECHO */
 main{
-  margin-left:320px;
-  padding:60px;
-  max-width:680px;
+  margin-left:380px;
+  padding:60px 40px;
+  max-width:700px;
 }
-
 /* PROYECTOS */
 .project{
   margin-bottom:20px;
