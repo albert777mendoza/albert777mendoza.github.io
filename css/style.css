@@ -169,7 +169,7 @@ main {
   .sidebar {
     position: fixed;
     top: 0;
-    left: 50px; /* Ajuste para mover la sidebar más hacia la izquierda */
+    left: 30px; /* Ajuste para mover la sidebar más hacia la izquierda */
     width: 320px;
     padding: 60px 40px;
     display: flex;
@@ -179,14 +179,9 @@ main {
   }
 
   main {
-    margin-left: 440px;  /* Aumentar el margen izquierdo para mover más el contenido */
+    margin-left: 370px;  /* Ajuste para el contenido principal, movido hacia la derecha */
     padding: 60px 40px;
     max-width: 700px;
     text-align: left;  /* Alinea el contenido a la izquierda en escritorio */
-  }
-
-  /* Ajuste para la sección "Acerca de mí" en la columna derecha */
-  main .about {
-    margin-left: 20px;  /* Desplaza la sección hacia la derecha */
   }
 }
