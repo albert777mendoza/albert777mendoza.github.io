@@ -65,10 +65,10 @@ body {
 
 /* MAIN (contenido derecho) */
 main {
-  margin-left: 520px;  /* Ajustado para balancear con el sidebar */
+  margin-left: 520px; /* Ajustado para balancear con el sidebar */
   padding: 60px 40px;
-  max-width: 90%; /* Cambiado a un valor relativo */
-  margin-right: 5cm;
+  max-width: 700px;
+  margin-right: auto;
 }
 
 /* PROYECTOS */
@@ -120,18 +120,70 @@ main {
 }
 
 /* RESPONSIVE: Móvil */
-@media(max-width:900px) {
+@media (max-width: 900px) {
 
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     padding: 30px;
+    text-align: center; /* Centrar el texto */
   }
 
+  /* CENTRAR FOTO Y TEXTO EN MÓVILES */
+  .profile-container {
+    display: flex;
+    flex-direction: column;  /* Esto hace que la imagen y el texto estén uno encima del otro */
+    align-items: center;  /* Centra la foto y el texto */
+    justify-content: center;
+    text-align: center;  /* Asegura que el texto esté centrado */
+  }
+
+  .profile-img {
+    width: 150px;   /* Ajuste para hacerlo un poco más pequeño */
+    height: 150px;
+  }
+
+  /* MAIN (contenido derecho) en dispositivos móviles */
   main {
     margin-left: 0;
+    margin-top: 30px;   /* Se añade un poco de margen superior */
     padding: 30px;
     max-width: 100%;
+  }
+
+  /* Contenido del Sidebar */
+  .sidebar h1 {
+    font-size: 2.2rem;   /* Reducir tamaño del texto */
+  }
+
+  .sidebar p {
+    font-size: 1.1rem;
+  }
+
+  .project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.25s ease;
+    backdrop-filter: blur(6px);
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+    border-color: rgba(96, 165, 250, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .project h2 {
+    color: #f1f5f9;
+    margin-bottom: 8px;
+  }
+
+  .project p {
+    color: #94a3b8;
+    line-height: 1.6;
   }
 }
