@@ -71,6 +71,7 @@ main {
   padding: 60px 40px;
   max-width: 700px;
   margin-right: 5cm;
+  text-align: center; /* Centra el contenido */
 }
 
 /* PROYECTOS */
@@ -137,6 +138,7 @@ main {
     height: auto;
     padding: 30px;
     text-align: center; /* Asegura que el contenido esté centrado */
+    margin-bottom: 20px; /* Agregado para margen debajo de la sidebar */
   }
 
   /* Contenedor de la foto y el texto */
