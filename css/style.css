@@ -1,3 +1,4 @@
+/* Estilo global */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -68,7 +69,7 @@ main {
   margin-left: 520px; /* Ajustado para balancear con el sidebar */
   padding: 60px 40px;
   max-width: 700px;
-  margin-right: auto;
+  margin-right: 5cm;
 }
 
 /* PROYECTOS */
@@ -99,7 +100,7 @@ main {
   line-height: 1.6;
 }
 
-/* HABILIDADES */
+/* SKILLS LIST */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -120,55 +121,55 @@ main {
 }
 
 /* RESPONSIVE: Móvil */
-@media (max-width: 900px) {
+@media(max-width: 900px) {
+  /* Ajustar la disposición en móviles */
+  .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  /* Sidebar */
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     padding: 30px;
-    text-align: center; /* Centrar el texto */
+    text-align: center; /* Asegura que el contenido esté centrado */
   }
 
-  /* CENTRAR FOTO Y TEXTO EN MÓVILES */
+  /* Contenedor de la foto y el texto */
   .profile-container {
     display: flex;
-    flex-direction: column;  /* Esto hace que la imagen y el texto estén uno encima del otro */
-    align-items: center;  /* Centra la foto y el texto */
-    justify-content: center;
-    text-align: center;  /* Asegura que el texto esté centrado */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .profile-img {
-    width: 150px;   /* Ajuste para hacerlo un poco más pequeño */
-    height: 150px;
+    width: 150px;  /* Reducir tamaño para la versión móvil */
+    height: 150px; /* Reducir tamaño para la versión móvil */
   }
 
-  /* MAIN (contenido derecho) en dispositivos móviles */
+  /* Columna principal */
   main {
     margin-left: 0;
-    margin-top: 30px;   /* Se añade un poco de margen superior */
     padding: 30px;
     max-width: 100%;
+    text-align: center; /* Centra el contenido */
   }
 
-  /* Contenido del Sidebar */
-  .sidebar h1 {
-    font-size: 2.2rem;   /* Reducir tamaño del texto */
-  }
-
-  .sidebar p {
-    font-size: 1.1rem;
-  }
-
+  /* Ajustar márgenes de proyectos para que estén centrados */
   .project {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 22px;
     background: rgba(30, 41, 59, 0.6);
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: 0.25s ease;
     backdrop-filter: blur(6px);
+    width: 100%; /* Asegura que los proyectos ocupen todo el ancho */
+    text-align: center; /* Centra el texto dentro del proyecto */
   }
 
   .project:hover {
@@ -180,6 +181,7 @@ main {
   .project h2 {
     color: #f1f5f9;
     margin-bottom: 8px;
+    font-weight: 600;
   }
 
   .project p {
