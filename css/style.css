@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #0f172a;
   color: #e5e7eb;
 }
@@ -9,18 +9,13 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 120px; /* Cambiado a 120px */
+  left: 120px; /* Ajustado para centrar más */
   width: 320px;
   height: 100vh;
   padding: 60px 40px;
-}
-
-/* MAIN (contenido derecho) */
-main {
-  margin-left: 520px;  /* Cambiado a 520px */
-  padding: 60px 40px;
-  max-width: 700px;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* TITULO */
@@ -68,6 +63,14 @@ main {
   opacity: 0.7;
 }
 
+/* MAIN (contenido derecho) */
+main {
+  margin-left: 520px; /* Ajustado para balancear con el sidebar */
+  padding: 60px 40px;
+  max-width: 700px;
+  margin-right: auto;
+}
+
 /* PROYECTOS */
 .project {
   margin-bottom: 20px;
@@ -88,11 +91,32 @@ main {
 .project h2 {
   color: #f1f5f9;
   margin-bottom: 8px;
+  font-weight: 600; /* Añadido para mejor contraste */
 }
 
 .project p {
   color: #94a3b8;
   line-height: 1.6;
+}
+
+/* HABILIDADES */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.skills-list li {
+  padding-left: 12px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.skills-list li::before {
+  content: "•";
+  color: #60a5fa;
+  position: absolute;
+  left: 0;
 }
 
 /* RESPONSIVE: Móvil */
