@@ -169,7 +169,7 @@ main {
   .sidebar {
     position: fixed;
     top: 0;
-    left: 100px; /* Ajuste para mover la sidebar un poco hacia la izquierda */
+    left: 50px; /* Ajuste para mover la sidebar más hacia la izquierda */
     width: 320px;
     padding: 60px 40px;
     display: flex;
