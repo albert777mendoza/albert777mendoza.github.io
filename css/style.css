@@ -9,11 +9,10 @@ body{
 .sidebar{
   position:fixed;
   top:0;
-  left:0;
+  left:60px;
   width:320px;
   height:100vh;
   padding:60px 40px;
-  background:transparent;
 }
 
 /* TITULO */
