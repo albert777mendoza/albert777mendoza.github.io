@@ -281,3 +281,33 @@ main {
   color: #bfc7d5;
   letter-spacing: 1px;
 }
+
+.project-img {
+  width: 100%;
+  max-width: 700px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.project-img:hover {
+  transform: scale(1.01);
+}
+
+.project h3 {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  color: #f8fafc;
+}
+
+.project ul {
+  margin-bottom: 25px;
+}
+
+.project p {
+  margin-bottom: 18px;
+}
