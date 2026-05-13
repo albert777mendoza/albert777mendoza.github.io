@@ -202,7 +202,7 @@ main {
   }
 
   main {
-    margin-left: 500px; /* Aumento del margen izquierdo para más espacio */
+    margin-left: 470px; /* Aumento del margen izquierdo para más espacio */
     padding: 60px 40px;
     max-width: 720px;
     text-align: left;
@@ -284,7 +284,7 @@ main {
 
 .project-img {
   width: 100%;
-  max-width: 620px;
+  max-width: 560px;
   height: auto;
   border-radius: 14px;
   margin-top: 10px;
@@ -298,9 +298,13 @@ main {
 }
 
 .project h3 {
-  margin-top: 35px;
+  margin-top: 28px;
   margin-bottom: 12px;
   color: #f8fafc;
+  font-size: 1.05rem;
+}
+.project-img {
+  margin-top: 14px;
 }
 
 .project ul {
