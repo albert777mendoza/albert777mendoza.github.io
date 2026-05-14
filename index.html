@@ -386,8 +386,130 @@ En esta etapa se observó que, el grupo A tenía más usuarios en todas las etap
         </div>
 
         <div class="project">
-          <h2>Streamlit Test</h2>
-          <p>Aplicación interactiva para visualización de datos.</p>
+          <h2>3. Análisis de base de datos relacional sobre libros</h2>
+
+  <h3>Objetivo</h3>
+
+  <p>
+Analizar base de datos relacional sobre libros, editoriales, autores y calificaciones de clientes y reseñas de libros, para generar una propuesta de valor enfocada en un nuevo producto..
+  </p>
+
+  <h3>Herramientas y tecnologías</h3>
+
+  <p>
+    SQL |SQLAlchemy | Python | Pandas | Seaborn | SciPy | Matplotlib|
+  </p>
+
+  <h3>Procesos desarrollados</h3>
+
+  <p>
+    Exploración de la base de datos | Revisar tablas y Relaciones |
+   Consultas varias |Análisis de resultados|
+
+  </p>
+
+  <h3>Preguntas clave</h3>
+
+  <ul>
+    <li>
+      ¿Cómo puede la plataforma equilibrar la concentración editorial, promoviendo la diversidad y visibilidad de editoriales con menor presencia?
+    </li>
+
+    <li>
+      ¿Qué estrategias de motivación podrían incentivar a los usuarios más activos a generar más reseñas de calidad, además de calificar libros?    </li>
+
+    <li>
+      De qué manera influye el reconocimiento de autores consolidados en la percepción de calidad, y cómo se puede aprovechar esa influencia para dar visibilidad a autores menos conocidos?
+    </li>
+  </ul>
+
+  <<h3>Metodología</h3>
+
+<ul>
+
+  <li>
+    <strong>Exploración de la base de datos:</strong>
+    identificación de tablas, claves primarias y foráneas, revisión de relaciones entre autores, libros, editoriales, calificaciones y reseñas. Visualización de las primeras filas con consultas dinámicas en Python y Pandas.
+  </li>
+
+  <li>
+    <strong>Formulación de consultas SQL:</strong>
+    construcción de queries con funciones de agregación (COUNT, AVG), filtros (WHERE, HAVING) y uniones (INNER JOIN) para responder a los objetivos: número de libros publicados, reseñas, calificaciones promedio, editoriales más productivas y autores mejor valorados.
+  </li>
+
+  <li>
+    <strong>Análisis de resultados:</strong>
+    interpretación de hallazgos sobre participación de usuarios, dispersión en calificaciones, concentración editorial y la influencia de autores reconocidos. Identificación de patrones clave en la interacción y producción editorial.
+  </li>
+
+  <li>
+    <strong>Conclusiones y recomendaciones:</strong>
+    planteamiento de estrategias para incentivar reseñas mediante gamificación, equilibrar la concentración editorial con recomendaciones personalizadas y aprovechar la influencia de autores reconocidos para visibilizar nuevos talentos.
+  </li>
+
+</ul>
+  <h3>Visualizaciones destacadas</h3>
+
+<p>
+    <p>
+Este gráfico muestra cómo se distribuye la cantidad de reseñas escritas por los usuarios. La mayoría aporta entre 15 y 20 reseñas, lo que evidencia un grupo moderadamente activo, mientras que pocos usuarios escriben muy pocas o muchas reseñas. Refuerza la conclusión de que la participación activa requiere mayor compromiso.
+</p>
+          
+<img src="assets/img/reseñas-usuario.png"
+     alt="Funnel Comparativo"
+     class="project-img">
+
+<p>
+El heatmap revela la relación entre la cantidad de reseñas y la calificación promedio de los libros. Se observa que la mayoría de los títulos con buenas calificaciones (3.8–4.6) tienen pocas reseñas, lo que sugiere que la percepción de calidad no siempre está acompañada de una alta participación en reseñas
+</p>
+          
+<img src="assets/img/calificacion-resenas"
+     alt="Eventos por día"
+     class="project-img">
+
+<p>
+El gráfico de burbujas integra tres dimensiones: número de libros publicados, calificación promedio y popularidad medida en reseñas. Permite visualizar cómo autores reconocidos combinan productividad y calidad con mayor volumen de reseñas, mientras otros muestran menor presencia o variabilidad en la valoración.
+</p>
+          
+<img src="assets/img/autores.png"
+     alt="Resumen de la prueba"
+     class="project-img">
+
+  
+  <h3>Conclusiones y recomendaciones</h3>
+
+  <ul>
+
+    <li>
+Pocas editoriales como Penguin Books y Vintage, dominan la producción de libros,  lo que evidencia una estructura de mercado concentrada.
+    </li>
+
+    <li>
+Los usuarios más comprometidos, con más de 50 libros calificados, escriben en promedio 24 reseñas, lo que confirma que la generación de contenido escrito requiere mayor esfuerzo y motivación.
+    </li>
+
+    <li>
+La experiencia de lectura depende fuertemente del autor, el contenido y las expectativas individuales de los lectores, las calificaciones presentan una gran dispersión ya que algunos libros alcanzan puntuaciones máximas de 5.0, mientras otros reciben valoraciones significativamente bajas.
+    </li>
+
+  </ul>
+
+  <h3> Recomendaciones</h3>
+
+  <ul>
+
+    <li>
+Fomentar la creación de reseñas, mediante la implementación de incentivos como gamificación, reconocimientos o distintivos para motivar a los usuarios a escribir reseñas.
+    </li>
+Gestionar la variabilidad en la percepción de calidad, a tra vés de herramientas de filtrado y segmentación (por género, estilo, popularidad) que permitan a los usuarios, encontrar libros más afines a sus intereses y gustos.
+  </ul>
+
+  <p>
+    <a href="https://github.com/albert777mendoza"
+       target="_blank">
+       Explora más detalles del proyecto en el repositorio completo.
+    </a>
+  </p>
         </div>
       </section>
 
