@@ -80,16 +80,17 @@ main {
 
 /* PROYECTOS */
 .project {
-  margin-bottom: 20px;
+  margin: 20px auto;      /* ✅ centra horizontalmente */
   padding: 22px;
   background: rgba(30, 41, 59, 0.6);
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: 0.25s ease;
   backdrop-filter: blur(6px);
-  width: 100%;        /* ✅ ocupa todo el ancho disponible */
-  max-width: 720px;   /* ✅ mismo límite que main */
+  width: 100%;
+  max-width: 720px;       /* ✅ mismo límite que main */
 }
+
 .project:hover {
   transform: translateY(-5px);
   border-color: rgba(96, 165, 250, 0.4);
