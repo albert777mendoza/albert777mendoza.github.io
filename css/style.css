@@ -428,3 +428,27 @@ main {
 .portfolio .skills-list li {
   margin-bottom: 4px;
 }
+.dashboard-btn{
+  display: inline-block;
+  margin-top: 14px;
+  margin-right: 10px;
+  padding: 10px 14px;
+  background: #4da6ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dashboard-btn:hover{
+  background: #6c63ff;
+}
+
+.dashboard-btn.secondary{
+  background: #0366d6;
+}
+
+.dashboard-btn.secondary:hover{
+  background: #024ea2;
+}
