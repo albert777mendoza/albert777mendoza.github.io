@@ -80,7 +80,7 @@ main {
 
 /* PROYECTOS */
 .project {
-  margin: 20px auto 20px 40px; /* arriba, derecha, abajo, izquierda */
+  margin-bottom: 20px;     /* solo separación vertical */
   padding: 22px;
   background: rgba(30, 41, 59, 0.6);
   border-radius: 14px;
@@ -88,7 +88,8 @@ main {
   transition: 0.25s ease;
   backdrop-filter: blur(6px);
   width: 100%;
-  max-width: 720px;
+  max-width: 720px;        /* mismo límite que main */
+  align-self: flex-start;  /* ✅ se alinea al borde izquierdo del main */
 }
 
 
