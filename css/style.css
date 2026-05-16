@@ -455,3 +455,14 @@ main {
 .dashboard-btn.secondary:hover{
   background: #024ea2;
 }
+/* Alineación y espaciado de los botones de proyectos */
+.project-links {
+  display: flex;       /* 
+  gap: 12px;           /* Espacio horizontal entre botones */
+  margin-top: 20px;    /* Espacio vital entre el texto/lista y el botón */
+  flex-wrap: wrap;     /* Si el botón es muy largo en móvil, baja a la siguiente línea */
+}
+
+.dashboard-btn {
+  margin-top: 0 !important; /* Resetea márgenes antiguos para usar los del contenedor */
+}
