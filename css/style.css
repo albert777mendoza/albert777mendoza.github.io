@@ -377,3 +377,54 @@ main {
   border-color: #6c63ff;
   transform: translateY(-2px);
 }
+/* ===== AJUSTES VISUALES PRO ===== */
+
+.portfolio main {
+  max-width: 680px;
+}
+
+.portfolio .sidebar {
+  width: 300px;
+  padding: 45px 30px;
+}
+
+.portfolio .profile-img {
+  width: 170px;
+  height: 170px;
+}
+
+.portfolio h1 {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.portfolio .section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.portfolio .section p,
+.portfolio .section li,
+.portfolio .project p,
+.portfolio .project li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.portfolio .project {
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.portfolio .section {
+  margin-bottom: 24px;
+}
+
+.portfolio .project h3 {
+  font-size: 1rem;
+}
+
+.portfolio .skills-list li {
+  margin-bottom: 4px;
+}
