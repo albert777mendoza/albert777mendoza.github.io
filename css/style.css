@@ -466,7 +466,8 @@ main {
 .dashboard-btn {
   margin-top: 0 !important; /* Resetea márgenes antiguos para usar los del contenedor */
 }
-.project-summary {
+/* Barra violeta solo para la ficha ejecutiva */
+.project-highlight {
   border-left: 5px solid #6f42c1;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
