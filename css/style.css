@@ -478,3 +478,24 @@ main {
   opacity: 0.7;
   font-weight: 500;
 }
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #dbeafe;
+  transform: translateY(-2px);
+}
