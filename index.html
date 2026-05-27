@@ -352,28 +352,84 @@
          <!-- Barra violeta solo para la ficha ejecutiva -->
 <div class="project-highlight">
   <h3>📌 Ficha Ejecutiva</h3>
-  <ul>
-    <li>
-      <strong>Problema de negocio:</strong>
-      Evaluar si un nuevo sistema de recomendaciones en una tienda online mejora la tasa de conversión frente al sistema anterior.
-    </li>
-    <li>
-      <strong>Dataset utilizado:</strong>
-      Datos de comportamiento de usuarios en una prueba A/B, incluyendo eventos de navegación, conversiones y métricas por grupo (A y B).
-    </li>
-    <li>
-      <strong>Herramientas:</strong>
-      Python, Pandas, Seaborn, SciPy, Matplotlib.
-    </li>
-    <li>
-      <strong>Resultado principal:</strong>
-      El grupo B no mostró mejora estadísticamente significativa en la tasa de conversión ni en ingresos frente al grupo de control (A).
-    </li>
-    <li>
-      <strong>Recomendación final:</strong>
-No implementar el cambio actual. Rediseñar el experimento corrigiendo desbalances entre grupos y posibles sesgos en la asignación.
-</li>
+
+<ul>
+  <li>
+    <strong>Problema de negocio:</strong>
+    Evaluar si un nuevo sistema de recomendaciones en una tienda online mejora la tasa de conversión frente al sistema anterior.
+  </li>
+
+  <li>
+    <strong>Dataset utilizado:</strong>
+    Datos de comportamiento de usuarios en una prueba A/B, incluyendo eventos de navegación, conversiones y métricas por grupo (A y B).
+  </li>
+
+  <li>
+    <strong>Herramientas:</strong>
+    Python, Pandas, Seaborn, SciPy y Matplotlib.
+  </li>
+
+  <li>
+    <strong>Resultados principales:</strong>
+    <ul>
+      <li>
+        El grupo B no mostró mejora estadísticamente significativa en la tasa de conversión frente al grupo de control (A).
+      </li>
+
+      <li>
+        La conversión total del funnel fue inferior en B (-1.1%) respecto a A.
+      </li>
+
+      <li>
+        Se identificaron anomalías relevantes en el experimento, incluyendo desbalance entre grupos, contaminación de usuarios y sesgo temporal.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Impacto de negocio:</strong>
+    <ul>
+      <li>
+        El análisis evitó la posible implementación de un cambio sin evidencia estadística de mejora real.
+      </li>
+
+      <li>
+        Fueron detectados riesgos metodológicos que podían conducir a decisiones erróneas sobre el rendimiento del nuevo sistema.
+      </li>
+
+      <li>
+        Los hallazgos permitieron proponer mejoras para aumentar la confiabilidad de futuros experimentos y decisiones data-driven.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Próximos pasos recomendados:</strong>
+    <ul>
+      <li>
+        Repetir el experimento con grupos balanceados y asignación aleatoria controlada.
+      </li>
+
+      <li>
+        Incrementar el tamaño muestral para mejorar la potencia estadística.
+      </li>
+
+      <li>
+        Incorporar métricas adicionales como revenue por usuario, retención y ticket promedio.
+      </li>
+
+      <li>
+        Evaluar hipótesis alternativas sobre el comportamiento de usuarios en etapas críticas del funnel.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Recomendación final:</strong>
+    No implementar el cambio actual hasta realizar un nuevo experimento con mejor diseño metodológico y control de sesgos.
+  </li>
 </ul>
+
 </div> <!-- Cierra project-highlight -->
 
 <!-- Botones fuera de la barra violeta -->
