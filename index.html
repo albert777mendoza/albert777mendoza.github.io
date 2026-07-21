@@ -21,6 +21,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+  
 <body>
 
   <div class="portfolio">
@@ -572,6 +573,92 @@
       </main>
     </div>
   </div> <!-- cierre de .portfolio -->
+     <h3>Preguntas clave</h3>
+            <ul>
+              <li>¿Cómo puede la plataforma equilibrar la concentración editorial, promoviendo la diversidad y visibilidad de editoriales con menor presencia?</li>
+              <li>¿Qué estrategias de motivación podrían incentivar a los usuarios más activos a generar más reseñas de calidad, además de calificar libros?</li>
+              <li>¿De qué manera influye el reconocimiento de autores consolidados en la percepción de calidad, y cómo se puede aprovechar esa influencia para dar visibilidad a autores menos conocidos?</li>
+            </ul>
 
+            <h3>Metodología</h3>
+            <ul>
+              <li><strong>Exploración de la base de datos:</strong> identificación de tablas, claves primarias y foráneas, revisión de relaciones entre autores, libros, editoriales, calificaciones y reseñas. Visualización de las primeras filas con consultas dinámicas en Python y Pandas.</li>
+              <li><strong>Formulación de consultas SQL:</strong> construcción de queries con funciones de agregación (COUNT, AVG), filtros (WHERE, HAVING) y uniones (INNER JOIN) para responder a los objetivos: número de libros publicados, reseñas, calificaciones promedio, editoriales más productivas y autores mejor valorados.</li>
+              <li><strong>Análisis de resultados:</strong> interpretación de hallazgos sobre participación de usuarios, dispersión en calificaciones, concentración editorial y la influencia de autores reconocidos. Identificación de patrones clave en la interacción y producción editorial.</li>
+              <li><strong>Conclusiones y recomendaciones:</strong> planteamiento de estrategias para incentivar reseñas mediante gamificación, equilibrar la concentración editorial con recomendaciones personalizadas y aprovechar la influencia de autores reconocidos para visibilizar nuevos talentos.</li>
+            </ul>
+
+            <h3>Visualizaciones destacadas</h3>
+
+            <p>Este gráfico muestra cómo se distribuye la cantidad de reseñas escritas por los usuarios. La mayoría aporta entre 15 y 20 reseñas, lo que evidencia un grupo moderadamente activo, mientras que pocos usuarios escriben muy pocas o muchas reseñas. Refuerza la conclusión de que la participación activa requiere mayor compromiso.</p>
+            <img src="assets/img/resenas-usuario.png" alt="Distribución de reseñas por usuario" class="project-img">
+
+            <p>El heatmap revela la relación entre la cantidad de reseñas y la calificación promedio de los libros. Se observa que la mayoría de los títulos con buenas calificaciones (3.8–4.6) tienen pocas reseñas, lo que sugiere que la percepción de calidad no siempre está acompañada de una alta participación en reseñas.</p>
+            <img src="assets/img/calificacion-resenas.png" alt="Relación entre calificación promedio y número de reseñas" class="project-img">
+
+            <p>El gráfico de burbujas integra tres dimensiones: número de libros publicados, calificación promedio y popularidad medida en reseñas. Permite visualizar cómo autores reconocidos combinan productividad y calidad con mayor volumen de reseñas, mientras otros muestran menor presencia o variabilidad en la valoración.</p>
+            <img src="assets/img/autores.png" alt="Autores: Producción vs Calidad vs Popularidad" class="project-img">
+
+            <h3>Conclusiones y recomendaciones</h3>
+            <ul>
+              <li>Pocas editoriales como Penguin Books y Vintage dominan la producción de libros, lo que evidencia una estructura de mercado concentrada.</li>
+              <li>Los usuarios más comprometidos, con más de 50 libros calificados, escriben en promedio 24 reseñas, lo que confirma que la generación de contenido escrito requiere mayor esfuerzo y motivación.</li>
+              <li>La experiencia de lectura depende fuertemente del autor, el contenido y las expectativas individuales de los lectores; las calificaciones presentan una gran dispersión ya que algunos libros alcanzan puntuaciones máximas de 5.0, mientras otros reciben valoraciones significativamente bajas.</li>
+            </ul>
+
+            <h3>Recomendaciones</h3>
+            <ul>
+              <li>Fomentar la creación de reseñas mediante la implementación de incentivos como gamificación, reconocimientos o distintivos para motivar a los usuarios a escribir reseñas.</li>
+              <li>Gestionar la variabilidad en la percepción de calidad a través de herramientas de filtrado y segmentación (por género, estilo, popularidad) que permitan a los usuarios encontrar libros más afines a sus intereses y gustos.</li>
+            </ul>
+
+          </div>
+          <!-- FIN PROYECTO 4 -->
+
+        </section>
+
+      </main>
+    </div>
+  </div> <!-- cierre de .portfolio -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.project').forEach(function (project) {
+    var links = project.querySelector('.project-links');
+    if (!links) return;
+ 
+    // Sube hasta encontrar el ancestro que es hijo directo de .project
+    // (para el proyecto 4, esto es .project-summary; para los demás, .project-links mismo)
+    var anchor = links;
+    while (anchor.parentElement !== project) {
+      anchor = anchor.parentElement;
+    }
+ 
+    // Mueve todo lo que sigue al ancestro dentro de un contenedor oculto
+    var details = document.createElement('div');
+    details.className = 'project-details';
+ 
+    var node = anchor.nextElementSibling;
+    while (node) {
+      var next = node.nextElementSibling;
+      details.appendChild(node);
+      node = next;
+    }
+ 
+    // Crea el botón toggle
+    var btn = document.createElement('button');
+    btn.className = 'toggle-details-btn';
+    btn.textContent = 'Ver proyecto completo ▼';
+    btn.addEventListener('click', function () {
+      var isOpen = details.classList.toggle('is-open');
+      btn.textContent = isOpen ? 'Ver menos ▲' : 'Ver proyecto completo ▼';
+    });
+ 
+    anchor.insertAdjacentElement('afterend', btn);
+    btn.insertAdjacentElement('afterend', details);
+  });
+});
+</script>
+ 
+</body>
 </body>
 </html>
