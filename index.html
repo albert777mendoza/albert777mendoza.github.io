@@ -32,11 +32,11 @@
         <h1>
           Albert<br> Mendoza
           <br>
-          <span class="subtitle">Analista de Datos </span>
+          <span class="subtitle"> Data Analyst | Business Intelligence </span>
         </h1>
         <div class="profile-container">
           <img src="assets/img/foto-albert.jpg" alt="Albert Mendoza" class="profile-img" />
-          <p> Portafolio de proyectos.</p>
+          <p> Data Analytics Portfolio.</p>
 
           <!-- CORREO -->
           <div class="email-contact">
@@ -58,502 +58,932 @@
 
        <!-- ABOUT -->
 <section class="about">
-  <h2>Acerca de mí</h2>
+  <h2>About me</h2>
   <p>
-    Profesional de Business Intelligence y Análisis de Datos con sólida trayectoria en tecnología (soporte de hardware, software, redes y administración de infraestructura), lo que me da una comprensión completa del ciclo de los datos: desde su origen en los sistemas hasta su transformación en información accionable para el negocio.
+    I am a Data Analyst and Business Intelligence professional with a strong background in technology, operations, information management, and public administration. My experience gives me a broad understanding of the data lifecycle — from how information is generated and managed to how it can be transformed into actionable insights for business decision-making.
   </p>
   <p>
-    Aplico Power BI, Python, SQL, Tableau y Excel en proyectos end-to-end — extracción, limpieza, análisis, visualización y presentación de resultados — diseñando dashboards ejecutivos, indicadores de gestión (KPIs) y reportes automatizados que apoyan decisiones basadas en datos. He aplicado estas herramientas en proyectos reales de hotelería, telecomunicaciones y e-commerce, con impacto cuantificable en revenue y eficiencia operativa.
+    I use Python, SQL, Power BI, Tableau, and Excel to perform end-to-end analysis, including data extraction, cleaning, exploratory and statistical analysis, visualization, KPI development, and reporting.
   </p>
   <p>
-    Me motiva resolver problemas de negocio concretos con datos y seguir creciendo dentro de la industria.
+    My projects have covered hotel revenue, telecommunications operations, and e-commerce experimentation, combining technical analysis with business context to identify risks, opportunities, and measurable improvements.
   </p>
   <p>
-    Explora mis proyectos a continuación.
+    I am motivated by solving real business problems with data and continuously developing my skills in analytics and business intelligence.
+  </p>
+  <p>
+    Explore my projects below.
   </p>
 </section>
 
 <!-- SKILLS -->
 <section class="skills">
-  <h2>Habilidades tecnológicas</h2>
+  <h2>Technical Skills</h2>
   <ul class="skills-list">
     <li>Power BI</li>
-    <li>Python · Pandas · Seaborn · Matplotlib · SciPy</li>
+    <li>Python · Pandas · NumPy · SciPy · Matplotlib · Seaborn</li>
     <li>SQL · SQLAlchemy</li>
     <li>Tableau</li>
     <li>Excel</li>
   </ul>
-          <h2>Idiomas</h2>
-          <p>
-            Español (nativo) <br>
-            Inglés (intermedio)
-          </p>
-        </section>
+  
+<section>
+  <h2>Languages</h2>
+  <p>
+    Spanish (Native)<br>
+    English (Advanced coursework, B1 certified)
+  </p>
+</section>
 
 <!-- SOFT SKILLS -->
+
 <section>
-  <h2>Habilidades blandas</h2>
+  <h2>Soft Skills</h2>
   <p>
-    Pensamiento analítico | Comunicación de resultados a stakeholders no técnicos |
-    Resolución de problemas | Atención al detalle | Orientación a resultados
+    Analytical Thinking | Communicating Insights to Non-Technical Stakeholders |
+    Problem Solving | Attention to Detail | Results Orientation
   </p>
 </section>
 
         <!-- PROJECTS -->
-        <section class="projects">
-          <h2>Proyectos Seleccionados:</h2>
+
+<section class="projects">
+  <h2>Selected Projects</h2>
+
+  <!-- ============================================================ -->
+
+  <!-- PROJECT 1 — HOTEL BOOKING                                     -->
+
+  <!-- ============================================================ -->
+
+  <div class="project">
+
+
+            <h2>1. Hotel Booking Analysis — Strategic Revenue & Cancellation Analysis</h2>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="project-highlight">
+  <h3>📌 Executive Summary</h3>
+  <ul>
+    <li>
+      <strong>Business problem:</strong>
+      Identify cancellation patterns, high-risk customer profiles, and revenue optimization opportunities across two Portuguese hotels to reduce financial losses and improve profitability.
+    </li>
+
+    <li>
+      <strong>Dataset:</strong>
+      119,390 real hotel bookings from two Portuguese properties — a City Hotel in Lisbon and a Resort Hotel in the Algarve — covering 2015–2017, including cancellation status, rates, market segments, distribution channels, and customer characteristics.
+    </li>
+
+    <li>
+      <strong>Tools:</strong>
+      Python, Pandas, Seaborn, Matplotlib, SQL, SQLAlchemy.
+    </li>
+
+    <li>
+      <strong>Key findings:</strong>
+      <ul>
+        <li>
+          37% of all bookings were canceled during the analyzed period, with a significant gap between the City Hotel (41.7%) and Resort Hotel (27.8%).
+        </li>
+        <li>
+          The highest-risk customer profile is a Transient guest booking through an Online TA more than 90 days in advance, without a deposit, and with a history of previous cancellations (94% recurrence).
+        </li>
+        <li>
+          53.7% of cancellations occurred during high-demand months (August, July, May, June, and April), when ADR reached its highest annual level (€125.17 per night).
+        </li>
+        <li>
+          Online TA is the most valuable distribution segment (€13.7M in generated revenue) while simultaneously presenting a high cancellation risk.
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Potential business impact:</strong>
+      <ul>
+        <li>
+          Total revenue lost to cancellations during 2015–2017 reached
+          <strong>€16,721,837</strong>, with the City Hotel accounting for 65.1% of the losses (€10.8M).
+        </li>
+        <li>
+          Reducing the City Hotel's cancellation rate from 41.7% to 30% could represent approximately
+          <strong>€3.2M in recovered revenue</strong> through targeted commercial policies.
+        </li>
+        <li>
+          Identifying high-risk customer profiles enables the hotel to intervene at the time of booking, before a cancellation occurs.
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Final recommendation:</strong>
+      Implement targeted deposit policies for high-risk Transient bookings made more than 90 days in advance, activate retention strategies during peak season, and encourage direct bookings to reduce dependence on intermediaries.
+    </li>
+  </ul>
+</div>
+
+<!-- BUTTONS -->
+<div class="project-links">
+  <a href="https://github.com/albert777mendoza/hotel_booking_analysis"
+     class="btn" target="_blank">📖 README</a>
+
+  <a href="https://github.com/albert777mendoza/hotel_booking_analysis/blob/main/notebooks/hotel_analysis.ipynb"
+     class="btn" target="_blank">📓 Notebook</a>
+
+  <a href="hotel_booking_analysis/dashboard/hotel-dashboard.html"
+     class="btn" target="_blank">📊 Dashboard</a>
+</div>
+
+<h3>Business Objective</h3>
+<p>
+  Strategic data analysis focused on identifying cancellation patterns and revenue optimization opportunities across two Portuguese hotels. The analysis develops an actionable high-risk customer profile and quantifies the financial impact of cancellations to support data-driven commercial decisions.
+</p>
+
+<h3>Tools & Technologies</h3>
+<p>
+  Python | Pandas | Seaborn | Matplotlib | SQL | SQLAlchemy
+</p>
+
+<h3>Analytical Processes</h3>
+<p>
+  Data Cleaning | Data Transformation |
+  Exploratory Data Analysis (EDA) |
+  Cancellation Analysis | Customer Risk Segmentation |
+  Revenue Analysis (ADR, RevPAR) |
+  SQL Queries on Relational Databases
+</p>
+
+<h3>Key Business Questions</h3>
+<ul>
+  <li>
+    <strong>Who cancels?</strong> Which customer type, market segment, and distribution channel present the highest cancellation risk?
+  </li>
+  <li>
+    <strong>When do cancellations occur?</strong> How does booking lead time affect cancellation rates?
+  </li>
+  <li>
+    <strong>What is the financial impact?</strong> How much revenue is lost to cancellations by hotel, season, and market segment?
+  </li>
+  <li>
+    <strong>Where is the revenue?</strong> Which segments and periods generate the highest value while also presenting the highest risk?
+  </li>
+</ul>
+
+<h3>Methodology</h3>
+<ul>
+  <li>
+    <strong>Data preprocessing:</strong>
+    Cleaned missing values, corrected data types, filtered ADR outliers including negative values and extreme observations such as €5,400 per night, and created derived variables such as season, lead-time segments, and revenue metrics.
+  </li>
+
+  <li>
+    <strong>Exploratory Data Analysis (EDA):</strong>
+    Analyzed booking trends from 2015–2017 and examined cancellation patterns by customer type, market segment, distribution channel, and booking lead time. Recurring seasonal patterns were identified.
+  </li>
+
+  <li>
+    <strong>Cancellation analysis:</strong>
+    Developed a high-risk customer profile by combining customer type, distribution channel, lead time, deposit type, and previous cancellation history. The analysis confirmed a direct relationship between longer booking lead times and higher cancellation rates.
+  </li>
+
+  <li>
+    <strong>Revenue analysis:</strong>
+    Calculated ADR and RevPAR by hotel, season, and market segment. Quantified revenue lost to cancellations by hotel, segment, and month, identifying a concentration of losses during high-demand periods.
+  </li>
+
+  <li>
+    <strong>SQL analysis:</strong>
+    Queried a relational database to answer key business questions and validate findings obtained through Python.
+  </li>
+
+  <li>
+    <strong>Conclusions and recommendations:</strong>
+    Developed an executive summary highlighting the high-risk customer profile, estimated financial impact, and prioritized actions for hotel management.
+  </li>
+</ul>
+
+<h3>Key Visualizations</h3>
+
+<p>
+  Executive KPIs: overall cancellation rate, total revenue lost, and average ADR by hotel. Summary of the financial impact during 2015–2017.
+</p>
+
+<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/indicadores_clave.png"
+     alt="Key hotel booking analysis indicators"
+     class="project-img">
+
+<p>
+  Cancellation rate by hotel. The City Hotel (41.7%) shows a significant gap compared with the Resort Hotel (27.8%), making the urban property the primary focus for retention initiatives.
+</p>
+
+<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_hotel.png"
+     alt="Cancellation rate by hotel"
+     class="project-img">
+
+<p>
+  Relationship between booking lead time and cancellation rate. Bookings made more than 181 days in advance reached a 57% cancellation rate, confirming a direct relationship between booking lead time and cancellation risk.
+</p>
+
+<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/anticipacion_cancelacion.png"
+     alt="Cancellation rate by booking lead time"
+     class="project-img">
+
+<p>
+  Revenue lost to cancellations during 2015–2017. The City Hotel accounts for 65.1% of total losses (€10.8M), defining the priority for intervention by property.
+</p>
+
+<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/revenue_perdido.png"
+     alt="Revenue lost to hotel cancellations"
+     class="project-img">
+
+<p>
+  Cancellation rate by distribution channel. Online travel intermediaries consistently show higher cancellation rates than direct channels, supporting the strategy of strengthening direct booking incentives.
+</p>
+
+<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_canal.png"
+     alt="Cancellation rate by distribution channel"
+     class="project-img">
+
+<h3>Conclusions & Key Findings</h3>
+<ul>
+  <li>
+    The overall 37% cancellation rate represents <strong>€16.7M in lost revenue</strong> during the analyzed period, with the City Hotel accounting for 65.1% of the financial impact.
+  </li>
+
+  <li>
+    The highest-risk profile is clear and actionable: a Transient customer booking through Online TA more than 90 days in advance, without a deposit, and with previous cancellation history (94% recurrence).
+  </li>
+
+  <li>
+    The concentration of cancellations during peak season increases the financial impact because it coincides with the months with the highest ADR.
+  </li>
+
+  <li>
+    Online TA represents the most complex segment: it generates the highest revenue (€13.7M) while also producing significant cancellation losses, requiring targeted retention strategies rather than exclusion.
+  </li>
+</ul>
+
+<h3>Recommendations</h3>
+<ul>
+  <li>
+    Implement <strong>mandatory non-refundable deposits</strong> for high-risk Transient bookings made more than 90 days in advance, applying the policy according to customer risk profile.
+  </li>
+
+  <li>
+    Activate <strong>proactive communication during peak season</strong> (July and August), including upgrade offers, exclusive benefits, and booking reminders to reduce cancellations during periods with the highest ADR.
+  </li>
+
+  <li>
+    Develop <strong>direct booking incentives</strong> to reduce intermediary dependence, increase control over the customer relationship, and potentially lower cancellation rates.
+  </li>
+
+  <li>
+    Implement a <strong>repeat-cancellation alert system</strong> to automatically identify customers with previous cancellations and apply stricter booking policies at the time of reservation.
+  </li>
+</ul>
+
+</div>
+<!-- END PROJECT 1 -->
 
           <!-- ============================================================ -->
-          <!-- PROYECTO 1 — HOTEL BOOKING                                   -->
-          <!-- ============================================================ -->
-          <div class="project">
+<!-- PROJECT 2 — CONTACT CENTER                                  -->
+<!-- ============================================================ -->
+<div class="project">
 
-            <h2>1. Hotel Booking Analysis — Análisis Estratégico de Revenue y Cancelaciones</h2>
+  <h2>2. Contact Center Operational Efficiency Analysis</h2>
 
-            <!-- FICHA EJECUTIVA -->
-            <div class="project-highlight">
-              <h3>📌 Ficha Ejecutiva</h3>
-              <ul>
-                <li>
-                  <strong>Problema de negocio:</strong>
-                  Identificar los patrones de cancelación, el perfil de cliente de mayor riesgo y las oportunidades de optimización de revenue en dos hoteles portugueses para reducir pérdidas económicas y mejorar la rentabilidad.
-                </li>
-                <li>
-                  <strong>Dataset utilizado:</strong>
-                  119,390 reservas reales de dos hoteles portugueses (City Hotel en Lisboa y Resort Hotel en el Algarve) durante el período 2015–2017, con información de cancelaciones, tarifas, segmentos de mercado y perfil de clientes.
-                </li>
-                <li>
-                  <strong>Herramientas:</strong>
-                  Python, Pandas, Seaborn, Matplotlib, SQL, SQLAlchemy.
-                </li>
-                <li>
-                  <strong>Resultados principales:</strong>
-                  <ul>
-                    <li>El 37% de todas las reservas fueron canceladas en el período analizado, con una brecha significativa entre el City Hotel (41.7%) y el Resort Hotel (27.8%).</li>
-                    <li>El perfil de cliente de mayor riesgo es un viajero Transient que reserva por Online TA con más de 90 días de anticipación, sin depósito y con historial de cancelaciones previas (94% de reincidencia).</li>
-                    <li>El 53.7% de las cancelaciones se concentran en temporada alta (Agosto, Julio, Mayo, Junio, Abril), precisamente cuando el ADR es el más alto del año (€125.17/noche).</li>
-                    <li>Online TA es el segmento más valioso (€13.7M en revenue generado) y simultáneamente el más riesgoso por su alta tasa de cancelación.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Impacto potencial de negocio:</strong>
-                  <ul>
-                    <li>El revenue total perdido por cancelaciones en el período 2015–2017 asciende a <strong>€16,721,837</strong>, con el City Hotel concentrando el 65.1% de esas pérdidas (€10.8M).</li>
-                    <li>Reducir la tasa de cancelación del City Hotel del 41.7% al 30% representaría recuperar aproximadamente <strong>€3.2M en revenue</strong> con políticas comerciales bien dirigidas.</li>
-                    <li>La identificación del perfil de riesgo permite al hotel intervenir en el momento de la reserva antes de que la cancelación ocurra.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Recomendación final:</strong>
-                  Implementar políticas de depósito obligatorio para reservas Transient con más de 90 días de anticipación, activar estrategias de retención en temporada alta e incentivar la reserva directa para reducir la dependencia de intermediarios.
-                </li>
-              </ul>
-            </div> <!-- Cierra project-highlight -->
+  <div class="project-highlight">
+    <h3>📌 Executive Summary</h3>
+    <ul>
+      <li>
+        <strong>Business problem:</strong>
+        Identify operational inefficiencies and critical factors affecting contact center performance, with a focus on missed calls and outbound call effectiveness.
+      </li>
 
-            <!-- BOTONES -->
-            <div class="project-links">
-              <a href="https://github.com/albert777mendoza/hotel_booking_analysis" class="btn" target="_blank">📖 README</a>
-              <a href="https://github.com/albert777mendoza/hotel_booking_analysis/blob/main/notebooks/hotel_analysis.ipynb" class="btn" target="_blank">📓 Notebook</a>
-              <a href="hotel_booking_analysis/dashboard/hotel-dashboard.html" class="btn" target="_blank">📊 Dashboard</a>
-            </div>
+      <li>
+        <strong>Dataset:</strong>
+        Operational records of inbound and outbound calls, including call duration, missed calls, and performance metrics by operator.
+      </li>
 
-            <h3>Objetivo</h3>
-            <p>
-              Proyecto de análisis estratégico orientado a identificar los patrones de cancelación y las oportunidades de optimización de revenue en dos hoteles portugueses. El análisis permite construir el perfil del cliente de alto riesgo de cancelación y cuantificar el impacto económico para apoyar decisiones comerciales con base en datos.
-            </p>
+      <li>
+        <strong>Tools:</strong>
+        Python, Pandas, Seaborn, statistical analysis, and Tableau.
+      </li>
 
-            <h3>Herramientas y tecnologías</h3>
-            <p>Python | Pandas | Seaborn | Matplotlib | SQL | SQLAlchemy |</p>
+      <li>
+        <strong>Key findings:</strong>
+        <ul>
+          <li>
+            Missed calls and low outbound call effectiveness were identified as the main drivers of operational inefficiency.
+          </li>
+          <li>
+            Outbound calls showed a significantly higher missed-call rate than inbound calls, confirmed through statistical hypothesis testing.
+          </li>
+          <li>
+            Nearly 50% of operators were classified as medium- or critical-risk based on the operational efficiency score.
+          </li>
+        </ul>
+      </li>
 
-            <h3>Procesos desarrollados</h3>
-            <p>
-              Limpieza de datos | Transformación de datos |
-              Análisis Exploratorio de Datos (EDA) |
-              Análisis de cancelaciones | Segmentación de clientes por riesgo |
-              Análisis de revenue (ADR, RevPAR) | Consultas SQL sobre base de datos relacional |
-            </p>
+      <li>
+        <strong>Potential business impact:</strong>
+        <ul>
+          <li>
+            Potential productivity losses of approximately <strong>$6K USD per month</strong> were estimated from operational waiting time associated with critical operators.
+          </li>
+          <li>
+            Reducing the missed-call rate from 37% to the operational target of 5% could recover more than <strong>10,000 additional customer interactions</strong>.
+          </li>
+          <li>
+            The analysis enables management to prioritize interventions for critical operators, optimize outbound calling processes, and improve overall contact center capacity.
+          </li>
+        </ul>
+      </li>
 
-            <h3>Preguntas clave</h3>
-            <ul>
-              <li>¿Quién cancela? — ¿qué perfil de cliente (tipo, segmento, canal) tiene mayor probabilidad de cancelar?</li>
-              <li>¿Cuándo cancela? — ¿cómo influye la anticipación de la reserva en la tasa de cancelación?</li>
-              <li>¿Cuánto cuesta? — ¿cuál es el impacto económico real de las cancelaciones por hotel, temporada y segmento?</li>
-              <li>¿Dónde está el revenue? — ¿qué segmentos y temporadas generan mayor valor y mayor riesgo simultáneamente?</li>
-            </ul>
+      <li>
+        <strong>Final recommendation:</strong>
+        Implement operational monitoring dashboards and optimize contact schedules and calling lists to reduce failed calls and improve productivity.
+      </li>
+    </ul>
+  </div>
 
-            <h3>Metodología</h3>
-            <ul>
-              <li>
-                <strong>Preprocesamiento de datos:</strong>
-                limpieza de nulos, corrección de tipos de datos, filtrado de outliers en ADR (valores negativos y extremos como €5,400/noche) y creación de variables derivadas como temporada, lead time segmentado y métricas de revenue.
-              </li>
-              <li>
-                <strong>Análisis Exploratorio de Datos (EDA):</strong>
-                exploración de la evolución de reservas 2015–2017, distribución de cancelaciones por tipo de cliente, segmento de mercado, canal de distribución y anticipación de reserva. Identificación de patrones estacionales recurrentes.
-              </li>
-              <li>
-                <strong>Análisis de cancelaciones:</strong>
-                construcción del perfil de cliente de alto riesgo mediante el cruce de variables: tipo de cliente, canal de origen, lead time, tipo de depósito e historial de cancelaciones previas. Validación de la relación directamente proporcional entre anticipación y tasa de cancelación.
-              </li>
-              <li>
-                <strong>Revenue Analysis:</strong>
-                cálculo de ADR y RevPAR por hotel, temporada y segmento de mercado. Cuantificación del revenue perdido por cancelaciones a nivel de país, segmento y mes. Identificación de la concentración de pérdidas en temporada alta.
-              </li>
-              <li>
-                <strong>Análisis SQL:</strong>
-                consultas sobre base de datos relacional para responder preguntas de negocio clave y validar los hallazgos obtenidos en Python.
-              </li>
-              <li>
-                <strong>Conclusiones y recomendaciones:</strong>
-                ficha ejecutiva con el perfil de riesgo, el impacto económico estimado y un plan de acción priorizado para la gerencia hotelera.
-              </li>
-            </ul>
+  <div class="project-links">
+    <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case1_telecom"
+       target="_blank">📖 README</a>
 
-            <h3>Visualizaciones destacadas</h3>
+    <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case1_telecom/notebooks/telecom_case.ipynb"
+       target="_blank">📓 Notebook</a>
 
-            <p>Indicadores clave del análisis: tasa de cancelación global, revenue perdido total y ADR promedio por hotel. Resumen ejecutivo del impacto económico del período 2015–2017.</p>
-            <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/indicadores_clave.png"
-                 alt="Indicadores clave" class="project-img">
+    <a href="https://public.tableau.com/views/Case1_TelecomFinalProyectD_A/Hoja1"
+       target="_blank">📊 Dashboard</a>
+  </div>
 
-            <p>Tasa de cancelación por hotel. El City Hotel (41.7%) presenta una brecha significativa frente al Resort Hotel (27.8%), lo que concentra las acciones prioritarias de retención en el perfil urbano.</p>
-            <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_hotel.png"
-                 alt="Cancelación por hotel" class="project-img">
+  <h3>Business Objective</h3>
+  <p>
+    Data analysis project focused on identifying inefficient operators within a contact center through a performance ranking and traffic-light classification system based on operational KPIs. The solution evaluated individual and group performance to support coaching, training, and operational optimization.
+  </p>
 
-            <p>Relación entre anticipación de reserva (lead time) y tasa de cancelación. Las reservas con más de 181 días de anticipación alcanzan el 57% de cancelación, confirmando una relación directamente proporcional entre el tiempo de antelación y el riesgo.</p>
-            <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/anticipacion_cancelacion.png"
-                 alt="Cancelación por anticipación" class="project-img">
+  <h3>Tools & Technologies</h3>
+  <p>
+    Python | Pandas | Seaborn | Tableau
+  </p>
 
-            <p>Revenue perdido por cancelaciones acumulado en el período 2015–2017. El City Hotel concentra el 65.1% de las pérdidas (€10.8M), lo que define la prioridad de intervención por tipo de hotel.</p>
-            <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/revenue_perdido.png"
-                 alt="Revenue perdido" class="project-img">
+  <h3>Analytical Processes</h3>
+  <p>
+    Data Cleaning | Data Transformation |
+    Exploratory Data Analysis (EDA) |
+    Performance Threshold Definition |
+    Operator Risk Classification |
+    Statistical Hypothesis Testing
+  </p>
 
-            <p>Tasa de cancelación por canal de distribución. Los intermediarios digitales (TA/TO) generan consistentemente más cancelaciones que los canales directos, validando la estrategia de incentivos para reserva directa.</p>
-            <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_canal.png"
-                 alt="Cancelación por canal" class="project-img">
+  <h3>Key Business Questions</h3>
+  <ul>
+    <li>
+      What is the main factor affecting operational effectiveness in the contact center?
+    </li>
+    <li>
+      How are operational inefficiency levels distributed, and what is their percentage impact?
+    </li>
+    <li>
+      What actions could improve operational quality and efficiency?
+    </li>
+  </ul>
 
-            <h3>Conclusiones y recomendaciones</h3>
-            <ul>
-              <li>El 37% de cancelaciones global representa una pérdida de €16.7M en el período analizado, con el City Hotel concentrando el 65.1% del impacto económico.</li>
-              <li>El perfil de mayor riesgo es claro y accionable: cliente Transient, canal Online TA, más de 90 días de anticipación, sin depósito y con historial de cancelaciones previas (94% de reincidencia).</li>
-              <li>La concentración de cancelaciones en temporada alta agrava el impacto porque coincide con los meses de ADR más alto — cada cancelación en verano vale casi el doble que una en enero.</li>
-              <li>Online TA es el segmento más complejo: genera el mayor revenue real (€13.7M) pero también la mayor pérdida por cancelaciones, requiriendo estrategias específicas de retención, no de exclusión.</li>
-            </ul>
+  <h3>Methodology</h3>
+  <ul>
+    <li>
+      <strong>Data preprocessing:</strong>
+      Cleaned, integrated, and standardized operational data, checking for inconsistencies, duplicates, and missing values.
+    </li>
 
-            <h3>Recomendaciones</h3>
-            <ul>
-              <li>Implementar <strong>depósito obligatorio no reembolsable</strong> para reservas Transient con más de 90 días de anticipación y sin historial limpio, activando esta política de forma diferenciada por perfil de riesgo.</li>
-              <li>Activar <strong>comunicación proactiva en temporada alta</strong> (Julio y Agosto) con ofertas de upgrade, beneficios exclusivos y recordatorios para reducir cancelaciones en los meses de mayor ADR.</li>
-              <li>Desarrollar <strong>incentivos para reserva directa</strong> — menor comisión, mayor control y menor tasa de cancelación — para reducir la dependencia de intermediarios como Booking y Expedia.</li>
-              <li>Implementar un <strong>sistema de alertas por reincidencia</strong> que identifique automáticamente clientes con cancelaciones previas y aplique políticas más estrictas desde el momento de la reserva.</li>
-            </ul>
+    <li>
+      <strong>Exploratory Data Analysis (EDA):</strong>
+      Analyzed variable distributions, call types, and operator performance to identify operational patterns and inefficiencies.
+    </li>
 
-          </div>
-          <!-- FIN PROYECTO 1 -->
+    <li>
+      <strong>Business analysis:</strong>
+      Identified critical factors associated with missed calls and operational performance, translating findings into actionable insights.
+    </li>
 
+    <li>
+      <strong>Statistical hypothesis testing:</strong>
+      Tested whether the missed-call rate differed significantly between inbound and outbound calls.
+    </li>
+  </ul>
 
-          <!-- ============================================================ -->
-          <!-- PROYECTO 2 — CONTACT CENTER                                  -->
-          <!-- ============================================================ -->
-          <div class="project">
+  <h3>Key Visualizations</h3>
 
-            <h2>2. Análisis de eficiencia operativa en un Contact Center</h2>
+  <p>
+    Relationship between customer volume handled and total call duration by operator. The visualization incorporates a traffic-light classification system to identify critical operators and improvement opportunities.
+  </p>
 
-            <div class="project-highlight">
-              <h3>📌 Ficha Ejecutiva</h3>
-              <ul>
-                <li>
-                  <strong>Problema de negocio:</strong>
-                  Identificar operadores ineficientes y factores críticos que afectan la efectividad operativa del contact center.
-                </li>
-                <li>
-                  <strong>Dataset utilizado:</strong>
-                  Registros operativos de llamadas entrantes y salientes, incluyendo duración, llamadas perdidas y desempeño por operador.
-                </li>
-                <li>
-                  <strong>Herramientas:</strong>
-                  Python, Pandas, Seaborn, análisis estadístico y Tableau.
-                </li>
-                <li>
-                  <strong>Resultados principales:</strong>
-                  <ul>
-                    <li>Las llamadas perdidas y la baja efectividad de las llamadas salientes fueron identificadas como los principales factores de ineficiencia operativa.</li>
-                    <li>Las llamadas salientes presentaron una tasa significativamente mayor de pérdida frente a las llamadas entrantes, validada mediante prueba estadística.</li>
-                    <li>Cerca del 50% de los operadores fueron clasificados en niveles de riesgo medio o crítico según el score de eficiencia operacional.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Impacto potencial de negocio:</strong>
-                  <ul>
-                    <li>Se estimaron pérdidas potenciales de productividad cercanas a $6K USD mensuales asociadas a tiempos de espera operacionales en operadores críticos.</li>
-                    <li>Si la tasa de llamadas perdidas se redujera desde 37% hasta el objetivo operacional del 5%, la operación podría recuperar más de 10,000 interacciones adicionales con clientes.</li>
-                    <li>Los resultados permiten priorizar acciones sobre operadores críticos, optimizar procesos de llamadas salientes y mejorar la capacidad operativa del contact center.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Recomendación final:</strong>
-                  Implementar dashboards de monitoreo operativo y optimizar horarios y bases de contacto para reducir llamadas fallidas y mejorar la productividad.
-                </li>
-              </ul>
-            </div>
+  <img src="assets/img/grafica-operadores.png"
+       alt="Operational performance by operator"
+       class="project-img">
 
-            <div class="project-links">
-              <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case1_telecom" target="_blank">📖 README</a>
-              <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case1_telecom/notebooks/telecom_case.ipynb" target="_blank">📓 Notebook</a>
-              <a href="https://public.tableau.com/views/Case1_TelecomFinalProyectD_A/Hoja1" target="_blank">📊 Dashboard</a>
-            </div>
+  <p>
+    Correlation matrix of contact center operational variables, highlighting relationships between call volume, duration, missed calls, and operational inefficiency.
+  </p>
 
-            <h3>Objetivo</h3>
-            <p>
-              Proyecto de análisis de datos orientado a identificar operadores ineficaces en un contact center mediante un sistema de ranking y semaforización basado en indicadores de desempeño. La solución permitió evaluar el rendimiento individual y grupal para apoyar procesos de retroalimentación, entrenamiento y optimización operativa.
-            </p>
+  <img src="assets/img/heatmap-correlacion.png"
+       alt="Correlation between contact center operational variables"
+       class="project-img">
 
-            <h3>Herramientas y tecnologías</h3>
-            <p>Python | Pandas | Seaborn |</p>
+  <p>
+    Operator segmentation using a traffic-light classification system based on operational performance indicators and risk levels.
+  </p>
 
-            <h3>Procesos desarrollados</h3>
-            <p>
-              Limpieza de datos | Transformación de datos |
-              Análisis Exploratorio de Datos (EDA) |
-              definición de umbrales y semáforo | clasificación de operadores por niveles
-            </p>
+  <img src="assets/img/distribucion-eficiencia.png"
+       alt="Operational efficiency distribution"
+       class="project-img">
 
-            <h3>Preguntas clave</h3>
-            <ul>
-              <li>¿Cuál es la principal causa de afectación en la efectividad operativa del contact center?</li>
-              <li>¿Cómo se distribuyen los niveles de ineficacia operativa y cuál es su impacto porcentual?</li>
-              <li>¿Qué acciones podrían implementarse para mejorar la calidad y eficiencia operativa?</li>
-            </ul>
+  <h3>Conclusions & Key Findings</h3>
+  <ul>
+    <li>
+      The identified operational inefficiency shows a structural pattern primarily associated with the high missed-call rate and low outbound call effectiveness.
+    </li>
 
-            <h3>Metodología</h3>
-            <ul>
-              <li><strong>Preprocesamiento de datos:</strong> limpieza, integración y estandarización de datos operativos, verificando inconsistencias, duplicados y valores faltantes.</li>
-              <li><strong>Análisis Exploratorio de Datos (EDA):</strong> análisis de distribución de variables, tipos de llamadas y desempeño por operador para identificar patrones de comportamiento operativo e ineficiencia.</li>
-              <li><strong>Análisis de negocio:</strong> identificación de factores críticos relacionados con llamadas perdidas y desempeño operativo, permitiendo generar insights accionables.</li>
-              <li><strong>Prueba de hipótesis estadística:</strong> validación de diferencias significativas entre la tasa de llamadas perdidas en llamadas entrantes y salientes.</li>
-            </ul>
+    <li>
+      Missed calls showed a significant relationship with operational performance
+      (<strong>r = 0.52</strong>), reaching critical levels when operator availability was limited.
+    </li>
 
-            <h3>Visualizaciones destacadas</h3>
+    <li>
+      Outbound calls showed a significantly higher missed-call rate than inbound calls
+      (<strong>52.56% vs. 41.46%</strong>), with the difference statistically validated
+      (<strong>Z = 21.433, p &lt; 0.001</strong>).
+    </li>
+  </ul>
 
-            <p>Relación entre volumen de clientes atendidos y duración total de llamadas por operador. La visualización incorpora un sistema de semaforización para identificar operadores críticos y oportunidades de mejora.</p>
-            <img src="assets/img/grafica-operadores.png" alt="Desempeño operativo por operador" class="project-img">
+  <h3>Recommended Strategies</h3>
+  <ul>
+    <li>
+      Optimize contact lists and calling schedules to reduce failed calls and improve the effective contact rate.
+    </li>
 
-            <p>Matriz de correlación entre variables operativas del contact center, permitiendo identificar relaciones entre volumen de llamadas, duración, llamadas perdidas y niveles de ineficiencia.</p>
-            <img src="assets/img/heatmap-correlacion.png" alt="Correlación entre variables operativas" class="project-img">
+    <li>
+      Implement operational monitoring dashboards to track missed calls, call duration, and operator performance.
+    </li>
 
-            <p>Segmentación de operadores mediante un sistema de semaforización basado en indicadores de desempeño operativo y niveles de riesgo.</p>
-            <img src="assets/img/distribucion-eficiencia.png" alt="Distribución de eficiencia operativa" class="project-img">
+    <li>
+      Strengthen training and call-time management practices to improve productivity and operational quality.
+    </li>
+  </ul>
 
-            <h3>Conclusiones y recomendaciones</h3>
-            <ul>
-              <li>La ineficiencia operativa identificada presenta un comportamiento estructural asociado principalmente a la alta tasa de llamadas perdidas y la baja efectividad de las llamadas salientes.</li>
-              <li>Las llamadas perdidas evidenciaron una relación significativa con el desempeño operativo (r = 0.52), alcanzando niveles críticos en ausencia de operadores disponibles.</li>
-              <li>Las llamadas salientes presentaron una tasa de pérdida significativamente mayor frente a las entrantes (52.56% vs 41.46%), diferencia validada estadísticamente (Z = 21.433, p &lt; 0.001).</li>
-            </ul>
+</div>
+<!-- END PROJECT 2 -->
 
-            <h3>Estrategias recomendadas</h3>
-            <ul>
-              <li>Optimización de bases de datos y horarios de contacto para reducir llamadas fallidas y mejorar la tasa de contacto efectivo.</li>
-              <li>Implementación de dashboards de monitoreo operativo para seguimiento de llamadas perdidas, duración y desempeño por operador.</li>
-              <li>Fortalecimiento de procesos de capacitación y gestión eficiente del tiempo de llamadas para incrementar productividad y calidad operativa.</li>
-            </ul>
+         <!-- ============================================================ -->
+<!-- PROJECT 3 — A/B TESTING                                     -->
+<!-- ============================================================ -->
+<div class="project">
 
-          </div>
-          <!-- FIN PROYECTO 2 -->
+  <h2>3. A/B Testing – Evaluating an E-commerce Recommendation System</h2>
 
+  <div class="project-highlight">
+    <h3>📌 Executive Summary</h3>
+    <ul>
 
-          <!-- ============================================================ -->
-          <!-- PROYECTO 3 — A/B TESTING                                     -->
-          <!-- ============================================================ -->
-          <div class="project">
+      <li>
+        <strong>Business problem:</strong>
+        Evaluate whether a new recommendation system improves the conversion rate of an online store compared with the existing system.
+      </li>
 
-            <h2>3. A/B Testing – Evalúa efectividad de un sistema de recomendaciones en tienda online</h2>
+      <li>
+        <strong>Dataset:</strong>
+        User behavior data from an A/B experiment, including navigation events, conversions, and performance metrics for control (A) and test (B) groups.
+      </li>
 
-            <div class="project-highlight">
-              <h3>📌 Ficha Ejecutiva</h3>
-              <ul>
-                <li>
-                  <strong>Problema de negocio:</strong>
-                  Evaluar si un nuevo sistema de recomendaciones en una tienda online mejora la tasa de conversión frente al sistema anterior.
-                </li>
-                <li>
-                  <strong>Dataset utilizado:</strong>
-                  Datos de comportamiento de usuarios en una prueba A/B, incluyendo eventos de navegación, conversiones y métricas por grupo (A y B).
-                </li>
-                <li>
-                  <strong>Herramientas:</strong>
-                  Python, Pandas, Seaborn, SciPy y Matplotlib.
-                </li>
-                <li>
-                  <strong>Resultados principales:</strong>
-                  <ul>
-                    <li>El grupo B no mostró mejora estadísticamente significativa en la tasa de conversión frente al grupo de control (A).</li>
-                    <li>La conversión total del funnel fue inferior en B (-1.1%) respecto a A.</li>
-                    <li>Se identificaron anomalías relevantes en el experimento, incluyendo desbalance entre grupos, contaminación de usuarios y sesgo temporal.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Impacto de negocio:</strong>
-                  <ul>
-                    <li>El análisis evitó la posible implementación de un cambio sin evidencia estadística de mejora real.</li>
-                    <li>Fueron detectados riesgos metodológicos que podían conducir a decisiones erróneas sobre el rendimiento del nuevo sistema.</li>
-                    <li>Los hallazgos permitieron proponer mejoras para aumentar la confiabilidad de futuros experimentos y decisiones data-driven.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Próximos pasos recomendados:</strong>
-                  <ul>
-                    <li>Repetir el experimento con grupos balanceados y asignación aleatoria controlada.</li>
-                    <li>Incrementar el tamaño muestral para mejorar la potencia estadística.</li>
-                    <li>Incorporar métricas adicionales como revenue por usuario, retención y ticket promedio.</li>
-                    <li>Evaluar hipótesis alternativas sobre el comportamiento de usuarios en etapas críticas del funnel.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Recomendación final:</strong>
-                  No implementar el cambio actual hasta realizar un nuevo experimento con mejor diseño metodológico y control de sesgos.
-                </li>
-              </ul>
-            </div>
+      <li>
+        <strong>Tools:</strong>
+        Python, Pandas, Seaborn, SciPy, and Matplotlib.
+      </li>
 
-            <div class="project-links">
-              <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case2_ab_testing" class="btn" target="_blank">📖 README</a>
-              <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case2_ab_testing/notebooks/ab_testing.ipynb" class="btn" target="_blank">📓 Notebook</a>
-            </div>
+      <li>
+        <strong>Key findings:</strong>
+        <ul>
+          <li>
+            The test group (B) did not show a statistically significant improvement in conversion compared with the control group (A).
+          </li>
+          <li>
+            Overall funnel conversion was slightly lower in group B, with a difference of approximately <strong>-1.1 percentage points</strong> compared with group A.
+          </li>
+          <li>
+            The experiment presented relevant methodological issues, including group imbalance, potential user contamination, and temporal bias.
+          </li>
+        </ul>
+      </li>
 
-            <h3>Objetivo</h3>
-            <p>Evaluar si el sistema de recomendaciones recientemente implementado en la tienda online, generó mejoras significativas en la tasa de conversión, comparando los resultados de un grupo de control y un grupo de prueba.</p>
+      <li>
+        <strong>Business impact:</strong>
+        <ul>
+          <li>
+            The analysis prevented the potential implementation of a product change without statistical evidence of a real improvement.
+          </li>
+          <li>
+            Methodological risks were identified that could have led to incorrect conclusions about the performance of the new recommendation system.
+          </li>
+          <li>
+            The findings provided recommendations to improve the reliability of future experiments and data-driven product decisions.
+          </li>
+        </ul>
+      </li>
 
-            <h3>Herramientas y tecnologías</h3>
-            <p>Python | Pandas | Seaborn | SciPy | Matplotlib |</p>
+      <li>
+        <strong>Recommended next steps:</strong>
+        <ul>
+          <li>
+            Repeat the experiment with balanced groups and controlled random assignment.
+          </li>
+          <li>
+            Increase the sample size to improve statistical power.
+          </li>
+          <li>
+            Include additional business metrics such as revenue per user, retention, and average order value.
+          </li>
+          <li>
+            Evaluate alternative hypotheses regarding user behavior at critical funnel stages.
+          </li>
+        </ul>
+      </li>
 
-            <h3>Procesos desarrollados</h3>
-            <p>
-              Limpieza de datos | Transformación de datos |
-              Análisis Exploratorio de Datos (EDA) | Construcción de embudo de conversión |
-              Ejecución de prueba A/B | Evaluación de resultados |
-            </p>
+      <li>
+        <strong>Final recommendation:</strong>
+        Do not implement the current change until a new experiment is conducted with improved experimental design and stronger bias controls.
+      </li>
 
-            <h3>Preguntas clave</h3>
-            <ul>
-              <li>¿El cambio implementado en el grupo B genera mejora significativa en el embudo?</li>
-              <li>¿Es recomendable la implementación del cambio inicialmente sugerido a la tienda on line?</li>
-              <li>¿La prueba estadística confirma que la diferencia es significativa?</li>
-            </ul>
+    </ul>
+  </div>
 
-            <h3>Metodología</h3>
-            <ul>
-              <li><strong>Preprocesamiento de datos:</strong> limpieza, integración y estandarización de datos operativos, verificando inconsistencias, duplicados y valores faltantes.</li>
-              <li><strong>Análisis Exploratorio de Datos (EDA):</strong> Comparación de tamaños de muestra, distribución de eventos por usuario y por día. Definición del universo elegible e identificación previa de posibles anomalías.</li>
-              <li><strong>Construcción del embudo de conversión:</strong> En esta etapa se observó que el grupo A tenía más usuarios en todas las etapas que B, lo que reflejó un desbalance inicial entre los grupos, algo a tener en cuenta al interpretar resultados.</li>
-              <li><strong>Ejecución de la prueba A/B:</strong> Aunque B muestra ligera mejora en la etapa product_page → product_cart, pierde ventaja en la etapa final. La diferencia general no es significativa estadísticamente.</li>
-            </ul>
+  <div class="project-links">
 
-            <h3>Visualizaciones destacadas</h3>
+    <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case2_ab_testing"
+       class="btn"
+       target="_blank">📖 README</a>
 
-            <p>El gráfico del embudo comparativo muestra cómo los usuarios avanzan en cada etapa del proceso de conversión. Permite identificar si el nuevo sistema de recomendaciones generó mejoras en la tasa de interacción y compras respecto al grupo de control.</p>
-            <img src="assets/img/funnel-comparativo.png" alt="Funnel Comparativo" class="project-img">
+    <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case2_ab_testing/notebooks/ab_testing.ipynb"
+       class="btn"
+       target="_blank">📓 Notebook</a>
 
-            <p>El gráfico de eventos diarios refleja la evolución temporal de la actividad de los usuarios durante el experimento. Ayuda a detectar tendencias, picos de interacción y posibles anomalías en el comportamiento de los grupos A y B.</p>
-            <img src="assets/img/eventos-dia.png" alt="Eventos por día" class="project-img">
+  </div>
 
-            <p>El gráfico resumen sintetiza usuarios, conversiones e ingresos de ambos grupos. Facilita la comparación directa y evidencia que el grupo de control obtuvo mejores resultados en tasa de conversión e ingresos frente al grupo de prueba.</p>
-            <img src="assets/img/resumen-prueba.png" alt="Resumen de la prueba" class="project-img">
+  <h3>Business Objective</h3>
+  <p>
+    Evaluate whether the newly implemented recommendation system generated a statistically significant improvement in the online store's conversion rate by comparing a control group with a test group.
+  </p>
 
-            <h3>Conclusiones y recomendaciones</h3>
-            <ul>
-              <li>En general, el grupo B no logra superar al grupo A en el rendimiento del funnel, mostrando solo una ligera mejora en la primera etapa y un desempeño inferior en las etapas críticas finales.</li>
-              <li>El cambio implementado en B no genera mejora significativa en el funnel. La diferencia observada es mínima (-1,1%) y no aporta valor de negocio.</li>
-              <li>La prueba estadística confirma que la diferencia no es significativa (p-value = 0.3024).</li>
-            </ul>
+  <h3>Tools & Technologies</h3>
+  <p>
+    Python | Pandas | Seaborn | SciPy | Matplotlib
+  </p>
 
-            <h3>Recomendaciones</h3>
-            <ul>
-              <li>A la tienda On Line, se recomienda NO implementar el cambio hasta no realizar un nuevo experimento con mejor diseño que corrija los desbalances y sesgos detectados.</li>
-            </ul>
+  <h3>Analytical Processes</h3>
+  <p>
+    Data Cleaning | Data Transformation |
+    Exploratory Data Analysis (EDA) |
+    Conversion Funnel Analysis |
+    A/B Testing |
+    Statistical Significance Testing
+  </p>
 
-          </div>
-          <!-- FIN PROYECTO 3 -->
+  <h3>Key Business Questions</h3>
+  <ul>
+    <li>
+      Does the change implemented in group B generate a significant improvement across the conversion funnel?
+    </li>
 
+    <li>
+      Should the online store implement the proposed recommendation system?
+    </li>
+
+    <li>
+      Does statistical testing confirm that the observed difference is significant?
+    </li>
+  </ul>
+
+  <h3>Methodology</h3>
+  <ul>
+
+    <li>
+      <strong>Data preprocessing:</strong>
+      Cleaned, integrated, and standardized the experiment data, checking for inconsistencies, duplicates, missing values, and potential data quality issues.
+    </li>
+
+    <li>
+      <strong>Exploratory Data Analysis (EDA):</strong>
+      Compared sample sizes, user-level event distributions, and daily activity. Defined the eligible population and identified potential anomalies before evaluating the experiment results.
+    </li>
+
+    <li>
+      <strong>Conversion funnel construction:</strong>
+      Built the conversion funnel to compare user progression across the main stages of the customer journey. Group A consistently contained more users than group B, revealing an initial imbalance that needed to be considered when interpreting the results.
+    </li>
+
+    <li>
+      <strong>A/B test evaluation:</strong>
+      Compared conversion rates between groups across the funnel. Group B showed a small improvement at the product page → product cart stage, but this advantage was not sustained through the final conversion stage.
+    </li>
+
+    <li>
+      <strong>Statistical significance testing:</strong>
+      Applied statistical hypothesis testing to determine whether the observed difference in conversion performance between groups was statistically significant.
+    </li>
+
+  </ul>
+
+  <h3>Key Visualizations</h3>
+
+  <p>
+    Comparative conversion funnel showing how users progressed through each stage of the customer journey. The visualization helps evaluate whether the new recommendation system improved user progression and conversion compared with the control group.
+  </p>
+
+  <img src="assets/img/funnel-comparativo.png"
+       alt="Comparative conversion funnel"
+       class="project-img">
+
+  <p>
+    Daily event activity throughout the experiment period. The visualization helps identify temporal trends, interaction peaks, and potential anomalies affecting groups A and B.
+  </p>
+
+  <img src="assets/img/eventos-dia.png"
+       alt="Daily user events"
+       class="project-img">
+
+  <p>
+    Summary comparison of users, conversions, and revenue across both experiment groups. The results show that the control group achieved better overall conversion and revenue performance than the test group.
+  </p>
+
+  <img src="assets/img/resumen-prueba.png"
+       alt="A/B test summary"
+       class="project-img">
+
+  <h3>Conclusions & Key Findings</h3>
+  <ul>
+
+    <li>
+      Overall, group B did not outperform group A across the conversion funnel. The test group showed only a limited improvement at an intermediate stage, followed by weaker performance at the final conversion stage.
+    </li>
+
+    <li>
+      The implemented change did not generate a statistically significant improvement in the overall funnel. The observed difference was approximately <strong>-1.1 percentage points</strong>.
+    </li>
+
+    <li>
+      Statistical testing confirmed that the observed difference was not significant
+      (<strong>p-value = 0.3024</strong>).
+    </li>
+
+  </ul>
+
+  <h3>Recommendations</h3>
+  <ul>
+
+    <li>
+      Do not implement the current recommendation system based on the observed results.
+    </li>
+
+    <li>
+      Repeat the experiment using balanced groups, controlled random assignment, and stronger controls for potential sources of bias.
+    </li>
+
+    <li>
+      Increase the sample size and experiment duration where appropriate to improve statistical power and reliability.
+    </li>
+
+  </ul>
+
+</div>
+<!-- END PROJECT 3 -->
 
           Aquí está, ya corregido (sin la duplicación y con un solo </body>). Reemplaza en GitHub todo desde <!-- PROYECTO 4 --> hasta el final del archivo con esto:
 
 html
 <!-- ============================================================ -->
-          <!-- PROYECTO 4 — SQL LIBROS                                      -->
-          <!-- ============================================================ -->
-          <div class="project">
-            <h2>4. Análisis de base de datos relacional sobre libros</h2>
-            <div class="project-summary">
-              <div class="project-highlight">
-                <h3>📌 Ficha Ejecutiva</h3>
-                <ul>
-                  <li>
-                    <strong>Problema de negocio:</strong>
-                    Analizar una base de datos relacional de libros para generar insights sobre editoriales, autores, calificaciones y reseñas, con el fin de proponer mejoras en la plataforma.
-                  </li>
-                  <li>
-                    <strong>Dataset utilizado:</strong>
-                    Base de datos relacional con información de libros, autores, editoriales, usuarios, calificaciones y reseñas.
-                  </li>
-                  <li>
-                    <strong>Herramientas:</strong>
-                    SQL, SQLAlchemy, Python, Pandas, Seaborn, SciPy, Matplotlib.
-                  </li>
-                  <li>
-                    <strong>Resultado principal:</strong>
-                    Se identificó una alta concentración editorial (Penguin Books y Vintage), baja participación en reseñas y fuerte dispersión en calificaciones según autor y contenido.
-                  </li>
-                  <li>
-                    <strong>Recomendación final:</strong>
-                    Implementar estrategias de gamificación para incentivar reseñas, y sistemas de recomendación/segmentación para reducir sesgos y mejorar la diversidad editorial.
-                  </li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case3_sql" class="btn" target="_blank">📖 README</a>
-                <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case3_sql/notebooks/sql_analysis.ipynb" class="btn" target="_blank">📓 Notebook</a>
-              </div>
-            </div>
-            <h3>Objetivo</h3>
-            <p>Analizar base de datos relacional sobre libros, editoriales, autores y calificaciones de clientes, para generar una propuesta de valor enfocada en un nuevo producto.</p>
-            <h3>Herramientas y tecnologías</h3>
-            <p>SQL | SQLAlchemy | Python | Pandas | Seaborn | SciPy | Matplotlib |</p>
-            <h3>Procesos desarrollados</h3>
-            <p>Exploración de la base de datos | Revisar tablas y Relaciones | Consultas varias | Análisis de resultados |</p>
-            <h3>Preguntas clave</h3>
-            <ul>
-              <li>¿Cómo puede la plataforma equilibrar la concentración editorial, promoviendo la diversidad y visibilidad de editoriales con menor presencia?</li>
-              <li>¿Qué estrategias de motivación podrían incentivar a los usuarios más activos a generar más reseñas de calidad, además de calificar libros?</li>
-              <li>¿De qué manera influye el reconocimiento de autores consolidados en la percepción de calidad, y cómo se puede aprovechar esa influencia para dar visibilidad a autores menos conocidos?</li>
-            </ul>
-            <h3>Metodología</h3>
-            <ul>
-              <li><strong>Exploración de la base de datos:</strong> identificación de tablas, claves primarias y foráneas, revisión de relaciones entre autores, libros, editoriales, calificaciones y reseñas. Visualización de las primeras filas con consultas dinámicas en Python y Pandas.</li>
-              <li><strong>Formulación de consultas SQL:</strong> construcción de queries con funciones de agregación (COUNT, AVG), filtros (WHERE, HAVING) y uniones (INNER JOIN) para responder a los objetivos: número de libros publicados, reseñas, calificaciones promedio, editoriales más productivas y autores mejor valorados.</li>
-              <li><strong>Análisis de resultados:</strong> interpretación de hallazgos sobre participación de usuarios, dispersión en calificaciones, concentración editorial y la influencia de autores reconocidos. Identificación de patrones clave en la interacción y producción editorial.</li>
-              <li><strong>Conclusiones y recomendaciones:</strong> planteamiento de estrategias para incentivar reseñas mediante gamificación, equilibrar la concentración editorial con recomendaciones personalizadas y aprovechar la influencia de autores reconocidos para visibilizar nuevos talentos.</li>
-            </ul>
-            <h3>Visualizaciones destacadas</h3>
-            <p>Este gráfico muestra cómo se distribuye la cantidad de reseñas escritas por los usuarios. La mayoría aporta entre 15 y 20 reseñas, lo que evidencia un grupo moderadamente activo, mientras que pocos usuarios escriben muy pocas o muchas reseñas. Refuerza la conclusión de que la participación activa requiere mayor compromiso.</p>
-            <img src="assets/img/resenas-usuario.png" alt="Distribución de reseñas por usuario" class="project-img">
-            <p>El heatmap revela la relación entre la cantidad de reseñas y la calificación promedio de los libros. Se observa que la mayoría de los títulos con buenas calificaciones (3.8–4.6) tienen pocas reseñas, lo que sugiere que la percepción de calidad no siempre está acompañada de una alta participación en reseñas.</p>
-            <img src="assets/img/calificacion-resenas.png" alt="Relación entre calificación promedio y número de reseñas" class="project-img">
-            <p>El gráfico de burbujas integra tres dimensiones: número de libros publicados, calificación promedio y popularidad medida en reseñas. Permite visualizar cómo autores reconocidos combinan productividad y calidad con mayor volumen de reseñas, mientras otros muestran menor presencia o variabilidad en la valoración.</p>
-            <img src="assets/img/autores.png" alt="Autores: Producción vs Calidad vs Popularidad" class="project-img">
-            <h3>Conclusiones y recomendaciones</h3>
-            <ul>
-              <li>Pocas editoriales como Penguin Books y Vintage dominan la producción de libros, lo que evidencia una estructura de mercado concentrada.</li>
-              <li>Los usuarios más comprometidos, con más de 50 libros calificados, escriben en promedio 24 reseñas, lo que confirma que la generación de contenido escrito requiere mayor esfuerzo y motivación.</li>
-              <li>La experiencia de lectura depende fuertemente del autor, el contenido y las expectativas individuales de los lectores; las calificaciones presentan una gran dispersión ya que algunos libros alcanzan puntuaciones máximas de 5.0, mientras otros reciben valoraciones significativamente bajas.</li>
-            </ul>
-            <h3>Recomendaciones</h3>
-            <ul>
-              <li>Fomentar la creación de reseñas mediante la implementación de incentivos como gamificación, reconocimientos o distintivos para motivar a los usuarios a escribir reseñas.</li>
-              <li>Gestionar la variabilidad en la percepción de calidad a través de herramientas de filtrado y segmentación (por género, estilo, popularidad) que permitan a los usuarios encontrar libros más afines a sus intereses y gustos.</li>
-            </ul>
-          </div>
-          <!-- FIN PROYECTO 4 -->
-        </section>
+<!-- PROJECT 4 — SQL BOOK DATABASE                               -->
+<!-- ============================================================ -->
+<div class="project">
+
+  <h2>4. Book Database Analysis — SQL & Relational Data Analysis</h2>
+
+  <div class="project-summary">
+
+    <div class="project-highlight">
+      <h3>📌 Executive Summary</h3>
+
+      <ul>
+
+        <li>
+          <strong>Business problem:</strong>
+          Analyze a relational database of books, authors, publishers, users, ratings, and reviews to identify patterns that could support product and content strategy decisions.
+        </li>
+
+        <li>
+          <strong>Dataset:</strong>
+          Relational database containing information about books, authors, publishers, user ratings, and written reviews.
+        </li>
+
+        <li>
+          <strong>Tools:</strong>
+          SQL, SQLAlchemy, Python, Pandas, Seaborn, SciPy, and Matplotlib.
+        </li>
+
+        <li>
+          <strong>Key findings:</strong>
+          <ul>
+            <li>
+              Book production is highly concentrated among a small number of publishers, particularly Penguin Books and Vintage.
+            </li>
+
+            <li>
+              User ratings are substantially more common than written reviews, indicating lower participation in content creation.
+            </li>
+
+            <li>
+              Highly rated books are not necessarily those with the highest number of reviews, highlighting the importance of considering both quality perception and user engagement.
+            </li>
+
+            <li>
+              Author-level analysis revealed differences in productivity, average ratings, and review volume across the catalog.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Business recommendations:</strong>
+          Use user segmentation and personalized recommendations to improve content discovery, while introducing engagement mechanisms to encourage users to contribute more written reviews.
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="project-links">
+
+      <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case3_sql"
+         class="btn"
+         target="_blank">📖 README</a>
+
+      <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case3_sql/notebooks/sql_analysis.ipynb"
+         class="btn"
+         target="_blank">📓 Notebook</a>
+
+    </div>
+
+  </div>
+
+  <h3>Business Objective</h3>
+
+  <p>
+    Analyze a relational database containing books, publishers, authors, ratings, and user reviews to identify patterns in publishing activity, content engagement, and perceived book quality, supporting data-driven product recommendations.
+  </p>
+
+  <h3>Tools & Technologies</h3>
+
+  <p>
+    SQL | SQLAlchemy | Python | Pandas | Seaborn | SciPy | Matplotlib
+  </p>
+
+  <h3>Analytical Processes</h3>
+
+  <p>
+    Relational Database Exploration |
+    SQL Querying |
+    Table Joins |
+    Aggregation |
+    Filtering |
+    Data Validation |
+    Result Analysis |
+    Business Insight Generation
+  </p>
+
+  <h3>Key Business Questions</h3>
+
+  <ul>
+
+    <li>
+      Which publishers have the largest presence in the book catalog?
+    </li>
+
+    <li>
+      How do user ratings and written reviews vary across books and authors?
+    </li>
+
+    <li>
+      Is higher perceived book quality associated with greater user engagement?
+    </li>
+
+    <li>
+      Which authors combine strong ratings, productivity, and user engagement?
+    </li>
+
+    <li>
+      What product strategies could improve content discovery and user participation?
+    </li>
+
+  </ul>
+
+  <h3>Methodology</h3>
+
+  <ul>
+
+    <li>
+      <strong>Database exploration:</strong>
+      Identified tables, primary keys, foreign keys, and relationships between authors, books, publishers, ratings, and reviews.
+    </li>
+
+    <li>
+      <strong>SQL query development:</strong>
+      Built queries using aggregation functions such as COUNT and AVG, filtering with WHERE and HAVING, and relational joins including INNER JOIN to answer key business questions.
+    </li>
+
+    <li>
+      <strong>Data analysis:</strong>
+      Examined publishing volume, review activity, average ratings, publisher concentration, and author-level performance to identify relevant patterns.
+    </li>
+
+    <li>
+      <strong>Business interpretation:</strong>
+      Translated database-level results into insights related to user engagement, content discovery, publisher concentration, and perceived quality.
+    </li>
+
+    <li>
+      <strong>Recommendations:</strong>
+      Proposed strategies to increase written reviews through engagement mechanisms and improve book discovery through filtering, segmentation, and personalized recommendations.
+    </li>
+
+  </ul>
+
+  <h3>Key Visualizations</h3>
+
+  <p>
+    Distribution of written reviews per user. The analysis shows that users contribute significantly more ratings than written reviews, highlighting an opportunity to increase participation in user-generated content.
+  </p>
+
+  <img src="assets/img/resenas-usuario.png"
+       alt="Distribution of reviews per user"
+       class="project-img">
+
+  <p>
+    Relationship between average book rating and number of written reviews. Most highly rated books have relatively limited review activity, showing that perceived quality and user-generated content volume do not necessarily move together.
+  </p>
+
+  <img src="assets/img/calificacion-resenas.png"
+       alt="Relationship between average rating and number of reviews"
+       class="project-img">
+
+  <p>
+    Author-level comparison combining publishing volume, average rating, and review activity. The visualization highlights differences between highly established authors and authors with lower catalog presence or engagement.
+  </p>
+
+  <img src="assets/img/autores.png"
+       alt="Author productivity, quality, and popularity"
+       class="project-img">
+
+  <h3>Conclusions & Key Findings</h3>
+
+  <ul>
+
+    <li>
+      A small number of publishers, particularly Penguin Books and Vintage, account for a significant share of the book catalog, indicating a concentrated publishing structure.
+    </li>
+
+    <li>
+      Highly engaged users who have rated more than 50 books write an average of approximately 24 reviews, suggesting that written content requires a higher level of user commitment than simple ratings.
+    </li>
+
+    <li>
+      Book ratings show substantial variation across titles, reflecting differences in author, content, and individual reader preferences.
+    </li>
+
+    <li>
+      The number of reviews should be considered alongside average ratings when evaluating book popularity and perceived quality.
+    </li>
+
+  </ul>
+
+  <h3>Recommendations</h3>
+
+  <ul>
+
+    <li>
+      Encourage written reviews through gamification, recognition systems, badges, or other engagement mechanisms.
+    </li>
+
+    <li>
+      Improve book discovery through filtering and segmentation based on genre, style, popularity, ratings, and user preferences.
+    </li>
+
+    <li>
+      Use author- and book-level performance indicators to support personalized recommendation strategies and increase engagement with less-visible content.
+    </li>
+
+  </ul>
+
+</div>
+<!-- END PROJECT 4 -->       
+
+</section>
       </main>
     </div>
   </div> <!-- cierre de .portfolio -->
