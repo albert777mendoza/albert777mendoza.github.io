@@ -1022,10 +1022,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Crea el botón toggle
     var btn = document.createElement('button');
     btn.className = 'toggle-details-btn';
-    btn.textContent = 'Ver proyecto completo ▼';
+    btn.textContent = 'View Full Project ▼';
     btn.addEventListener('click', function () {
       var isOpen = details.classList.toggle('is-open');
-      btn.textContent = isOpen ? 'Ver menos ▲' : 'Ver proyecto completo ▼';
+      btn.textContent = isOpen ? 'Ver menos ▲' : 'View Full Project ▼';
     });
 
     anchor.insertAdjacentElement('afterend', btn);
