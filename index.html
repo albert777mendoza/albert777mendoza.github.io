@@ -643,50 +643,41 @@
   </div> <!-- cierre de .portfolio -->
 
 
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Expandir y contraer los detalles de cada proyecto
-  document.querySelectorAll(".project .toggle-details-btn").forEach(function (button) {
-    const details = button.nextElementSibling;
+  document.querySelectorAll(".toggle-details-btn").forEach(function (button) {
+    button.onclick = function () {
+      const details = button.nextElementSibling;
 
-    if (!details || !details.classList.contains("project-details")) {
-      return;
-    }
+      if (!details || !details.classList.contains("project-details")) {
+        return;
+      }
 
-    button.addEventListener("click", function () {
-      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      const open = details.hidden;
 
-      button.setAttribute("aria-expanded", String(!isExpanded));
-      details.hidden = isExpanded;
-
-      button.textContent = isExpanded
-        ? "View Full Project ▼"
-        : "Show Less ▲";
-    });
+      details.hidden = !open;
+      button.setAttribute("aria-expanded", String(open));
+      button.textContent = open ? "Show Less ▲" : "View Full Project ▼";
+    };
   });
 
-  // Cambiar el idioma de los proyectos Olist y Toledo
-  document.querySelectorAll(".project-language-buttons .language-btn").forEach(function (button) {
-    button.addEventListener("click", function () {
+  document.querySelectorAll(".language-btn").forEach(function (button) {
+    button.onclick = function () {
       const project = button.dataset.project;
       const language = button.dataset.lang;
 
-      document.querySelectorAll(
-        '.project-language-content[id^="' + project + '-"]'
-      ).forEach(function (content) {
-        content.hidden = content.id !== project + "-" + language;
+      document.querySelectorAll(".project-language-content").forEach(function (content) {
+        if (content.id.startsWith(project + "-")) {
+          content.hidden = content.id !== project + "-" + language;
+        }
       });
 
-      document.querySelectorAll(
-        '.language-btn[data-project="' + project + '"]'
-      ).forEach(function (languageButton) {
-        const isActive = languageButton === button;
-
-        languageButton.classList.toggle("active", isActive);
-        languageButton.setAttribute("aria-pressed", String(isActive));
+      document.querySelectorAll('.language-btn[data-project="' + project + '"]').forEach(function (btn) {
+        btn.classList.toggle("active", btn === button);
       });
-    });
+    };
   });
 
 });
