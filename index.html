@@ -109,328 +109,532 @@
 </section>
 
         
-<!-- PROJECTS -->
-<section class="projects" id="projects">
+
+<section id="projects" class="projects-section">
   <h2>Projects</h2>
+  <p class="section-intro">
+    Data analytics projects focused on business performance, operational
+    efficiency, experimentation, and data-driven decision-making.
+  </p>
 
-  <!-- PROJECT 1: OLIST -->
-  <article class="project">
-    <h3>1. Brazilian E-Commerce Analysis — Olist</h3>
+  <!-- 1. OLIST E-COMMERCE ANALYTICS -->
+  <article class="project" id="olist-project">
+    <h3>Olist E-commerce Analytics</h3>
+    <p class="project-subtitle">SQL · PostgreSQL · Power BI</p>
 
-    <div class="project-highlight">
-      <p>
-        End-to-end analysis of a Brazilian e-commerce marketplace,
-        using SQL, PostgreSQL and Power BI to investigate sales
-        performance, delivery efficiency and customer satisfaction.
-      </p>
-    </div>
+    <p>
+      An end-to-end analysis of Brazilian e-commerce data to understand sales
+      performance, delivery reliability, and customer satisfaction.
+    </p>
+
+    <ul>
+      <li><strong>Sales growth:</strong> approximately 138% from January–August 2017 to the same period in 2018.</li>
+      <li><strong>On-time deliveries:</strong> average review score of 4.29 versus 2.57 for late deliveries.</li>
+      <li><strong>Negative reviews:</strong> 9.19% for on-time deliveries versus 53.99% for late deliveries.</li>
+    </ul>
 
     <div class="project-links">
-      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis"
-         target="_blank" rel="noopener">GitHub Repository</a>
-      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_ventas.pdf"
-         target="_blank" rel="noopener">Sales Dashboard (PDF)</a>
-      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_logistica_satisfaccion.pdf"
-         target="_blank" rel="noopener">Logistics &amp; Satisfaction (PDF)</a>
-      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/PBI/olist.pbix"
-         target="_blank" rel="noopener">Power BI File</a>
+      <a href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis"
+         target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <a href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_ventas.pdf"
+         target="_blank" rel="noopener noreferrer">Sales Dashboard (PDF)</a>
+      <a href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_logistica_satisfaccion.pdf"
+         target="_blank" rel="noopener noreferrer">Logistics &amp; Satisfaction Dashboard (PDF)</a>
+      <a href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/PBI/olist.pbix"
+         target="_blank" rel="noopener noreferrer">Power BI File</a>
     </div>
 
     <div class="project-language-buttons">
-      <button type="button" class="btn"
-        onclick="document.getElementById('olist-en').hidden=false;
-                 document.getElementById('olist-es').hidden=true;">
-        English
-      </button>
-      <button type="button" class="btn"
-        onclick="document.getElementById('olist-en').hidden=true;
-                 document.getElementById('olist-es').hidden=false;">
-        Ver proyecto en español
-      </button>
+      <button type="button" class="language-btn active"
+              data-project="olist" data-lang="en">English</button>
+      <button type="button" class="language-btn"
+              data-project="olist" data-lang="es">Español</button>
     </div>
 
-    <div id="olist-en">
-      <h4>Business Objective</h4>
+    <div class="project-language-content" id="olist-en">
+      <h4>Business Questions</h4>
+      <ul>
+        <li>How did sales evolve over time?</li>
+        <li>How are delivery performance and customer satisfaction related?</li>
+        <li>Which logistics indicators can help prioritize improvements?</li>
+      </ul>
+      <h4>Approach</h4>
       <p>
-        Evaluate marketplace sales trends and identify how delivery
-        performance relates to customer satisfaction, generating
-        actionable insights for business decisions.
+        Used SQL and PostgreSQL to query and validate relational e-commerce
+        data, then built Power BI dashboards to communicate commercial and
+        logistics findings.
       </p>
+      <h4>Business Takeaway</h4>
+      <p>
+        Delivery performance is strongly associated with customer satisfaction.
+        Late deliveries deserve attention because they coincide with
+        substantially lower ratings and a much higher share of negative reviews.
+      </p>
+    </div>
+
+    <div class="project-language-content" id="olist-es" hidden>
+      <h4>Preguntas de negocio</h4>
+      <ul>
+        <li>¿Cómo evolucionaron las ventas a lo largo del tiempo?</li>
+        <li>¿Qué relación existe entre el desempeño de las entregas y la satisfacción?</li>
+        <li>¿Qué indicadores logísticos ayudan a priorizar mejoras?</li>
+      </ul>
+      <h4>Enfoque</h4>
+      <p>
+        Se utilizaron SQL y PostgreSQL para consultar y validar datos
+        relacionales del comercio electrónico, y Power BI para construir
+        dashboards con hallazgos comerciales y logísticos.
+      </p>
+      <h4>Conclusión de negocio</h4>
+      <p>
+        El desempeño de las entregas está fuertemente asociado con la
+        satisfacción del cliente. Las entregas tardías merecen atención porque
+        coinciden con calificaciones considerablemente menores y una mayor
+        proporción de reseñas negativas.
+      </p>
+    </div>
+
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Analysis Scope</h4>
+      <ul>
+        <li>Sales trends and monthly performance.</li>
+        <li>Order delivery performance and delays.</li>
+        <li>Review scores and negative-review rates by delivery status.</li>
+        <li>Business reporting through Power BI dashboards.</li>
+      </ul>
+      <p>
+        The analysis supports prioritizing delivery reliability as a potential
+        lever for improving customer experience. The observed differences are
+        descriptive and do not, by themselves, prove causation.
+      </p>
+    </div>
+  </article>
+
+  <!-- 2. HOTEL BOOKING ANALYSIS -->
+  <article class="project" id="hotel-project">
+    <h3>Hotel Booking Analysis</h3>
+    <p class="project-subtitle">Python · Pandas · Seaborn · Matplotlib · SQL · SQLAlchemy</p>
+
+    <p>
+      Strategic analysis of 119,390 hotel bookings from 2015–2017 to identify
+      cancellation patterns, revenue exposure, and opportunities to improve
+      booking management.
+    </p>
+
+    <ul>
+      <li><strong>Cancellation rate:</strong> 37% overall; 41.7% for City Hotel and 27.8% for Resort Hotel.</li>
+      <li><strong>Revenue at risk:</strong> approximately €16.72 million in estimated lost revenue associated with cancellations.</li>
+      <li><strong>Potential opportunity:</strong> reducing City Hotel cancellations from 41.7% to 30% could represent approximately €3.2 million in recoverable revenue under the project's assumptions.</li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://github.com/albert777mendoza/hotel_booking_analysis"
+         target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <a href="https://github.com/albert777mendoza/hotel_booking_analysis/blob/main/notebooks/hotel_analysis.ipynb"
+         target="_blank" rel="noopener noreferrer">Jupyter Notebook</a>
+      <a href="https://albert777mendoza.github.io/hotel_booking_analysis/dashboard/hotel-dashboard.html"
+         target="_blank" rel="noopener noreferrer">Interactive Dashboard</a>
+    </div>
+
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Business Questions</h4>
+      <ul>
+        <li>Which hotel type experiences more cancellations?</li>
+        <li>How do booking lead time, customer type, and deposit policy relate to cancellation risk?</li>
+        <li>Which distribution channels generate the most revenue?</li>
+        <li>Where could hotel management prioritize cancellation-reduction efforts?</li>
+      </ul>
 
       <h4>Key Findings</h4>
       <ul>
-        <li>Sales increased by approximately 138% when comparing
-          January–August 2017 with the same period in 2018.</li>
-        <li>Orders delivered on time received an average review score
-          of 4.29, compared with 2.57 for late deliveries.</li>
-        <li>Negative reviews represented 9.19% of on-time deliveries
-          and 53.99% of late deliveries.</li>
+        <li>City Hotel had a higher cancellation rate than Resort Hotel.</li>
+        <li>Longer booking lead times and prior cancellation history were useful risk indicators.</li>
+        <li>Online Travel Agencies generated approximately €13.7 million in revenue in the analyzed data.</li>
+        <li>City Hotel accounted for about 65.1% of the estimated cancellation-related lost revenue.</li>
+        <li>Average Daily Rate (ADR) reached a peak of approximately €125.17 in the analyzed period.</li>
       </ul>
 
-      <h4>Business Recommendations</h4>
-      <ul>
-        <li>Monitor delivery delays by seller, carrier and location.</li>
-        <li>Prioritize operational improvements for orders at risk
-          of late delivery.</li>
-        <li>Track sales trends and customer satisfaction through
-          business-focused dashboards.</li>
-      </ul>
-
-      <p><strong>Tools:</strong> SQL, PostgreSQL, Power BI, data
-        validation, KPI analysis and business reporting.</p>
-    </div>
-
-    <div id="olist-es" hidden>
-      <h4>Objetivo de negocio</h4>
+      <h4>Methodology</h4>
       <p>
-        Evaluar las tendencias de ventas del marketplace e identificar
-        cómo el desempeño de las entregas se relaciona con la
-        satisfacción del cliente, generando información útil para
-        la toma de decisiones.
+        Cleaned and explored booking data using Python and Pandas, analyzed
+        cancellation and revenue patterns, and used visualizations to compare
+        hotel types, booking characteristics, and distribution channels.
       </p>
 
-      <h4>Principales hallazgos</h4>
+      <h4>Recommendations</h4>
       <ul>
-        <li>Las ventas aumentaron aproximadamente un 138% al comparar
-          enero–agosto de 2017 con el mismo periodo de 2018.</li>
-        <li>Los pedidos entregados a tiempo obtuvieron una calificación
-          promedio de 4,29, frente a 2,57 para las entregas tardías.</li>
-        <li>Las reseñas negativas representaron el 9,19% de las
-          entregas a tiempo y el 53,99% de las entregas tardías.</li>
+        <li>Prioritize cancellation-risk monitoring for City Hotel bookings.</li>
+        <li>Review booking policies for reservations with long lead times and a history of cancellations.</li>
+        <li>Track cancellation rates, ADR, and revenue exposure by hotel type and channel.</li>
       </ul>
 
-      <h4>Recomendaciones de negocio</h4>
-      <ul>
-        <li>Monitorear los retrasos por vendedor, transportista
-          y ubicación.</li>
-        <li>Priorizar mejoras operativas en los pedidos con riesgo
-          de entrega tardía.</li>
-        <li>Hacer seguimiento a las ventas y la satisfacción del
-          cliente mediante dashboards orientados al negocio.</li>
-      </ul>
-
-      <p><strong>Herramientas:</strong> SQL, PostgreSQL, Power BI,
-        validación de datos, análisis de indicadores e informes
-        de negocio.</p>
+      <div class="project-gallery">
+        <figure>
+          <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/indicadores_clave.png"
+               alt="Hotel booking key performance indicators" loading="lazy">
+          <figcaption>Key performance indicators</figcaption>
+        </figure>
+        <figure>
+          <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_hotel.png"
+               alt="Cancellation rates by hotel type" loading="lazy">
+          <figcaption>Cancellation by hotel type</figcaption>
+        </figure>
+        <figure>
+          <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/anticipacion_cancelacion.png"
+               alt="Booking lead time and cancellation patterns" loading="lazy">
+          <figcaption>Lead time and cancellations</figcaption>
+        </figure>
+        <figure>
+          <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/revenue_perdido.png"
+               alt="Estimated lost revenue associated with cancellations" loading="lazy">
+          <figcaption>Estimated lost revenue</figcaption>
+        </figure>
+        <figure>
+          <img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_canal.png"
+               alt="Cancellation patterns by distribution channel" loading="lazy">
+          <figcaption>Cancellations by channel</figcaption>
+        </figure>
+      </div>
+      <p>
+        <em>Note:</em> the €3.2 million figure is an estimated opportunity based
+        on the project's assumptions, not guaranteed recovered revenue.
+      </p>
     </div>
   </article>
 
-  <!-- PROJECT 2: HOTEL BOOKING -->
-  <article class="project">
-    <h3>2. Hotel Booking Demand Analysis</h3>
+  <!-- 3. CONTACT CENTER ANALYTICS -->
+  <article class="project" id="contact-center-project">
+    <h3>Contact Center Operational Efficiency Analysis</h3>
+    <p class="project-subtitle">Python · Pandas · Statistical Analysis · Tableau</p>
 
-    <div class="project-highlight">
-      <p>
-        Analysis of hotel booking data to understand cancellations,
-        revenue exposure and opportunities to improve booking
-        management.
-      </p>
-    </div>
-
-    <div class="project-links">
-      <a class="btn" href="https://github.com/albert777mendoza/hotel_booking_analysis"
-         target="_blank" rel="noopener">GitHub Repository</a>
-    </div>
-
-    <h4>Business Objective</h4>
     <p>
-      Identify cancellation patterns, compare City Hotel and Resort
-      Hotel performance, and assess opportunities to reduce revenue
-      losses through data-driven recommendations.
+      Analysis of contact center activity to identify missed-call patterns,
+      operational risks, and opportunities to improve customer access and
+      operator performance.
     </p>
 
-    <h4>Key Questions</h4>
     <ul>
-      <li>Which hotel type has the highest cancellation rate?</li>
-      <li>How do booking channels and customer characteristics
-        relate to cancellations?</li>
-      <li>Which operational changes could help reduce cancellation
-        risk?</li>
+      <li><strong>Outbound failed-call rate:</strong> 52.56%, compared with 41.46% for inbound calls.</li>
+      <li><strong>Statistical test:</strong> Z = 21.433, p &lt; 0.001, indicating a statistically significant difference in the analyzed sample.</li>
+      <li><strong>Estimated opportunity:</strong> the project estimated approximately US$6,000 per month in potential productivity loss.</li>
     </ul>
 
-    <p><strong>Tools:</strong> Python, Pandas, data analysis,
-      visualization and statistical reasoning.</p>
-  </article>
-
-  <!-- PROJECT 3: CONTACT CENTER -->
-  <article class="project">
-    <h3>3. Telecom Contact Center Performance Analysis</h3>
-
-    <div class="project-highlight">
-      <p>
-        Analysis of contact center operations to identify inefficient
-        operators, missed interactions and opportunities to improve
-        service performance.
-      </p>
-    </div>
-
     <div class="project-links">
-      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
-         target="_blank" rel="noopener">GitHub Repository</a>
+      <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case1_telecom"
+         target="_blank" rel="noopener noreferrer">Project README</a>
+      <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case1_telecom/notebooks/telecom_case.ipynb"
+         target="_blank" rel="noopener noreferrer">Jupyter Notebook</a>
+      <a href="https://public.tableau.com/views/Case1_TelecomFinalProyectD_A/Hoja1"
+         target="_blank" rel="noopener noreferrer">Tableau Dashboard</a>
     </div>
 
-    <h4>Key Findings</h4>
-    <ul>
-      <li>Failed outbound calls represented 52.56% of the analyzed
-        interactions, compared with 41.46% for inbound calls.</li>
-      <li>A statistical comparison showed a significant difference
-        between these proportions (z = 21.433, p &lt; 0.001).</li>
-      <li>Operator performance metrics can help prioritize
-        coaching and operational follow-up.</li>
-    </ul>
-
-    <h4>Business Recommendations</h4>
-    <ul>
-      <li>Monitor operator-level KPIs and failed interactions.</li>
-      <li>Investigate the main causes of unsuccessful calls.</li>
-      <li>Use performance dashboards to guide coaching and
-        resource allocation.</li>
-    </ul>
-
-    <p><strong>Tools:</strong> Python, Pandas, data visualization
-      and hypothesis testing.</p>
-  </article>
-
-  <!-- PROJECT 4: A/B TESTING -->
-  <article class="project">
-    <h3>4. A/B Testing — Online Store</h3>
-
-    <div class="project-highlight">
-      <p>
-        Statistical evaluation of an experiment to determine whether
-        a proposed change produced measurable improvements in
-        user conversion.
-      </p>
-    </div>
-
-    <div class="project-links">
-      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
-         target="_blank" rel="noopener">GitHub Repository</a>
-    </div>
-
-    <h4>Business Objective</h4>
-    <p>
-      Evaluate the experiment results using conversion metrics
-      and statistical testing to support an evidence-based
-      product decision.
-    </p>
-
-    <h4>Key Finding</h4>
-    <p>
-      The analysis reported a p-value of 0.3024 for the relevant
-      comparison. The result did not provide sufficient statistical
-      evidence of a difference at the conventional 5% significance
-      level.
-    </p>
-
-    <p><strong>Tools:</strong> Python, Pandas, SciPy,
-      exploratory analysis and A/B testing.</p>
-  </article>
-
-  <!-- PROJECT 5: BOOK DATABASE -->
-  <article class="project">
-    <h3>5. SQL Book Database Analysis</h3>
-
-    <div class="project-highlight">
-      <p>
-        SQL-based analysis of a book database to explore publication
-        activity, ratings, reviews and author performance.
-      </p>
-    </div>
-
-    <div class="project-links">
-      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
-         target="_blank" rel="noopener">GitHub Repository</a>
-    </div>
-
-    <h4>Business Objective</h4>
-    <p>
-      Query a relational database to generate insights about books,
-      authors, user reviews and ratings, demonstrating practical
-      SQL skills for business analysis.
-    </p>
-
-    <h4>Analytical Approach</h4>
-    <ul>
-      <li>Explore relationships between books, authors and reviews.</li>
-      <li>Use joins, aggregations and grouped metrics to answer
-        business questions.</li>
-      <li>Summarize findings to support content and catalog analysis.</li>
-    </ul>
-
-    <p><strong>Tools:</strong> SQL, relational databases,
-      joins and aggregations.</p>
-  </article>
-
-  <!-- PROJECT 6: TOLEDO -->
-  <article class="project">
-    <h3>6. Public Management &amp; Data Analysis — Toledo</h3>
-
-    <div class="project-highlight">
-      <p>
-        Applied data management and reporting in a municipal public
-        management context, organizing information to support
-        monitoring, accountability and decision-making.
-      </p>
-    </div>
-
-    <div class="project-links">
-      <button type="button" class="btn"
-        onclick="document.getElementById('toledo-en').hidden=false;
-                 document.getElementById('toledo-es').hidden=true;">
-        English
-      </button>
-      <button type="button" class="btn"
-        onclick="document.getElementById('toledo-en').hidden=true;
-                 document.getElementById('toledo-es').hidden=false;">
-        Ver proyecto en español
-      </button>
-    </div>
-
-    <div id="toledo-en">
-      <h4>Project Overview</h4>
-      <p>
-        Supported municipal information management through data
-        collection, consolidation, reporting and documentation
-        across public-sector departments.
-      </p>
-
-      <h4>Key Contributions</h4>
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Business Questions</h4>
       <ul>
-        <li>Organized and consolidated information from different
-          municipal departments.</li>
-        <li>Used spreadsheets, online forms and shared repositories
-          to support data collection and reporting.</li>
-        <li>Prepared reports and documentation to support public
-          accountability and monitoring.</li>
+        <li>Do inbound and outbound calls show different failed-call rates?</li>
+        <li>Which operators may need performance support or further investigation?</li>
+        <li>How can missed calls inform operational improvement priorities?</li>
       </ul>
 
-      <p><strong>Skills:</strong> Data management, Excel, reporting,
-        documentation and stakeholder coordination.</p>
-    </div>
-
-    <div id="toledo-es" hidden>
-      <h4>Descripción del proyecto</h4>
-      <p>
-        Apoyo a la gestión de información municipal mediante la
-        recopilación, consolidación, elaboración de informes y
-        documentación de distintas dependencias públicas.
-      </p>
-
-      <h4>Principales contribuciones</h4>
+      <h4>Key Findings</h4>
       <ul>
-        <li>Organicé y consolidé información de diferentes
-          dependencias municipales.</li>
-        <li>Utilicé hojas de cálculo, formularios en línea y
-          repositorios compartidos para recopilar información
-          y elaborar reportes.</li>
-        <li>Preparé informes y documentación para apoyar la
-          rendición de cuentas y el seguimiento de la gestión.</li>
+        <li>Outbound calls had a higher failed-call rate than inbound calls in the analyzed data.</li>
+        <li>The difference was statistically significant (Z = 21.433, p &lt; 0.001).</li>
+        <li>The project found a moderate positive correlation (r = 0.52) between missed calls and its operational-performance measure.</li>
+        <li>Operator segmentation identified groups requiring closer monitoring and potential coaching.</li>
       </ul>
 
-      <p><strong>Habilidades:</strong> Gestión de datos, Excel,
-        elaboración de informes, documentación y coordinación
-        con diferentes actores.</p>
+      <h4>Methodology</h4>
+      <p>
+        Prepared and analyzed call-level data with Python and Pandas, examined
+        operational indicators, compared inbound and outbound outcomes, and
+        applied statistical testing to assess the observed difference.
+      </p>
+
+      <h4>Recommendations</h4>
+      <ul>
+        <li>Investigate the causes of unsuccessful outbound calls.</li>
+        <li>Monitor missed-call rates and operator-level indicators over time.</li>
+        <li>Use targeted coaching and staffing reviews to address recurring operational issues.</li>
+      </ul>
+
+      <div class="project-gallery">
+        <figure>
+          <img src="assets/img/grafica-operadores.png"
+               alt="Contact center operator performance analysis" loading="lazy">
+          <figcaption>Operator performance</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/heatmap-correlacion.png"
+               alt="Correlation heatmap for contact center indicators" loading="lazy">
+          <figcaption>Correlation analysis</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/distribucion-eficiencia.png"
+               alt="Distribution of operator efficiency indicators" loading="lazy">
+          <figcaption>Efficiency distribution</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        The financial estimate is an analytical estimate from the project,
+        rather than a verified accounting loss.
+      </p>
+    </div>
+  </article>
+
+  <!-- 4. A/B TESTING -->
+  <article class="project" id="ab-testing-project">
+    <h3>A/B Testing — E-commerce Recommendation System</h3>
+    <p class="project-subtitle">Python · Pandas · SciPy · Statistical Hypothesis Testing</p>
+
+    <p>
+      Evaluation of an e-commerce recommendation-system experiment to determine
+      whether the observed conversion results provided sufficient evidence to
+      support implementation.
+    </p>
+
+    <ul>
+      <li><strong>p-value:</strong> 0.3024.</li>
+      <li><strong>Decision:</strong> no statistically significant improvement was detected at the 5% significance level.</li>
+      <li><strong>Business implication:</strong> the available evidence was insufficient to justify rollout based on conversion improvement.</li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case2_ab_testing"
+         target="_blank" rel="noopener noreferrer">Project README</a>
+      <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case2_ab_testing/notebooks/ab_testing.ipynb"
+         target="_blank" rel="noopener noreferrer">Jupyter Notebook</a>
+    </div>
+
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Business Questions</h4>
+      <ul>
+        <li>Did the new recommendation experience improve conversion?</li>
+        <li>Was the observed difference statistically significant?</li>
+        <li>Were there experiment-design issues that could affect the conclusion?</li>
+      </ul>
+
+      <h4>Key Findings</h4>
+      <ul>
+        <li>The hypothesis test returned a p-value of 0.3024, above the 0.05 significance threshold.</li>
+        <li>The observed funnel difference was approximately -1.1 percentage points in the analyzed comparison.</li>
+        <li>Potential group imbalance, user contamination, and temporal effects were identified as considerations for interpretation.</li>
+      </ul>
+
+      <h4>Methodology</h4>
+      <p>
+        Prepared the experiment data, reviewed the conversion funnel, formulated
+        hypotheses, and used statistical testing to evaluate the evidence for a
+        difference between groups.
+      </p>
+
+      <h4>Recommendation</h4>
+      <p>
+        Do not claim a positive impact or implement the change solely on the
+        basis of these results. Review assignment quality, sample balance,
+        experiment duration, and possible contamination before running a
+        better-controlled test.
+      </p>
+
+      <div class="project-gallery">
+        <figure>
+          <img src="assets/img/funnel-comparativo.png"
+               alt="Comparison of conversion funnels between experiment groups" loading="lazy">
+          <figcaption>Conversion funnel comparison</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/eventos-dia.png"
+               alt="Daily event trends during the A/B test" loading="lazy">
+          <figcaption>Events over time</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/resumen-prueba.png"
+               alt="Summary of A/B test statistical results" loading="lazy">
+          <figcaption>Statistical test summary</figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- 5. SQL BOOK DATABASE -->
+  <article class="project" id="book-database-project">
+    <h3>Book Database Analysis</h3>
+    <p class="project-subtitle">SQL · Relational Data Analysis · Python</p>
+
+    <p>
+      Analysis of a relational book database to explore publishing activity,
+      user engagement, ratings, reviews, and author performance.
+    </p>
+
+    <ul>
+      <li>Examined publishers and the concentration of books across publishing catalogs.</li>
+      <li>Compared ratings with written reviews to understand different forms of user engagement.</li>
+      <li>Explored differences in author output, ratings, and review activity.</li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case3_sql"
+         target="_blank" rel="noopener noreferrer">Project README</a>
+      <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case3_sql/notebooks/sql_analysis.ipynb"
+         target="_blank" rel="noopener noreferrer">Jupyter Notebook</a>
+    </div>
+
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Business Questions</h4>
+      <ul>
+        <li>Which publishers have the largest book catalogs?</li>
+        <li>How do ratings and written reviews differ as measures of engagement?</li>
+        <li>Which authors show stronger output or user response?</li>
+        <li>How can relational queries turn database records into business insights?</li>
+      </ul>
+
+      <h4>Key Findings</h4>
+      <ul>
+        <li>Publishing activity was concentrated among publishers such as Penguin Books and Vintage.</li>
+        <li>Ratings were more common than written reviews.</li>
+        <li>Highly rated books were not necessarily the books with the most reviews.</li>
+        <li>Users who rated more than 50 books wrote an average of approximately 24 reviews in the analyzed dataset.</li>
+        <li>Authors differed in publication volume, ratings, and review activity.</li>
+      </ul>
+
+      <h4>Methodology</h4>
+      <p>
+        Queried relational tables with SQL to aggregate book, publisher, author,
+        rating, and review data, then interpreted the results in a business
+        context.
+      </p>
+
+      <h4>Business Takeaway</h4>
+      <p>
+        Ratings and written reviews capture different types of engagement.
+        Combining both measures provides a more useful view of reader activity
+        than relying on a single metric.
+      </p>
+
+      <div class="project-gallery">
+        <figure>
+          <img src="assets/img/resenas-usuario.png"
+               alt="Written reviews by user activity" loading="lazy">
+          <figcaption>User reviews</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/calificacion-resenas.png"
+               alt="Relationship between ratings and reviews" loading="lazy">
+          <figcaption>Ratings and reviews</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/autores.png"
+               alt="Author activity and performance" loading="lazy">
+          <figcaption>Author analysis</figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- 6. TOLEDO TERRITORIAL ANALYSIS — BILINGUAL -->
+  <article class="project" id="toledo-project">
+    <h3>Toledo Territorial Analysis</h3>
+    <p class="project-subtitle">Public Data · Territorial Indicators · Python · Data Visualization</p>
+
+    <p>
+      Analysis of municipal indicators using Colombia's DNP TerriData platform
+      to explore historical trends and support evidence-based territorial
+      planning.
+    </p>
+
+    <div class="project-links">
+      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata"
+         target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata/blob/main/notebooks/analisis_toledo.ipynb"
+         target="_blank" rel="noopener noreferrer">Jupyter Notebook</a>
+    </div>
+
+    <div class="project-language-buttons">
+      <button type="button" class="language-btn active"
+              data-project="toledo" data-lang="en">English</button>
+      <button type="button" class="language-btn"
+              data-project="toledo" data-lang="es">Español</button>
+    </div>
+
+    <div class="project-language-content" id="toledo-en">
+      <h4>Objective</h4>
+      <p>
+        Explore municipal performance across demographic, education, health,
+        fiscal, and institutional indicators, using historical public data to
+        identify trends and areas that may require further attention.
+      </p>
+      <h4>Approach</h4>
+      <p>
+        Organized and explored indicators from DNP TerriData, reviewed changes
+        over time, and used visual analysis to support a clearer understanding
+        of the municipality's territorial context.
+      </p>
+      <h4>Potential Applications</h4>
+      <ul>
+        <li>Support evidence-informed municipal planning.</li>
+        <li>Identify indicators for deeper analysis and monitoring.</li>
+        <li>Provide a foundation for future integration with additional public-sector datasets.</li>
+      </ul>
+    </div>
+
+    <div class="project-language-content" id="toledo-es" hidden>
+      <h4>Objetivo</h4>
+      <p>
+        Explorar el desempeño municipal en indicadores demográficos, educativos,
+        de salud, fiscales e institucionales, utilizando datos públicos
+        históricos para identificar tendencias y áreas que requieren mayor
+        atención.
+      </p>
+      <h4>Enfoque</h4>
+      <p>
+        Se organizaron y exploraron indicadores de DNP TerriData, se revisaron
+        sus cambios a lo largo del tiempo y se utilizaron visualizaciones para
+        comprender mejor el contexto territorial del municipio.
+      </p>
+      <h4>Aplicaciones potenciales</h4>
+      <ul>
+        <li>Apoyar la planeación municipal basada en evidencia.</li>
+        <li>Identificar indicadores para análisis y seguimiento más profundos.</li>
+        <li>Establecer una base para integrar futuras fuentes de datos del sector público.</li>
+      </ul>
+    </div>
+
+    <button type="button" class="toggle-details-btn"
+            aria-expanded="false">View Full Project ▼</button>
+    <div class="project-details" hidden>
+      <h4>Analysis Scope / Alcance del análisis</h4>
+      <p>
+        The project examines historical municipal indicators, including fiscal
+        and revenue-related measures, demographic patterns, education, health,
+        and institutional context. Findings should be interpreted in relation
+        to the coverage and definitions of the original public datasets.
+      </p>
+      <p>
+        El proyecto examina indicadores municipales históricos, incluidas
+        medidas fiscales y de ingresos, patrones demográficos, educación,
+        salud y contexto institucional. Los hallazgos deben interpretarse
+        teniendo en cuenta la cobertura y las definiciones de las fuentes
+        públicas originales.
+      </p>
+
+      <div class="project-gallery">
+        <figure>
+          <img src="assets/img/matriz-desempeno-toledo.png"
+               alt="Municipal performance indicator matrix for Toledo" loading="lazy">
+          <figcaption>Municipal performance matrix</figcaption>
+        </figure>
+      </div>
     </div>
   </article>
 </section>
@@ -438,42 +642,53 @@
     </div>
   </div> <!-- cierre de .portfolio -->
 
+
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.project').forEach(function (project) {
-    var links = project.querySelector('.project-links');
-    if (!links) return;
+document.addEventListener("DOMContentLoaded", function () {
 
-    // Sube hasta encontrar el ancestro que es hijo directo de .project
-    // (para el proyecto 4, esto es .project-summary; para los demás, .project-links mismo)
-    var anchor = links;
-    while (anchor.parentElement !== project) {
-      anchor = anchor.parentElement;
+  // Expandir y contraer los detalles de cada proyecto
+  document.querySelectorAll(".project .toggle-details-btn").forEach(function (button) {
+    const details = button.nextElementSibling;
+
+    if (!details || !details.classList.contains("project-details")) {
+      return;
     }
 
-    // Mueve todo lo que sigue al ancestro dentro de un contenedor oculto
-    var details = document.createElement('div');
-    details.className = 'project-details';
+    button.addEventListener("click", function () {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-    var node = anchor.nextElementSibling;
-    while (node) {
-      var next = node.nextElementSibling;
-      details.appendChild(node);
-      node = next;
-    }
+      button.setAttribute("aria-expanded", String(!isExpanded));
+      details.hidden = isExpanded;
 
-    // Crea el botón toggle
-    var btn = document.createElement('button');
-    btn.className = 'toggle-details-btn';
-    btn.textContent = 'View Full Project ▼';
-    btn.addEventListener('click', function () {
-      var isOpen = details.classList.toggle('is-open');
-      btn.textContent = isOpen ? 'Ver menos ▲' : 'View Full Project ▼';
+      button.textContent = isExpanded
+        ? "View Full Project ▼"
+        : "Show Less ▲";
     });
-
-    anchor.insertAdjacentElement('afterend', btn);
-    btn.insertAdjacentElement('afterend', details);
   });
+
+  // Cambiar el idioma de los proyectos Olist y Toledo
+  document.querySelectorAll(".project-language-buttons .language-btn").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const project = button.dataset.project;
+      const language = button.dataset.lang;
+
+      document.querySelectorAll(
+        '.project-language-content[id^="' + project + '-"]'
+      ).forEach(function (content) {
+        content.hidden = content.id !== project + "-" + language;
+      });
+
+      document.querySelectorAll(
+        '.language-btn[data-project="' + project + '"]'
+      ).forEach(function (languageButton) {
+        const isActive = languageButton === button;
+
+        languageButton.classList.toggle("active", isActive);
+        languageButton.setAttribute("aria-pressed", String(isActive));
+      });
+    });
+  });
+
 });
 </script>
 
