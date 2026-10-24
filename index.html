@@ -108,1389 +108,331 @@
   </p>
 </section>
 
-        <!-- PROJECTS -->
+        
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
 
-<section class="projects">
-  <h2>Selected Projects</h2>
+  <!-- PROJECT 1: OLIST -->
+  <article class="project">
+    <h3>1. Brazilian E-Commerce Analysis — Olist</h3>
 
-  <!-- ============================================================ -->
+    <div class="project-highlight">
+      <p>
+        End-to-end analysis of a Brazilian e-commerce marketplace,
+        using SQL, PostgreSQL and Power BI to investigate sales
+        performance, delivery efficiency and customer satisfaction.
+      </p>
+    </div>
 
-  <!-- PROJECT 1 — HOTEL BOOKING                                     -->
+    <div class="project-links">
+      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis"
+         target="_blank" rel="noopener">GitHub Repository</a>
+      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_ventas.pdf"
+         target="_blank" rel="noopener">Sales Dashboard (PDF)</a>
+      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/docs/dashboard_logistica_satisfaccion.pdf"
+         target="_blank" rel="noopener">Logistics &amp; Satisfaction (PDF)</a>
+      <a class="btn" href="https://github.com/albert777mendoza/olist_brazilian_ecommerce_analysis/blob/main/PBI/olist.pbix"
+         target="_blank" rel="noopener">Power BI File</a>
+    </div>
 
-  <!-- ============================================================ -->
+    <div class="project-language-buttons">
+      <button type="button" class="btn"
+        onclick="document.getElementById('olist-en').hidden=false;
+                 document.getElementById('olist-es').hidden=true;">
+        English
+      </button>
+      <button type="button" class="btn"
+        onclick="document.getElementById('olist-en').hidden=true;
+                 document.getElementById('olist-es').hidden=false;">
+        Ver proyecto en español
+      </button>
+    </div>
 
-  <div class="project">
+    <div id="olist-en">
+      <h4>Business Objective</h4>
+      <p>
+        Evaluate marketplace sales trends and identify how delivery
+        performance relates to customer satisfaction, generating
+        actionable insights for business decisions.
+      </p>
 
-
-            <h2>1. Hotel Booking Analysis — Strategic Revenue & Cancellation Analysis</h2>
-
-<!-- EXECUTIVE SUMMARY -->
-<div class="project-highlight">
-  <h3>📌 Executive Summary</h3>
-  <ul>
-    <li>
-      <strong>Business problem:</strong>
-      Identify cancellation patterns, high-risk customer profiles, and revenue optimization opportunities across two Portuguese hotels to reduce financial losses and improve profitability.
-    </li>
-
-    <li>
-      <strong>Dataset:</strong>
-      119,390 real hotel bookings from two Portuguese properties — a City Hotel in Lisboa and a Resort Hotel in the Algarve — covering 2015–2017, including cancellation status, rates, market segments, distribution channels, and customer characteristics.
-    </li>
-
-    <li>
-      <strong>Tools:</strong>
-      Python, Pandas, Seaborn, Matplotlib, SQL, SQLAlchemy.
-    </li>
-
-    <li>
-      <strong>Key findings:</strong>
+      <h4>Key Findings</h4>
       <ul>
-        <li>
-          37% of all bookings were canceled during the analyzed period, with a significant gap between the City Hotel (41.7%) and Resort Hotel (27.8%).
-        </li>
-        <li>
-          The highest-risk customer profile is a Transient guest booking through an Online TA more than 90 days in advance, without a deposit, and with a history of previous cancellations (94% recurrence).
-        </li>
-        <li>
-          53.7% of cancellations occurred during high-demand months (August, July, May, June, and April), when ADR reached its highest annual level (€125.17 per night).
-        </li>
-        <li>
-          Online TA is the most valuable distribution segment (€13.7M in generated revenue) while simultaneously presenting a high cancellation risk.
-        </li>
+        <li>Sales increased by approximately 138% when comparing
+          January–August 2017 with the same period in 2018.</li>
+        <li>Orders delivered on time received an average review score
+          of 4.29, compared with 2.57 for late deliveries.</li>
+        <li>Negative reviews represented 9.19% of on-time deliveries
+          and 53.99% of late deliveries.</li>
       </ul>
-    </li>
 
-    <li>
-      <strong>Potential business impact:</strong>
+      <h4>Business Recommendations</h4>
       <ul>
-        <li>
-          Total revenue lost to cancellations during 2015–2017 reached
-          <strong>€16,721,837</strong>, with the City Hotel accounting for 65.1% of the losses (€10.8M).
-        </li>
-        <li>
-          Reducing the City Hotel's cancellation rate from 41.7% to 30% could represent approximately
-          <strong>€3.2M in recovered revenue</strong> through targeted commercial policies.
-        </li>
-        <li>
-          Identifying high-risk customer profiles enables the hotel to intervene at the time of booking, before a cancellation occurs.
-        </li>
+        <li>Monitor delivery delays by seller, carrier and location.</li>
+        <li>Prioritize operational improvements for orders at risk
+          of late delivery.</li>
+        <li>Track sales trends and customer satisfaction through
+          business-focused dashboards.</li>
       </ul>
-    </li>
 
-    <li>
-      <strong>Final recommendation:</strong>
-      Implement targeted deposit policies for high-risk Transient bookings made more than 90 days in advance, activate retention strategies during peak season, and encourage direct bookings to reduce dependence on intermediaries.
-    </li>
-  </ul>
-</div>
+      <p><strong>Tools:</strong> SQL, PostgreSQL, Power BI, data
+        validation, KPI analysis and business reporting.</p>
+    </div>
 
-<!-- BUTTONS -->
-<div class="project-links">
-  <a href="https://github.com/albert777mendoza/hotel_booking_analysis"
-     class="btn" target="_blank">📖 README</a>
+    <div id="olist-es" hidden>
+      <h4>Objetivo de negocio</h4>
+      <p>
+        Evaluar las tendencias de ventas del marketplace e identificar
+        cómo el desempeño de las entregas se relaciona con la
+        satisfacción del cliente, generando información útil para
+        la toma de decisiones.
+      </p>
 
-  <a href="https://github.com/albert777mendoza/hotel_booking_analysis/blob/main/notebooks/hotel_analysis.ipynb"
-     class="btn" target="_blank">📓 Notebook</a>
+      <h4>Principales hallazgos</h4>
+      <ul>
+        <li>Las ventas aumentaron aproximadamente un 138% al comparar
+          enero–agosto de 2017 con el mismo periodo de 2018.</li>
+        <li>Los pedidos entregados a tiempo obtuvieron una calificación
+          promedio de 4,29, frente a 2,57 para las entregas tardías.</li>
+        <li>Las reseñas negativas representaron el 9,19% de las
+          entregas a tiempo y el 53,99% de las entregas tardías.</li>
+      </ul>
 
-  <a href="hotel_booking_analysis/dashboard/hotel-dashboard.html"
-     class="btn" target="_blank">📊 Dashboard</a>
-</div>
+      <h4>Recomendaciones de negocio</h4>
+      <ul>
+        <li>Monitorear los retrasos por vendedor, transportista
+          y ubicación.</li>
+        <li>Priorizar mejoras operativas en los pedidos con riesgo
+          de entrega tardía.</li>
+        <li>Hacer seguimiento a las ventas y la satisfacción del
+          cliente mediante dashboards orientados al negocio.</li>
+      </ul>
 
-<h3>Business Objective</h3>
-<p>
-  Strategic data analysis focused on identifying cancellation patterns and revenue optimization opportunities across two Portuguese hotels. The analysis develops an actionable high-risk customer profile and quantifies the financial impact of cancellations to support data-driven commercial decisions.
-</p>
+      <p><strong>Herramientas:</strong> SQL, PostgreSQL, Power BI,
+        validación de datos, análisis de indicadores e informes
+        de negocio.</p>
+    </div>
+  </article>
 
-<h3>Tools & Technologies</h3>
-<p>
-  Python | Pandas | Seaborn | Matplotlib | SQL | SQLAlchemy
-</p>
+  <!-- PROJECT 2: HOTEL BOOKING -->
+  <article class="project">
+    <h3>2. Hotel Booking Demand Analysis</h3>
 
-<h3>Analytical Processes</h3>
-<p>
-  Data Cleaning | Data Transformation |
-  Exploratory Data Analysis (EDA) |
-  Cancellation Analysis | Customer Risk Segmentation |
-  Revenue Analysis (ADR, RevPAR) |
-  SQL Queries on Relational Databases
-</p>
+    <div class="project-highlight">
+      <p>
+        Analysis of hotel booking data to understand cancellations,
+        revenue exposure and opportunities to improve booking
+        management.
+      </p>
+    </div>
 
-<h3>Key Business Questions</h3>
-<ul>
-  <li>
-    <strong>Who cancels?</strong> Which customer type, market segment, and distribution channel present the highest cancellation risk?
-  </li>
-  <li>
-    <strong>When do cancellations occur?</strong> How does booking lead time affect cancellation rates?
-  </li>
-  <li>
-    <strong>What is the financial impact?</strong> How much revenue is lost to cancellations by hotel, season, and market segment?
-  </li>
-  <li>
-    <strong>Where is the revenue?</strong> Which segments and periods generate the highest value while also presenting the highest risk?
-  </li>
-</ul>
+    <div class="project-links">
+      <a class="btn" href="https://github.com/albert777mendoza/hotel_booking_analysis"
+         target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
 
-<h3>Methodology</h3>
-<ul>
-  <li>
-    <strong>Data preprocessing:</strong>
-    Cleaned missing values, corrected data types, filtered ADR outliers including negative values and extreme observations such as €5,400 per night, and created derived variables such as season, lead-time segments, and revenue metrics.
-  </li>
+    <h4>Business Objective</h4>
+    <p>
+      Identify cancellation patterns, compare City Hotel and Resort
+      Hotel performance, and assess opportunities to reduce revenue
+      losses through data-driven recommendations.
+    </p>
 
-  <li>
-    <strong>Exploratory Data Analysis (EDA):</strong>
-    Analyzed booking trends from 2015–2017 and examined cancellation patterns by customer type, market segment, distribution channel, and booking lead time. Recurring seasonal patterns were identified.
-  </li>
-
-  <li>
-    <strong>Cancellation analysis:</strong>
-    Developed a high-risk customer profile by combining customer type, distribution channel, lead time, deposit type, and previous cancellation history. The analysis confirmed a direct relationship between longer booking lead times and higher cancellation rates.
-  </li>
-
-  <li>
-    <strong>Revenue analysis:</strong>
-    Calculated ADR and RevPAR by hotel, season, and market segment. Quantified revenue lost to cancellations by hotel, segment, and month, identifying a concentration of losses during high-demand periods.
-  </li>
-
-  <li>
-    <strong>SQL analysis:</strong>
-    Queried a relational database to answer key business questions and validate findings obtained through Python.
-  </li>
-
-  <li>
-    <strong>Conclusions and recommendations:</strong>
-    Developed an executive summary highlighting the high-risk customer profile, estimated financial impact, and prioritized actions for hotel management.
-  </li>
-</ul>
-
-<h3>Key Visualizations</h3>
-
-<p>
-  Executive KPIs: overall cancellation rate, total revenue lost, and average ADR by hotel. Summary of the financial impact during 2015–2017.
-</p>
-
-<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/indicadores_clave.png"
-     alt="Key hotel booking analysis indicators"
-     class="project-img">
-
-<p>
-  Cancellation rate by hotel. The City Hotel (41.7%) shows a significant gap compared with the Resort Hotel (27.8%), making the urban property the primary focus for retention initiatives.
-</p>
-
-<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_hotel.png"
-     alt="Cancellation rate by hotel"
-     class="project-img">
-
-<p>
-  Relationship between booking lead time and cancellation rate. Bookings made more than 181 days in advance reached a 57% cancellation rate, confirming a direct relationship between booking lead time and cancellation risk.
-</p>
-
-<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/anticipacion_cancelacion.png"
-     alt="Cancellation rate by booking lead time"
-     class="project-img">
-
-<p>
-  Revenue lost to cancellations during 2015–2017. The City Hotel accounts for 65.1% of total losses (€10.8M), defining the priority for intervention by property.
-</p>
-
-<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/revenue_perdido.png"
-     alt="Revenue lost to hotel cancellations"
-     class="project-img">
-
-<p>
-  Cancellation rate by distribution channel. Online travel intermediaries consistently show higher cancellation rates than direct channels, supporting the strategy of strengthening direct booking incentives.
-</p>
-
-<img src="https://raw.githubusercontent.com/albert777mendoza/hotel_booking_analysis/main/images/cancelacion_canal.png"
-     alt="Cancellation rate by distribution channel"
-     class="project-img">
-
-<h3>Conclusions & Key Findings</h3>
-<ul>
-  <li>
-    The overall 37% cancellation rate represents <strong>€16.7M in lost revenue</strong> during the analyzed period, with the City Hotel accounting for 65.1% of the financial impact.
-  </li>
-
-  <li>
-    The highest-risk profile is clear and actionable: a Transient customer booking through Online TA more than 90 days in advance, without a deposit, and with previous cancellation history (94% recurrence).
-  </li>
-
-  <li>
-    The concentration of cancellations during peak season increases the financial impact because it coincides with the months with the highest ADR.
-  </li>
-
-  <li>
-    Online TA represents the most complex segment: it generates the highest revenue (€13.7M) while also producing significant cancellation losses, requiring targeted retention strategies rather than exclusion.
-  </li>
-</ul>
-
-<h3>Recommendations</h3>
-<ul>
-  <li>
-    Implement <strong>mandatory non-refundable deposits</strong> for high-risk Transient bookings made more than 90 days in advance, applying the policy according to customer risk profile.
-  </li>
-
-  <li>
-    Activate <strong>proactive communication during peak season</strong> (July and August), including upgrade offers, exclusive benefits, and booking reminders to reduce cancellations during periods with the highest ADR.
-  </li>
-
-  <li>
-    Develop <strong>direct booking incentives</strong> to reduce intermediary dependence, increase control over the customer relationship, and potentially lower cancellation rates.
-  </li>
-
-  <li>
-    Implement a <strong>repeat-cancellation alert system</strong> to automatically identify customers with previous cancellations and apply stricter booking policies at the time of reservation.
-  </li>
-</ul>
-
-</div>
-<!-- END PROJECT 1 -->
-
-          <!-- ============================================================ -->
-<!-- PROJECT 2 — CONTACT CENTER                                  -->
-<!-- ============================================================ -->
-<div class="project">
-
-  <h2>2. Contact Center Operational Efficiency Analysis</h2>
-
-  <div class="project-highlight">
-    <h3>📌 Executive Summary</h3>
+    <h4>Key Questions</h4>
     <ul>
-      <li>
-        <strong>Business problem:</strong>
-        Identify operational inefficiencies and critical factors affecting contact center performance, with a focus on missed calls and outbound call effectiveness.
-      </li>
-
-      <li>
-        <strong>Dataset:</strong>
-        Operational records of inbound and outbound calls, including call duration, missed calls, and performance metrics by operator.
-      </li>
-
-      <li>
-        <strong>Tools:</strong>
-        Python, Pandas, Seaborn, statistical analysis, and Tableau.
-      </li>
-
-      <li>
-        <strong>Key findings:</strong>
-        <ul>
-          <li>
-            Missed calls and low outbound call effectiveness were identified as the main drivers of operational inefficiency.
-          </li>
-          <li>
-            Outbound calls showed a significantly higher missed-call rate than inbound calls, confirmed through statistical hypothesis testing.
-          </li>
-          <li>
-            Nearly 50% of operators were classified as medium- or critical-risk based on the operational efficiency score.
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>Potential business impact:</strong>
-        <ul>
-          <li>
-            Potential productivity losses of approximately <strong>$6K USD per month</strong> were estimated from operational waiting time associated with critical operators.
-          </li>
-          <li>
-            Reducing the missed-call rate from 37% to the operational target of 5% could recover more than <strong>10,000 additional customer interactions</strong>.
-          </li>
-          <li>
-            The analysis enables management to prioritize interventions for critical operators, optimize outbound calling processes, and improve overall contact center capacity.
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>Final recommendation:</strong>
-        Implement operational monitoring dashboards and optimize contact schedules and calling lists to reduce failed calls and improve productivity.
-      </li>
+      <li>Which hotel type has the highest cancellation rate?</li>
+      <li>How do booking channels and customer characteristics
+        relate to cancellations?</li>
+      <li>Which operational changes could help reduce cancellation
+        risk?</li>
     </ul>
-  </div>
 
-  <div class="project-links">
-    <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case1_telecom"
-       target="_blank">📖 README</a>
+    <p><strong>Tools:</strong> Python, Pandas, data analysis,
+      visualization and statistical reasoning.</p>
+  </article>
 
-    <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case1_telecom/notebooks/telecom_case.ipynb"
-       target="_blank">📓 Notebook</a>
+  <!-- PROJECT 3: CONTACT CENTER -->
+  <article class="project">
+    <h3>3. Telecom Contact Center Performance Analysis</h3>
 
-    <a href="https://public.tableau.com/views/Case1_TelecomFinalProyectD_A/Hoja1"
-       target="_blank">📊 Dashboard</a>
-  </div>
+    <div class="project-highlight">
+      <p>
+        Analysis of contact center operations to identify inefficient
+        operators, missed interactions and opportunities to improve
+        service performance.
+      </p>
+    </div>
 
-  <h3>Business Objective</h3>
-  <p>
-    Data analysis project focused on identifying inefficient operators within a contact center through a performance ranking and traffic-light classification system based on operational KPIs. The solution evaluated individual and group performance to support coaching, training, and operational optimization.
-  </p>
+    <div class="project-links">
+      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
+         target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
 
-  <h3>Tools & Technologies</h3>
-  <p>
-    Python | Pandas | Seaborn | Tableau
-  </p>
-
-  <h3>Analytical Processes</h3>
-  <p>
-    Data Cleaning | Data Transformation |
-    Exploratory Data Analysis (EDA) |
-    Performance Threshold Definition |
-    Operator Risk Classification |
-    Statistical Hypothesis Testing
-  </p>
-
-  <h3>Key Business Questions</h3>
-  <ul>
-    <li>
-      What is the main factor affecting operational effectiveness in the contact center?
-    </li>
-    <li>
-      How are operational inefficiency levels distributed, and what is their percentage impact?
-    </li>
-    <li>
-      What actions could improve operational quality and efficiency?
-    </li>
-  </ul>
-
-  <h3>Methodology</h3>
-  <ul>
-    <li>
-      <strong>Data preprocessing:</strong>
-      Cleaned, integrated, and standardized operational data, checking for inconsistencies, duplicates, and missing values.
-    </li>
-
-    <li>
-      <strong>Exploratory Data Analysis (EDA):</strong>
-      Analyzed variable distributions, call types, and operator performance to identify operational patterns and inefficiencies.
-    </li>
-
-    <li>
-      <strong>Business analysis:</strong>
-      Identified critical factors associated with missed calls and operational performance, translating findings into actionable insights.
-    </li>
-
-    <li>
-      <strong>Statistical hypothesis testing:</strong>
-      Tested whether the missed-call rate differed significantly between inbound and outbound calls.
-    </li>
-  </ul>
-
-  <h3>Key Visualizations</h3>
-
-  <p>
-    Relationship between customer volume handled and total call duration by operator. The visualization incorporates a traffic-light classification system to identify critical operators and improvement opportunities.
-  </p>
-
-  <img src="assets/img/grafica-operadores.png"
-       alt="Operational performance by operator"
-       class="project-img">
-
-  <p>
-    Correlation matrix of contact center operational variables, highlighting relationships between call volume, duration, missed calls, and operational inefficiency.
-  </p>
-
-  <img src="assets/img/heatmap-correlacion.png"
-       alt="Correlation between contact center operational variables"
-       class="project-img">
-
-  <p>
-    Operator segmentation using a traffic-light classification system based on operational performance indicators and risk levels.
-  </p>
-
-  <img src="assets/img/distribucion-eficiencia.png"
-       alt="Operational efficiency distribution"
-       class="project-img">
-
-  <h3>Conclusions & Key Findings</h3>
-  <ul>
-    <li>
-      The identified operational inefficiency shows a structural pattern primarily associated with the high missed-call rate and low outbound call effectiveness.
-    </li>
-
-    <li>
-      Missed calls showed a significant relationship with operational performance
-      (<strong>r = 0.52</strong>), reaching critical levels when operator availability was limited.
-    </li>
-
-    <li>
-      Outbound calls showed a significantly higher missed-call rate than inbound calls
-      (<strong>52.56% vs. 41.46%</strong>), with the difference statistically validated
-      (<strong>Z = 21.433, p &lt; 0.001</strong>).
-    </li>
-  </ul>
-
-  <h3>Recommended Strategies</h3>
-  <ul>
-    <li>
-      Optimize contact lists and calling schedules to reduce failed calls and improve the effective contact rate.
-    </li>
-
-    <li>
-      Implement operational monitoring dashboards to track missed calls, call duration, and operator performance.
-    </li>
-
-    <li>
-      Strengthen training and call-time management practices to improve productivity and operational quality.
-    </li>
-  </ul>
-
-</div>
-<!-- END PROJECT 2 -->
-
-         <!-- ============================================================ -->
-<!-- PROJECT 3 — A/B TESTING                                     -->
-<!-- ============================================================ -->
-<div class="project">
-
-  <h2>3. A/B Testing – Evaluating an E-commerce Recommendation System</h2>
-
-  <div class="project-highlight">
-    <h3>📌 Executive Summary</h3>
+    <h4>Key Findings</h4>
     <ul>
-
-      <li>
-        <strong>Business problem:</strong>
-        Evaluate whether a new recommendation system improves the conversion rate of an online store compared with the existing system.
-      </li>
-
-      <li>
-        <strong>Dataset:</strong>
-        User behavior data from an A/B experiment, including navigation events, conversions, and performance metrics for control (A) and test (B) groups.
-      </li>
-
-      <li>
-        <strong>Tools:</strong>
-        Python, Pandas, Seaborn, SciPy, and Matplotlib.
-      </li>
-
-      <li>
-        <strong>Key findings:</strong>
-        <ul>
-          <li>
-            The test group (B) did not show a statistically significant improvement in conversion compared with the control group (A).
-          </li>
-          <li>
-            Overall funnel conversion was slightly lower in group B, with a difference of approximately <strong>-1.1 percentage points</strong> compared with group A.
-          </li>
-          <li>
-            The experiment presented relevant methodological issues, including group imbalance, potential user contamination, and temporal bias.
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>Business impact:</strong>
-        <ul>
-          <li>
-            The analysis prevented the potential implementation of a product change without statistical evidence of a real improvement.
-          </li>
-          <li>
-            Methodological risks were identified that could have led to incorrect conclusions about the performance of the new recommendation system.
-          </li>
-          <li>
-            The findings provided recommendations to improve the reliability of future experiments and data-driven product decisions.
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>Recommended next steps:</strong>
-        <ul>
-          <li>
-            Repeat the experiment with balanced groups and controlled random assignment.
-          </li>
-          <li>
-            Increase the sample size to improve statistical power.
-          </li>
-          <li>
-            Include additional business metrics such as revenue per user, retention, and average order value.
-          </li>
-          <li>
-            Evaluate alternative hypotheses regarding user behavior at critical funnel stages.
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>Final recommendation:</strong>
-        Do not implement the current change until a new experiment is conducted with improved experimental design and stronger bias controls.
-      </li>
-
+      <li>Failed outbound calls represented 52.56% of the analyzed
+        interactions, compared with 41.46% for inbound calls.</li>
+      <li>A statistical comparison showed a significant difference
+        between these proportions (z = 21.433, p &lt; 0.001).</li>
+      <li>Operator performance metrics can help prioritize
+        coaching and operational follow-up.</li>
     </ul>
-  </div>
 
-  <div class="project-links">
+    <h4>Business Recommendations</h4>
+    <ul>
+      <li>Monitor operator-level KPIs and failed interactions.</li>
+      <li>Investigate the main causes of unsuccessful calls.</li>
+      <li>Use performance dashboards to guide coaching and
+        resource allocation.</li>
+    </ul>
 
-    <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case2_ab_testing"
-       class="btn"
-       target="_blank">📖 README</a>
+    <p><strong>Tools:</strong> Python, Pandas, data visualization
+      and hypothesis testing.</p>
+  </article>
 
-    <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case2_ab_testing/notebooks/ab_testing.ipynb"
-       class="btn"
-       target="_blank">📓 Notebook</a>
-
-  </div>
-
-  <h3>Business Objective</h3>
-  <p>
-    Evaluate whether the newly implemented recommendation system generated a statistically significant improvement in the online store's conversion rate by comparing a control group with a test group.
-  </p>
-
-  <h3>Tools & Technologies</h3>
-  <p>
-    Python | Pandas | Seaborn | SciPy | Matplotlib
-  </p>
-
-  <h3>Analytical Processes</h3>
-  <p>
-    Data Cleaning | Data Transformation |
-    Exploratory Data Analysis (EDA) |
-    Conversion Funnel Analysis |
-    A/B Testing |
-    Statistical Significance Testing
-  </p>
-
-  <h3>Key Business Questions</h3>
-  <ul>
-    <li>
-      Does the change implemented in group B generate a significant improvement across the conversion funnel?
-    </li>
-
-    <li>
-      Should the online store implement the proposed recommendation system?
-    </li>
-
-    <li>
-      Does statistical testing confirm that the observed difference is significant?
-    </li>
-  </ul>
-
-  <h3>Methodology</h3>
-  <ul>
-
-    <li>
-      <strong>Data preprocessing:</strong>
-      Cleaned, integrated, and standardized the experiment data, checking for inconsistencies, duplicates, missing values, and potential data quality issues.
-    </li>
-
-    <li>
-      <strong>Exploratory Data Analysis (EDA):</strong>
-      Compared sample sizes, user-level event distributions, and daily activity. Defined the eligible population and identified potential anomalies before evaluating the experiment results.
-    </li>
-
-    <li>
-      <strong>Conversion funnel construction:</strong>
-      Built the conversion funnel to compare user progression across the main stages of the customer journey. Group A consistently contained more users than group B, revealing an initial imbalance that needed to be considered when interpreting the results.
-    </li>
-
-    <li>
-      <strong>A/B test evaluation:</strong>
-      Compared conversion rates between groups across the funnel. Group B showed a small improvement at the product page → product cart stage, but this advantage was not sustained through the final conversion stage.
-    </li>
-
-    <li>
-      <strong>Statistical significance testing:</strong>
-      Applied statistical hypothesis testing to determine whether the observed difference in conversion performance between groups was statistically significant.
-    </li>
-
-  </ul>
-
-  <h3>Key Visualizations</h3>
-
-  <p>
-    Comparative conversion funnel showing how users progressed through each stage of the customer journey. The visualization helps evaluate whether the new recommendation system improved user progression and conversion compared with the control group.
-  </p>
-
-  <img src="assets/img/funnel-comparativo.png"
-       alt="Comparative conversion funnel"
-       class="project-img">
-
-  <p>
-    Daily event activity throughout the experiment period. The visualization helps identify temporal trends, interaction peaks, and potential anomalies affecting groups A and B.
-  </p>
-
-  <img src="assets/img/eventos-dia.png"
-       alt="Daily user events"
-       class="project-img">
-
-  <p>
-    Summary comparison of users, conversions, and revenue across both experiment groups. The results show that the control group achieved better overall conversion and revenue performance than the test group.
-  </p>
-
-  <img src="assets/img/resumen-prueba.png"
-       alt="A/B test summary"
-       class="project-img">
-
-  <h3>Conclusions & Key Findings</h3>
-  <ul>
-
-    <li>
-      Overall, group B did not outperform group A across the conversion funnel. The test group showed only a limited improvement at an intermediate stage, followed by weaker performance at the final conversion stage.
-    </li>
-
-    <li>
-      The implemented change did not generate a statistically significant improvement in the overall funnel. The observed difference was approximately <strong>-1.1 percentage points</strong>.
-    </li>
-
-    <li>
-      Statistical testing confirmed that the observed difference was not significant
-      (<strong>p-value = 0.3024</strong>).
-    </li>
-
-  </ul>
-
-  <h3>Recommendations</h3>
-  <ul>
-
-    <li>
-      Do not implement the current recommendation system based on the observed results.
-    </li>
-
-    <li>
-      Repeat the experiment using balanced groups, controlled random assignment, and stronger controls for potential sources of bias.
-    </li>
-
-    <li>
-      Increase the sample size and experiment duration where appropriate to improve statistical power and reliability.
-    </li>
-
-  </ul>
-
-</div>
-<!-- END PROJECT 3 -->
-
-          
-
-<!-- ============================================================ -->
-<!-- PROJECT 4 — SQL BOOK DATABASE                               -->
-<!-- ============================================================ -->
-<div class="project">
-
-  <h2>4. Book Database Analysis — SQL & Relational Data Analysis</h2>
-
-  <div class="project-summary">
+  <!-- PROJECT 4: A/B TESTING -->
+  <article class="project">
+    <h3>4. A/B Testing — Online Store</h3>
 
     <div class="project-highlight">
-      <h3>📌 Executive Summary</h3>
-
-      <ul>
-
-        <li>
-          <strong>Business problem:</strong>
-          Analyze a relational database of books, authors, publishers, users, ratings, and reviews to identify patterns that could support product and content strategy decisions.
-        </li>
-
-        <li>
-          <strong>Dataset:</strong>
-          Relational database containing information about books, authors, publishers, user ratings, and written reviews.
-        </li>
-
-        <li>
-          <strong>Tools:</strong>
-          SQL, SQLAlchemy, Python, Pandas, Seaborn, SciPy, and Matplotlib.
-        </li>
-
-        <li>
-          <strong>Key findings:</strong>
-          <ul>
-            <li>
-              Book production is highly concentrated among a small number of publishers, particularly Penguin Books and Vintage.
-            </li>
-
-            <li>
-              User ratings are substantially more common than written reviews, indicating lower participation in content creation.
-            </li>
-
-            <li>
-              Highly rated books are not necessarily those with the highest number of reviews, highlighting the importance of considering both quality perception and user engagement.
-            </li>
-
-            <li>
-              Author-level analysis revealed differences in productivity, average ratings, and review volume across the catalog.
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>Business recommendations:</strong>
-          Use user segmentation and personalized recommendations to improve content discovery, while introducing engagement mechanisms to encourage users to contribute more written reviews.
-        </li>
-
-      </ul>
+      <p>
+        Statistical evaluation of an experiment to determine whether
+        a proposed change produced measurable improvements in
+        user conversion.
+      </p>
     </div>
 
     <div class="project-links">
-
-      <a href="https://github.com/albert777mendoza/final_project_da/tree/main/case3_sql"
-         class="btn"
-         target="_blank">📖 README</a>
-
-      <a href="https://github.com/albert777mendoza/final_project_da/blob/main/case3_sql/notebooks/sql_analysis.ipynb"
-         class="btn"
-         target="_blank">📓 Notebook</a>
-
+      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
+         target="_blank" rel="noopener">GitHub Repository</a>
     </div>
 
-  </div>
+    <h4>Business Objective</h4>
+    <p>
+      Evaluate the experiment results using conversion metrics
+      and statistical testing to support an evidence-based
+      product decision.
+    </p>
 
-  <h3>Business Objective</h3>
+    <h4>Key Finding</h4>
+    <p>
+      The analysis reported a p-value of 0.3024 for the relevant
+      comparison. The result did not provide sufficient statistical
+      evidence of a difference at the conventional 5% significance
+      level.
+    </p>
 
-  <p>
-    Analyze a relational database containing books, publishers, authors, ratings, and user reviews to identify patterns in publishing activity, content engagement, and perceived book quality, supporting data-driven product recommendations.
-  </p>
+    <p><strong>Tools:</strong> Python, Pandas, SciPy,
+      exploratory analysis and A/B testing.</p>
+  </article>
 
-  <h3>Tools & Technologies</h3>
-
-  <p>
-    SQL | SQLAlchemy | Python | Pandas | Seaborn | SciPy | Matplotlib
-  </p>
-
-  <h3>Analytical Processes</h3>
-
-  <p>
-    Relational Database Exploration |
-    SQL Querying |
-    Table Joins |
-    Aggregation |
-    Filtering |
-    Data Validation |
-    Result Analysis |
-    Business Insight Generation
-  </p>
-
-  <h3>Key Business Questions</h3>
-
-  <ul>
-
-    <li>
-      Which publishers have the largest presence in the book catalog?
-    </li>
-
-    <li>
-      How do user ratings and written reviews vary across books and authors?
-    </li>
-
-    <li>
-      Is higher perceived book quality associated with greater user engagement?
-    </li>
-
-    <li>
-      Which authors combine strong ratings, productivity, and user engagement?
-    </li>
-
-    <li>
-      What product strategies could improve content discovery and user participation?
-    </li>
-
-  </ul>
-
-  <h3>Methodology</h3>
-
-  <ul>
-
-    <li>
-      <strong>Database exploration:</strong>
-      Identified tables, primary keys, foreign keys, and relationships between authors, books, publishers, ratings, and reviews.
-    </li>
-
-    <li>
-      <strong>SQL query development:</strong>
-      Built queries using aggregation functions such as COUNT and AVG, filtering with WHERE and HAVING, and relational joins including INNER JOIN to answer key business questions.
-    </li>
-
-    <li>
-      <strong>Data analysis:</strong>
-      Examined publishing volume, review activity, average ratings, publisher concentration, and author-level performance to identify relevant patterns.
-    </li>
-
-    <li>
-      <strong>Business interpretation:</strong>
-      Translated database-level results into insights related to user engagement, content discovery, publisher concentration, and perceived quality.
-    </li>
-
-    <li>
-      <strong>Recommendations:</strong>
-      Proposed strategies to increase written reviews through engagement mechanisms and improve book discovery through filtering, segmentation, and personalized recommendations.
-    </li>
-
-  </ul>
-
-  <h3>Key Visualizations</h3>
-
-  <p>
-    Distribution of written reviews per user. The analysis shows that users contribute significantly more ratings than written reviews, highlighting an opportunity to increase participation in user-generated content.
-  </p>
-
-  <img src="assets/img/resenas-usuario.png"
-       alt="Distribution of reviews per user"
-       class="project-img">
-
-  <p>
-    Relationship between average book rating and number of written reviews. Most highly rated books have relatively limited review activity, showing that perceived quality and user-generated content volume do not necessarily move together.
-  </p>
-
-  <img src="assets/img/calificacion-resenas.png"
-       alt="Relationship between average rating and number of reviews"
-       class="project-img">
-
-  <p>
-    Author-level comparison combining publishing volume, average rating, and review activity. The visualization highlights differences between highly established authors and authors with lower catalog presence or engagement.
-  </p>
-
-  <img src="assets/img/autores.png"
-       alt="Author productivity, quality, and popularity"
-       class="project-img">
-
-  <h3>Conclusions & Key Findings</h3>
-
-  <ul>
-
-    <li>
-      A small number of publishers, particularly Penguin Books and Vintage, account for a significant share of the book catalog, indicating a concentrated publishing structure.
-    </li>
-
-    <li>
-      Highly engaged users who have rated more than 50 books write an average of approximately 24 reviews, suggesting that written content requires a higher level of user commitment than simple ratings.
-    </li>
-
-    <li>
-      Book ratings show substantial variation across titles, reflecting differences in author, content, and individual reader preferences.
-    </li>
-
-    <li>
-      The number of reviews should be considered alongside average ratings when evaluating book popularity and perceived quality.
-    </li>
-
-  </ul>
-
-  <h3>Recommendations</h3>
-
-  <ul>
-
-    <li>
-      Encourage written reviews through gamification, recognition systems, badges, or other engagement mechanisms.
-    </li>
-
-    <li>
-      Improve book discovery through filtering and segmentation based on genre, style, popularity, ratings, and user preferences.
-    </li>
-
-    <li>
-      Use author- and book-level performance indicators to support personalized recommendation strategies and increase engagement with less-visible content.
-    </li>
-
-  </ul>
-
-</div>
-<!-- END PROJECT 4 -->     
-
-  <!-- ============================================================ -->
-<!-- PROJECT 5 — VERSIÓN ESPAÑOL                                -->
-<!-- ============================================================ -->
-
-<div class="project">
-
-  <h2>5. Análisis Territorial de Toledo — Analítica de Datos Municipales</h2>
-
-  <div class="project-summary">
+  <!-- PROJECT 5: BOOK DATABASE -->
+  <article class="project">
+    <h3>5. SQL Book Database Analysis</h3>
 
     <div class="project-highlight">
-
-      <h3>📌 Resumen Ejecutivo</h3>
-
-      <ul>
-
-        <li>
-          <strong>Problema de negocio:</strong>
-          Analizar indicadores municipales históricos para comprender el comportamiento fiscal, la gestión institucional y las condiciones de educación, salud y demografía de Toledo, Norte de Santander, apoyando la planeación y la toma de decisiones basada en datos.
-        </li>
-
-        <li>
-          <strong>Dataset:</strong>
-          Datos multidimensionales oficiales del municipio provenientes del Departamento Nacional de Planeación (DNP) a través de la plataforma TerriData.
-        </li>
-
-        <li>
-          <strong>Herramientas:</strong>
-          Python, Pandas, Seaborn, Matplotlib, Jupyter Notebook, Git y GitHub.
-        </li>
-
-        <li>
-          <strong>Principales hallazgos:</strong>
-
-          <ul>
-
-            <li>
-              El análisis histórico permitió identificar cambios importantes en diferentes indicadores municipales, especialmente en ingresos y desempeño institucional.
-            </li>
-
-            <li>
-              El enfoque multidimensional permitió analizar conjuntamente indicadores fiscales, demográficos, educativos, de salud y de gestión.
-            </li>
-
-            <li>
-              El análisis temporal permitió observar cambios en el desempeño municipal en lugar de evaluar los indicadores de manera aislada.
-            </li>
-
-            <li>
-              El proyecto demuestra cómo los datos públicos oficiales pueden transformarse en indicadores estructurados para apoyar el monitoreo y la planeación municipal.
-            </li>
-
-          </ul>
-
-        </li>
-
-        <li>
-          <strong>Recomendaciones de negocio:</strong>
-          Establecer un monitoreo sistemático de los principales indicadores municipales e integrar información financiera, social e institucional en dashboards que apoyen decisiones administrativas basadas en evidencia.
-        </li>
-
-      </ul>
-
+      <p>
+        SQL-based analysis of a book database to explore publication
+        activity, ratings, reviews and author performance.
+      </p>
     </div>
 
     <div class="project-links">
-
-      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata"
-         class="btn"
-         target="_blank">
-         📖 README
-      </a>
-
-      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata/blob/main/notebooks/analisis_toledo.ipynb"
-         class="btn"
-         target="_blank">
-         📓 Notebook
-      </a>
-
+      <a class="btn" href="https://github.com/albert777mendoza/final_project_da"
+         target="_blank" rel="noopener">GitHub Repository</a>
     </div>
 
-  </div>
+    <h4>Business Objective</h4>
+    <p>
+      Query a relational database to generate insights about books,
+      authors, user reviews and ratings, demonstrating practical
+      SQL skills for business analysis.
+    </p>
 
+    <h4>Analytical Approach</h4>
+    <ul>
+      <li>Explore relationships between books, authors and reviews.</li>
+      <li>Use joins, aggregations and grouped metrics to answer
+        business questions.</li>
+      <li>Summarize findings to support content and catalog analysis.</li>
+    </ul>
 
-  <h3>Objetivo del Proyecto</h3>
+    <p><strong>Tools:</strong> SQL, relational databases,
+      joins and aggregations.</p>
+  </article>
 
-  <p>
-    Analizar datos municipales oficiales provenientes de la plataforma TerriData del DNP para identificar patrones históricos en el desempeño fiscal, la gestión pública y los indicadores de educación, salud y demografía de Toledo, Norte de Santander.
-  </p>
-
-  <p>
-    El objetivo es transformar datos heterogéneos del sector público en indicadores analíticos claros que puedan apoyar el monitoreo, la planeación y la toma de decisiones basada en evidencia.
-  </p>
-
-
-  <h3>Herramientas y Tecnologías</h3>
-
-  <p>
-    Python | Pandas | Seaborn | Matplotlib | Jupyter Notebook | Git | GitHub
-  </p>
-
-
-  <h3>Procesos Analíticos</h3>
-
-  <p>
-    Exploración de Datos Públicos |
-    Limpieza y Preprocesamiento |
-    Filtrado de Datos |
-    Transformación |
-    Agregación |
-    Análisis Descriptivo |
-    Análisis Temporal |
-    Visualización |
-    Análisis de Desempeño Municipal
-  </p>
-
-
-  <h3>Preguntas Clave de Negocio</h3>
-
-  <ul>
-
-    <li>
-      ¿Cómo han evolucionado los principales indicadores municipales a lo largo del tiempo?
-    </li>
-
-    <li>
-      ¿Cómo ha cambiado el comportamiento de los ingresos municipales durante los diferentes períodos?
-    </li>
-
-    <li>
-      ¿Qué cambios pueden observarse en los indicadores de educación, salud y demografía?
-    </li>
-
-    <li>
-      ¿Qué dimensiones presentan los cambios más significativos en el desempeño municipal?
-    </li>
-
-    <li>
-      ¿Cómo pueden los datos multidimensionales mejorar el monitoreo y la planeación municipal?
-    </li>
-
-  </ul>
-
-
-  <h3>Metodología</h3>
-
-  <ul>
-
-    <li>
-      <strong>Extracción e inspección:</strong>
-      Carga de datasets oficiales de TerriData en Python y revisión de estructura, variables, tipos de datos, cobertura temporal y valores faltantes.
-    </li>
-
-    <li>
-      <strong>Limpieza y transformación:</strong>
-      Estandarización de datasets, filtrado de registros correspondientes a Toledo, selección de indicadores relevantes y preparación de dataframes para el análisis.
-    </li>
-
-    <li>
-      <strong>Análisis de indicadores:</strong>
-      Evaluación de indicadores históricos relacionados con ingresos municipales, gestión institucional y dimensiones de educación, salud y demografía.
-    </li>
-
-    <li>
-      <strong>Análisis de tendencias:</strong>
-      Comparación del comportamiento de los indicadores durante diferentes años para identificar cambios, períodos de mejora y variaciones en el desempeño municipal.
-    </li>
-
-    <li>
-      <strong>Visualización:</strong>
-      Creación de gráficos y visualizaciones multidimensionales mediante Matplotlib y Seaborn para comunicar los patrones históricos de manera clara.
-    </li>
-
-    <li>
-      <strong>Interpretación:</strong>
-      Transformación de los resultados analíticos en insights útiles para el monitoreo, la planeación y la priorización de áreas de gestión municipal.
-    </li>
-
-  </ul>
-
-
-  <h3>Visualización Principal</h3>
-
-  <p>
-    <strong>Matriz de Desempeño Multidimensional — Municipio de Toledo</strong>
-  </p>
-
-  <p>
-    La matriz resume el comportamiento histórico de diferentes indicadores municipales entre 2000 y 2025, permitiendo observar simultáneamente distintas dimensiones del desempeño territorial.
-  </p>
-
-  <img src="assets/img/matriz-desempeno-toledo.png"
-       alt="Matriz de desempeño multidimensional del municipio de Toledo, Norte de Santander"
-       class="project-img">
-
-
-  <h3>Conclusiones y Principales Hallazgos</h3>
-
-  <ul>
-
-    <li>
-      El desempeño municipal presenta variaciones importantes entre indicadores y períodos, lo que refuerza la necesidad de analizar la información territorial de manera longitudinal.
-    </li>
-
-    <li>
-      Los indicadores de ingresos presentan cambios significativos durante el período histórico analizado, aportando contexto para comprender la capacidad fiscal municipal.
-    </li>
-
-    <li>
-      Los indicadores de gestión institucional y desempeño social deben analizarse conjuntamente con la información fiscal para obtener una visión más amplia del desempeño municipal.
-    </li>
-
-    <li>
-      El enfoque multidimensional proporciona un marco analítico más completo que la evaluación independiente de cada indicador.
-    </li>
-
-    <li>
-      El proyecto establece un flujo de trabajo analítico reutilizable que puede adaptarse a otros municipios colombianos utilizando fuentes oficiales comparables.
-    </li>
-
-  </ul>
-
-
-  <h3>Recomendaciones</h3>
-
-  <ul>
-
-    <li>
-      Desarrollar dashboards de monitoreo que integren indicadores fiscales, sociales, demográficos e institucionales en un único entorno analítico.
-    </li>
-
-    <li>
-      Establecer referencias históricas que permitan identificar cambios significativos en el desempeño municipal y apoyar revisiones periódicas de gestión.
-    </li>
-
-    <li>
-      Combinar indicadores financieros y sociales al evaluar el desempeño municipal, evitando analizar la ejecución presupuestal de manera aislada.
-    </li>
-
-    <li>
-      Automatizar los procesos de preparación de datos y generación de indicadores para facilitar actualizaciones periódicas y su replicación en otros municipios.
-    </li>
-
-    <li>
-      Ampliar el análisis con información oficial adicional de ejecución financiera, como CUIPO, para fortalecer el componente fiscal del modelo analítico.
-    </li>
-
-  </ul>
-
-
-</div>
-
-<!-- END PROJECT 5 -->
-
-  <!-- ============================================================ -->
-<!-- PROJECT 5 — TOLEDO TERRITORIAL ANALYSIS                     -->
-<!-- ============================================================ -->
-
-<div class="project">
-
-  <h2>5. Toledo Territorial Analysis — Municipal Data Analytics</h2>
-
-  <div class="project-summary">
+  <!-- PROJECT 6: TOLEDO -->
+  <article class="project">
+    <h3>6. Public Management &amp; Data Analysis — Toledo</h3>
 
     <div class="project-highlight">
-
-      <h3>📌 Executive Summary</h3>
-
-      <ul>
-
-        <li>
-          <strong>Business problem:</strong>
-          Analyze historical municipal indicators to understand fiscal performance, institutional management, education, health, and demographic conditions in Toledo, Norte de Santander, supporting data-driven local planning and decision-making.
-        </li>
-
-        <li>
-          <strong>Dataset:</strong>
-          Official multidimensional municipal data from the National Planning Department (DNP) through the TerriData platform.
-        </li>
-
-        <li>
-          <strong>Tools:</strong>
-          Python, Pandas, Seaborn, Matplotlib, Jupyter Notebook, Git, and GitHub.
-        </li>
-
-        <li>
-          <strong>Key findings:</strong>
-          <ul>
-
-            <li>
-              Historical analysis revealed significant changes in municipal indicators across different periods, particularly in revenue performance and institutional management.
-            </li>
-
-            <li>
-              The multidimensional approach made it possible to examine fiscal, demographic, education, health, and management indicators within a common analytical framework.
-            </li>
-
-            <li>
-              Time-series analysis helped identify changes in municipal performance rather than evaluating individual indicators in isolation.
-            </li>
-
-            <li>
-              The analysis demonstrates how official public datasets can be transformed into structured indicators to support municipal monitoring and planning.
-            </li>
-
-          </ul>
-        </li>
-
-        <li>
-          <strong>Business recommendations:</strong>
-          Establish systematic monitoring of key municipal indicators and integrate financial, social, and institutional data into dashboards that can support evidence-based administrative decisions.
-        </li>
-
-      </ul>
-
+      <p>
+        Applied data management and reporting in a municipal public
+        management context, organizing information to support
+        monitoring, accountability and decision-making.
+      </p>
     </div>
 
     <div class="project-links">
-
-      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata"
-         class="btn"
-         target="_blank">
-         📖 README
-      </a>
-
-      <a href="https://github.com/albert777mendoza/analisis-toledo-terridata/blob/main/notebooks/analisis_toledo.ipynb"
-         class="btn"
-         target="_blank">
-         📓 Notebook
-      </a>
-
+      <button type="button" class="btn"
+        onclick="document.getElementById('toledo-en').hidden=false;
+                 document.getElementById('toledo-es').hidden=true;">
+        English
+      </button>
+      <button type="button" class="btn"
+        onclick="document.getElementById('toledo-en').hidden=true;
+                 document.getElementById('toledo-es').hidden=false;">
+        Ver proyecto en español
+      </button>
     </div>
 
-  </div>
+    <div id="toledo-en">
+      <h4>Project Overview</h4>
+      <p>
+        Supported municipal information management through data
+        collection, consolidation, reporting and documentation
+        across public-sector departments.
+      </p>
 
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Organized and consolidated information from different
+          municipal departments.</li>
+        <li>Used spreadsheets, online forms and shared repositories
+          to support data collection and reporting.</li>
+        <li>Prepared reports and documentation to support public
+          accountability and monitoring.</li>
+      </ul>
 
-  <h3>Business Objective</h3>
+      <p><strong>Skills:</strong> Data management, Excel, reporting,
+        documentation and stakeholder coordination.</p>
+    </div>
 
-  <p>
-    Analyze official municipal data from the DNP TerriData platform to identify historical patterns in fiscal performance, public management, education, health, and demographic indicators for Toledo, Norte de Santander.
-  </p>
+    <div id="toledo-es" hidden>
+      <h4>Descripción del proyecto</h4>
+      <p>
+        Apoyo a la gestión de información municipal mediante la
+        recopilación, consolidación, elaboración de informes y
+        documentación de distintas dependencias públicas.
+      </p>
 
-  <p>
-    The objective is to transform heterogeneous public-sector data into clear analytical indicators that can support municipal monitoring, planning, and evidence-based decision-making.
-  </p>
+      <h4>Principales contribuciones</h4>
+      <ul>
+        <li>Organicé y consolidé información de diferentes
+          dependencias municipales.</li>
+        <li>Utilicé hojas de cálculo, formularios en línea y
+          repositorios compartidos para recopilar información
+          y elaborar reportes.</li>
+        <li>Preparé informes y documentación para apoyar la
+          rendición de cuentas y el seguimiento de la gestión.</li>
+      </ul>
 
-
-  <h3>Tools & Technologies</h3>
-
-  <p>
-    Python | Pandas | Seaborn | Matplotlib | Jupyter Notebook | Git | GitHub
-  </p>
-
-
-  <h3>Analytical Processes</h3>
-
-  <p>
-    Public Data Exploration |
-    Data Cleaning & Preprocessing |
-    Data Filtering |
-    Data Transformation |
-    Aggregation |
-    Descriptive Analysis |
-    Time-Series Analysis |
-    Data Visualization |
-    Municipal Performance Analysis
-  </p>
-
-
-  <h3>Key Business Questions</h3>
-
-  <ul>
-
-    <li>
-      How have key municipal indicators evolved over time?
-    </li>
-
-    <li>
-      How has municipal revenue performance changed across different periods?
-    </li>
-
-    <li>
-      What changes can be observed in education, health, and demographic indicators?
-    </li>
-
-    <li>
-      Which dimensions show the most significant changes in municipal performance?
-    </li>
-
-    <li>
-      How can multidimensional public data improve municipal monitoring and planning?
-    </li>
-
-  </ul>
-
-
-  <h3>Methodology</h3>
-
-  <ul>
-
-    <li>
-      <strong>Data extraction & inspection:</strong>
-      Loaded official TerriData datasets into Python and examined their structure, variables, data types, temporal coverage, and missing values.
-    </li>
-
-    <li>
-      <strong>Data cleaning & transformation:</strong>
-      Standardized datasets, filtered records related to Toledo, selected relevant indicators, and prepared analytical dataframes for further analysis.
-    </li>
-
-    <li>
-      <strong>Indicator analysis:</strong>
-      Evaluated historical indicators covering municipal revenues, institutional management, education, health, and demographic dimensions.
-    </li>
-
-    <li>
-      <strong>Trend analysis:</strong>
-      Compared indicator behavior across multiple years to identify changes, periods of improvement, and variations in municipal performance.
-    </li>
-
-    <li>
-      <strong>Data visualization:</strong>
-      Created charts and multidimensional visualizations using Matplotlib and Seaborn to communicate historical patterns in a clear and accessible way.
-    </li>
-
-    <li>
-      <strong>Business interpretation:</strong>
-      Translated analytical results into insights that can support municipal monitoring, planning, and prioritization of management areas.
-    </li>
-
-  </ul>
-
-
-  <h3>Key Visualization</h3>
-
-  <p>
-    <strong>Multidimensional Performance Matrix — Municipality of Toledo</strong>
-  </p>
-
-  <p>
-    The matrix summarizes the historical behavior of selected municipal indicators from 2000 to 2025, allowing different dimensions of territorial performance to be viewed simultaneously.
-  </p>
-
-  <img src="assets/img/matriz-desempeno-toledo.png"
-       alt="Multidimensional Performance Matrix for Toledo, Norte de Santander"
-       class="project-img">
-
-
-  <h3>Conclusions & Key Findings</h3>
-
-  <ul>
-
-    <li>
-      Municipal performance varies considerably across indicators and periods, reinforcing the importance of analyzing territorial data longitudinally.
-    </li>
-
-    <li>
-      Revenue indicators show substantial changes over the historical period analyzed, providing useful context for understanding municipal fiscal capacity.
-    </li>
-
-    <li>
-      Institutional management and social indicators should be analyzed together with fiscal information to obtain a broader view of municipal performance.
-    </li>
-
-    <li>
-      The multidimensional approach provides a more complete analytical framework than evaluating individual indicators independently.
-    </li>
-
-    <li>
-      The project establishes a reusable analytical workflow that can be adapted to other Colombian municipalities using comparable official datasets.
-    </li>
-
-  </ul>
-
-
-  <h3>Recommendations</h3>
-
-  <ul>
-
-    <li>
-      Develop monitoring dashboards that consolidate key fiscal, social, demographic, and institutional indicators in a single analytical environment.
-    </li>
-
-    <li>
-      Establish historical benchmarks to identify significant changes in municipal performance and support periodic management reviews.
-    </li>
-
-    <li>
-      Combine financial and social indicators when evaluating municipal performance instead of analyzing budget execution independently.
-    </li>
-
-    <li>
-      Automate the data preparation and indicator-generation process to facilitate periodic updates and replication across municipalities.
-    </li>
-
-    <li>
-      Extend the analysis with additional official financial-execution data, such as CUIPO, to strengthen the fiscal component of the analytical framework.
-    </li>
-
-  </ul>
-
-
-</div>
-
-<!-- END PROJECT 5 -->
-
+      <p><strong>Habilidades:</strong> Gestión de datos, Excel,
+        elaboración de informes, documentación y coordinación
+        con diferentes actores.</p>
+    </div>
+  </article>
 </section>
       </main>
     </div>
