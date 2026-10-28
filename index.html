@@ -642,44 +642,37 @@
     </div>
   </div> <!-- cierre de .portfolio -->
 
-
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll(".toggle-details-btn").forEach(function (button) {
-    button.onclick = function () {
-      const details = button.nextElementSibling;
+    button.addEventListener("click", function () {
+      var details = button.nextElementSibling;
+      if (!details || !details.classList.contains("project-details")) return;
 
-      if (!details || !details.classList.contains("project-details")) {
-        return;
-      }
-
-      const open = details.hidden;
-
+      var open = !details.classList.contains("is-open");
+      details.classList.toggle("is-open", open);
       details.hidden = !open;
       button.setAttribute("aria-expanded", String(open));
       button.textContent = open ? "Show Less ▲" : "View Full Project ▼";
-    };
+    });
   });
 
   document.querySelectorAll(".language-btn").forEach(function (button) {
-    button.onclick = function () {
-      const project = button.dataset.project;
-      const language = button.dataset.lang;
+    button.addEventListener("click", function () {
+      var project = button.dataset.project;
+      var language = button.dataset.lang;
 
       document.querySelectorAll(".project-language-content").forEach(function (content) {
         if (content.id.startsWith(project + "-")) {
           content.hidden = content.id !== project + "-" + language;
         }
       });
-
       document.querySelectorAll('.language-btn[data-project="' + project + '"]').forEach(function (btn) {
         btn.classList.toggle("active", btn === button);
       });
-    };
+    });
   });
-
 });
 </script>
 
