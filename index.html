@@ -196,21 +196,67 @@
 
     <button type="button" class="toggle-details-btn"
             aria-expanded="false">View Full Project ▼</button>
-    <div class="project-details">
-      <h4>Analysis Scope</h4>
-      <ul>
-        <li>Sales trends and monthly performance.</li>
-        <li>Order delivery performance and delays.</li>
-        <li>Review scores and negative-review rates by delivery status.</li>
-        <li>Business reporting through Power BI dashboards.</li>
-      </ul>
-      <p>
-        The analysis supports prioritizing delivery reliability as a potential
-        lever for improving customer experience. The observed differences are
-        descriptive and do not, by themselves, prove causation.
-      </p>
-    </div>
-  </article>
+
+    <div class="project-details" hidden>
+
+  <div class="project-lang-detail" data-project="olist" data-lang="en">
+    <h4>Analysis Scope</h4>
+    <ul>
+      <li>Sales trends and monthly performance.</li>
+      <li>Order delivery performance and delays.</li>
+      <li>Review scores and negative-review rates by delivery status.</li>
+      <li>Business reporting through Power BI dashboards.</li>
+    </ul>
+
+    <h4>Business Recommendations</h4>
+    <ul>
+      <li>Monitor delivery delays by seller, carrier and location.</li>
+      <li>Prioritize operational improvements for orders at risk of late delivery.</li>
+      <li>Track sales trends and customer satisfaction through business-focused dashboards.</li>
+    </ul>
+
+    <p><strong>Tools:</strong> SQL, PostgreSQL, Power BI, data validation, KPI analysis and business reporting.</p>
+  </div>
+
+  <div class="project-lang-detail" data-project="olist" data-lang="es" hidden>
+    <h4>Alcance del análisis</h4>
+    <ul>
+      <li>Tendencias de ventas y desempeño mensual.</li>
+      <li>Desempeño de las entregas y retrasos.</li>
+      <li>Calificaciones y tasa de reseñas negativas según el estado de la entrega.</li>
+      <li>Reportes de negocio mediante dashboards en Power BI.</li>
+    </ul>
+
+    <h4>Recomendaciones de negocio</h4>
+    <ul>
+      <li>Monitorear los retrasos por vendedor, transportista y ubicación.</li>
+      <li>Priorizar mejoras operativas en los pedidos con riesgo de entrega tardía.</li>
+      <li>Hacer seguimiento a las ventas y la satisfacción del cliente mediante dashboards orientados al negocio.</li>
+    </ul>
+
+    <p><strong>Herramientas:</strong> SQL, PostgreSQL, Power BI, validación de datos, análisis de indicadores e informes de negocio.</p>
+  </div>
+
+  <div class="project-gallery">
+    <figure>
+      <img src="assets/img/olist-dashboard-ventas.png"
+           alt="Olist sales dashboard" loading="lazy">
+      <figcaption>Sales dashboard / Dashboard de ventas</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/olist-dashboard-logistica.png"
+           alt="Olist logistics and satisfaction dashboard" loading="lazy">
+      <figcaption>Logistics &amp; satisfaction / Logística y satisfacción</figcaption>
+    </figure>
+  </div>
+
+  <p>
+    <em>Note / Nota:</em> the observed differences are descriptive and do not,
+    by themselves, prove causation. / Las diferencias observadas son descriptivas
+    y no demuestran causalidad por sí solas.
+  </p>
+</div> 
+ </article>
 
   <!-- 2. HOTEL BOOKING ANALYSIS -->
   <article class="project" id="hotel-project">
@@ -658,21 +704,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.querySelectorAll(".language-btn").forEach(function (button) {
-    button.addEventListener("click", function () {
-      var project = button.dataset.project;
-      var language = button.dataset.lang;
+  
+document.querySelectorAll(".language-btn").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var project = button.dataset.project;
+    var language = button.dataset.lang;
 
-      document.querySelectorAll(".project-language-content").forEach(function (content) {
-        if (content.id.startsWith(project + "-")) {
-          content.hidden = content.id !== project + "-" + language;
-        }
-      });
-      document.querySelectorAll('.language-btn[data-project="' + project + '"]').forEach(function (btn) {
-        btn.classList.toggle("active", btn === button);
-      });
+    // Cambiar el contenido principal del proyecto
+    document.querySelectorAll(".project-language-content").forEach(function (content) {
+      if (content.id.startsWith(project + "-")) {
+        content.hidden = content.id !== project + "-" + language;
+      }
+    });
+
+    // Cambiar los detalles ampliados del proyecto
+    document.querySelectorAll(".project-lang-detail").forEach(function (detail) {
+      if (detail.dataset.project === project) {
+        detail.hidden = detail.dataset.lang !== language;
+      }
+    });
+
+    // Actualizar el botón de idioma activo
+    document.querySelectorAll('.language-btn[data-project="' + project + '"]').forEach(function (btn) {
+      btn.classList.toggle("active", btn === button);
     });
   });
+});
 });
 </script>
 
